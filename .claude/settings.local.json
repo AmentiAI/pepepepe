@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /mnt/c/Users/Wilso/pepepepe -not -path */node_modules/* -not -path */.next/* -type f)",
+      "Bash(npm run:*)",
+      "WebFetch(domain:www.doublewoodsupplements.com)",
+      "Bash(python3 -c \"from PIL import Image, ImageDraw, ImageFont; print\\(''PIL available''\\)\")",
+      "Bash(python3:*)",
+      "Bash(sed -i \"s|https://apollopeptidesciences.com/wp-content/uploads/2024/04/bpc157.webp|/images/bpc157.svg|g\" lib/products.ts)",
+      "Bash(sed -i \"s|https://apollopeptidesciences.com/wp-content/uploads/2024/04/tb500.webp|/images/tb500.svg|g\" lib/products.ts)",
+      "Bash(sed -i \"s|https://apollopeptidesciences.com/wp-content/uploads/2024/04/ghkcu.webp|/images/ghkcu.svg|g\" lib/products.ts)",
+      "Bash(sed -i \"s|https://apollopeptidesciences.com/wp-content/uploads/2024/04/glp1s_5mg.webp|/images/glp1s_5mg.svg|g\" lib/products.ts)",
+      "Bash(sed -i \"s|https://apollopeptidesciences.com/wp-content/uploads/2024/04/glp1s_10mg.webp|/images/glp1s_10mg.svg|g\" lib/products.ts)",
+      "WebFetch(domain:apollopeptidesciences.com)",
+      "Bash(sed -i 's/className=\"\"object-contain group-hover:scale-110 transition-transform duration-300\"\"/className=\"\"w-full h-full object-contain group-hover:scale-110 transition-transform duration-300\"\"/' /mnt/c/Users/Wilso/pepepepe/app/stacks/[slug]/page.tsx)",
+      "Bash(__NEW_LINE_16cb12ff4137140c__ sed:*)",
+      "Bash(wait)",
+      "Bash(npx next:*)",
+      "Bash(node_modules/.bin/next build:*)",
+      "Bash(node_modules/.bin/tsc --noEmit)",
+      "Bash(wc:*)",
+      "Bash(npx tsc:*)",
+      "Bash(sed -i \"s/seoTitle: ''BPC-157 10mg — Complete Healing Peptide Protocol | PeptideProtocols''/seoTitle: ''BPC-157 Dosage \\\\& Protocol Guide — Healing Benefits \\\\& Results | PeptideProtocols''/\" lib/products.ts)",
+      "Bash(sed -i \"s/seoTitle: ''TB-500 10mg — Systemic Recovery Peptide Protocol | PeptideProtocols''/seoTitle: ''TB-500 Dosage \\\\& Protocol Guide — Injury Recovery Results | PeptideProtocols''/\" lib/products.ts)",
+      "Bash(sed -i \"s/seoTitle: ''Semaglutide 5mg — GLP-1 Fat Loss Protocol | PeptideProtocols''/seoTitle: ''Semaglutide Dosage \\\\& Titration Guide — GLP-1 Fat Loss Protocol | PeptideProtocols''/\" lib/products.ts)",
+      "Bash(sed -i \"s/seoTitle: ''Semaglutide 10mg — Extended GLP-1 Fat Loss Protocol | PeptideProtocols''/seoTitle: ''Semaglutide 10mg Dosage \\\\& Protocol Guide | PeptideProtocols''/\" lib/products.ts)",
+      "Bash(sed -i \"s/seoTitle: ''Semaglutide 15mg — Maximum Dose GLP-1 Protocol | PeptideProtocols''/seoTitle: ''Semaglutide 15mg Dosage \\\\& Maximum Dose Protocol | PeptideProtocols''/\" lib/products.ts)"
+    ]
+  }
+}

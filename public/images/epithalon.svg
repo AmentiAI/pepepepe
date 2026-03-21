@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="bgepithalon" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#3b0764" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#080808" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="glowepithalon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#c084fc" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#bgepithalon)"/>
+  <rect width="600" height="600" fill="url(#glowepithalon)"/>
+
+  <!-- Vial body -->
+  <g filter="url(#shadow)">
+    <!-- Vial glass -->
+    <rect x="240" y="120" width="120" height="200" rx="14" ry="14" fill="#1a1a1a" stroke="#c084fc" stroke-width="2" opacity="0.95"/>
+    <!-- Cap -->
+    <rect x="252" y="108" width="96" height="28" rx="8" ry="8" fill="#c084fc" opacity="0.9"/>
+    <!-- Liquid fill -->
+    <rect x="244" y="200" width="112" height="116" rx="0" ry="0" fill="#c084fc" opacity="0.15"/>
+    <rect x="244" y="200" width="112" height="2" fill="#c084fc" opacity="0.4"/>
+    <!-- Vial shine -->
+    <rect x="250" y="125" width="14" height="160" rx="7" fill="white" opacity="0.06"/>
+    <!-- Label band -->
+    <rect x="240" y="170" width="120" height="80" fill="white" opacity="0.04"/>
+    <rect x="240" y="170" width="120" height="1" fill="#c084fc" opacity="0.3"/>
+    <rect x="240" y="249" width="120" height="1" fill="#c084fc" opacity="0.3"/>
+    <!-- Dose text on vial -->
+    <text x="300" y="216" font-family="monospace" font-size="13" font-weight="700" fill="#c084fc" text-anchor="middle" opacity="0.9">50mg</text>
+  </g>
+
+  <!-- Product name -->
+  <text x="300" y="280" font-family="system-ui,-apple-system,sans-serif" font-size="34" font-weight="800" fill="white" text-anchor="middle" opacity="0.95">Epithalon</text>
+  
+
+  <!-- Category badge -->
+  <rect x="175" y="320" width="250" height="36" rx="18" fill="#c084fc" opacity="0.12"/>
+  <rect x="175" y="320" width="250" height="36" rx="18" fill="none" stroke="#c084fc" stroke-width="1" opacity="0.3"/>
+  <text x="300" y="343" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#c084fc" text-anchor="middle" opacity="0.85">🧬 Anti-Aging</text>
+
+  <!-- Bottom: Apollo label -->
+  <text x="300" y="400" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#444" text-anchor="middle">Apollo Peptide Sciences</text>
+
+  <!-- Corner accent dots -->
+  <circle cx="40" cy="40" r="3" fill="#c084fc" opacity="0.3"/>
+  <circle cx="560" cy="40" r="3" fill="#c084fc" opacity="0.3"/>
+  <circle cx="40" cy="560" r="3" fill="#c084fc" opacity="0.3"/>
+  <circle cx="560" cy="560" r="3" fill="#c084fc" opacity="0.3"/>
+</svg>
