@@ -26,7 +26,7 @@ const goals = [
 ];
 
 export default function HomePage() {
-  const topProducts = allProducts.filter(p => p.productType !== 'supply').slice(0, 6);
+  const topProducts = allProducts.filter(p => p.productType !== 'supply').slice(0, 4);
   const featuredStack = allStacks[0];
 
   return (
@@ -49,7 +49,7 @@ export default function HomePage() {
               </AnimateIn>
 
               <AnimateIn delay={0.1}>
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight mb-6">
+                <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight mb-6">
                   Peptide
                   <br />
                   <span className="gradient-text">protocols</span>
@@ -59,7 +59,7 @@ export default function HomePage() {
               </AnimateIn>
 
               <AnimateIn delay={0.2}>
-                <p className="text-2xl text-gray-400 leading-relaxed mb-10 max-w-xl">
+                <p className="text-lg sm:text-2xl text-gray-400 leading-relaxed mb-8 sm:mb-10 max-w-xl">
                   Complete peptide protocols for healing, fat loss, performance, and longevity.
                   Research-grade Phiogen products. COA-verified purity. Real pricing.
                 </p>
@@ -93,17 +93,20 @@ export default function HomePage() {
                     href={`/products/${p.slug}`}
                     className="group bg-[#111] border border-white/5 hover:border-brand-500/20 rounded-2xl p-4 transition-colors card-hover"
                   >
-                    <div className="relative h-36 mb-3">
+                    <div className="relative h-32 sm:h-40 mb-3">
                       <img
                         src={p.image}
                         alt={p.name}
                         className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
-                    <p className="text-sm font-bold text-white group-hover:text-brand-300 transition-colors line-clamp-1">
+                    <p className="text-xs sm:text-sm font-bold text-white group-hover:text-brand-300 transition-colors line-clamp-1">
                       {p.name}
                     </p>
-                    <p className="text-sm text-brand-400 font-black">${p.price}</p>
+                    <div className="flex items-center justify-between mt-1">
+                      <p className="text-sm text-brand-400 font-black">${p.price}</p>
+                      <span className="text-xs text-gray-500 group-hover:text-brand-400 transition-colors">Buy →</span>
+                    </div>
                   </Link>
                 ))}
               </div>
@@ -127,13 +130,13 @@ export default function HomePage() {
       </div>
 
       {/* ── Stats ────────────────────────────────────────────────── */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
           {stats.map((stat, i) => (
             <AnimateIn key={stat.label} delay={i * 0.1}>
-              <div className="bg-[#111] border border-white/5 rounded-2xl p-8 text-center">
-                <p className="text-5xl font-black text-brand-400 mb-2">{stat.value}</p>
-                <p className="text-base text-gray-400">{stat.label}</p>
+              <div className="bg-[#111] border border-white/5 rounded-2xl p-5 sm:p-8 text-center">
+                <p className="text-4xl sm:text-5xl font-black text-brand-400 mb-2">{stat.value}</p>
+                <p className="text-sm sm:text-base text-gray-400">{stat.label}</p>
               </div>
             </AnimateIn>
           ))}
@@ -148,16 +151,16 @@ export default function HomePage() {
             <p className="text-lg text-gray-400">Find the right peptide protocol for your specific objective.</p>
           </div>
         </AnimateIn>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           {goals.map((goal, i) => (
             <AnimateIn key={goal.href} delay={i * 0.08}>
               <Link
                 href={goal.href}
-                className={`group flex flex-col items-center gap-3 bg-[#111] border border-white/5 ${goal.color} rounded-2xl p-8 transition-all text-center card-hover`}
+                className={`group flex flex-col items-center gap-2 sm:gap-3 bg-[#111] border border-white/5 ${goal.color} rounded-2xl p-5 sm:p-8 transition-all text-center card-hover`}
               >
-                <span className="text-4xl">{goal.icon}</span>
-                <p className="font-bold text-white text-lg group-hover:text-brand-300 transition-colors">{goal.label}</p>
-                <p className="text-sm text-gray-400">{goal.desc}</p>
+                <span className="text-3xl sm:text-4xl">{goal.icon}</span>
+                <p className="font-bold text-white text-base sm:text-lg group-hover:text-brand-300 transition-colors">{goal.label}</p>
+                <p className="text-xs sm:text-sm text-gray-400">{goal.desc}</p>
               </Link>
             </AnimateIn>
           ))}
@@ -165,8 +168,8 @@ export default function HomePage() {
       </section>
 
       {/* ── Featured stack ───────────────────────────────────────── */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-        <div className="bg-gradient-to-br from-brand-950/60 to-black border border-brand-500/20 rounded-3xl p-8 md:p-12">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20">
+        <div className="bg-gradient-to-br from-brand-950/60 to-black border border-brand-500/20 rounded-3xl p-6 sm:p-8 md:p-12">
           <AnimateIn>
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
               <div className="max-w-xl">
@@ -210,29 +213,32 @@ export default function HomePage() {
       {/* ── Top products ─────────────────────────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
         <AnimateIn>
-          <div className="flex items-center justify-between mb-10">
+          <div className="flex items-center justify-between mb-8 sm:mb-10">
             <div>
-              <h2 className="text-3xl font-black text-white mb-2">Top Peptides</h2>
-              <p className="text-lg text-gray-400">The most popular and effective peptides available.</p>
+              <h2 className="text-2xl sm:text-3xl font-black text-white mb-2">Buy Top Peptides</h2>
+              <p className="text-base sm:text-lg text-gray-400">Research-grade · COA verified · Ships from Phiogen.</p>
             </div>
             <Link
               href="/products"
               className="hidden md:flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors"
             >
-              View all 20 <ArrowRight className="w-4 h-4" />
+              View all <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </AnimateIn>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
           {topProducts.map((product, i) => (
             <AnimateIn key={product.slug} delay={i * 0.06}>
-              <ProductCard product={product} />
+              <ProductCard product={product} large />
             </AnimateIn>
           ))}
         </div>
-        <div className="mt-8 text-center md:hidden">
-          <Link href="/products" className="inline-flex items-center gap-2 text-sm text-brand-400">
-            View all peptides <ArrowRight className="w-4 h-4" />
+        <div className="mt-8 text-center">
+          <Link
+            href="/products"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-semibold rounded-xl text-sm transition-colors"
+          >
+            View All Peptides <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </section>

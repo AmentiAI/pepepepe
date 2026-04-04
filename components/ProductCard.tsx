@@ -4,6 +4,7 @@ import type { Product } from '@/lib/products';
 
 interface ProductCardProps {
   product: Product;
+  large?: boolean;
 }
 
 const categoryColor: Record<string, string> = {
@@ -22,14 +23,18 @@ const categoryGlow: Record<string, string> = {
   supplies: 'from-gray-900/40 to-[#0d0d0d]',
 };
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, large = false }: ProductCardProps) {
   const catStyle = categoryColor[product.category] ?? 'text-brand-400 bg-brand-500/10 border-brand-500/20';
   const glow = categoryGlow[product.category] ?? 'from-[#0d0d0d] to-[#1a1a1a]';
+  const imgH = large ? 'h-72 sm:h-96' : 'h-64 sm:h-80';
+  const padContent = large ? 'p-5 sm:p-8' : 'p-4 sm:p-6';
+  const nameSize = large ? 'text-xl sm:text-2xl' : 'text-lg sm:text-xl';
+  const priceSize = large ? 'text-4xl sm:text-5xl' : 'text-3xl sm:text-4xl';
 
   return (
     <div className="group relative bg-[#111] border border-white/5 hover:border-white/10 rounded-2xl overflow-hidden card-hover flex flex-col">
       {/* Product Image */}
-      <div className={`relative h-80 bg-gradient-to-br ${glow} overflow-hidden shrink-0 flex items-center justify-center`}>
+      <div className={`relative ${imgH} bg-gradient-to-br ${glow} overflow-hidden shrink-0 flex items-center justify-center`}>
         <img
           src={product.image}
           alt={product.name}
@@ -37,46 +42,46 @@ export function ProductCard({ product }: ProductCardProps) {
         />
         {/* Popularity badge */}
         {product.popularityRank <= 6 && (
-          <div className="absolute top-3 right-3 flex items-center gap-1.5 bg-brand-500/20 border border-brand-500/30 rounded-full px-3 py-1.5">
-            <TrendingUp className="w-4 h-4 text-brand-400" />
-            <span className="text-sm font-semibold text-brand-300">Popular</span>
+          <div className="absolute top-3 right-3 flex items-center gap-1.5 bg-brand-500/20 border border-brand-500/30 rounded-full px-2.5 py-1">
+            <TrendingUp className="w-3.5 h-3.5 text-brand-400" />
+            <span className="text-xs font-semibold text-brand-300">Popular</span>
           </div>
         )}
         {/* Category pill */}
         <div className="absolute bottom-3 left-3">
-          <span className={`inline-block text-sm font-semibold border rounded-full px-3 py-1.5 capitalize ${catStyle}`}>
+          <span className={`inline-block text-xs font-semibold border rounded-full px-2.5 py-1 capitalize ${catStyle}`}>
             {product.category.replace('-', ' ')}
           </span>
         </div>
       </div>
 
       {/* Content */}
-      <div className="p-8 flex flex-col flex-1">
+      <div className={`${padContent} flex flex-col flex-1`}>
         {/* Name */}
-        <h3 className="font-bold text-white text-2xl leading-tight mb-3 group-hover:text-brand-300 transition-colors">
+        <h3 className={`font-bold text-white ${nameSize} leading-tight mb-2 group-hover:text-brand-300 transition-colors`}>
           {product.name}
         </h3>
 
         {/* Tagline */}
-        <p className="text-base text-gray-400 leading-relaxed mb-5 line-clamp-2 flex-1">
+        <p className="text-sm text-gray-400 leading-relaxed mb-4 line-clamp-2 flex-1">
           {product.tagline}
         </p>
 
         {/* Rating */}
-        <div className="flex items-center gap-1.5 mb-5">
+        <div className="flex items-center gap-1 mb-4">
           {Array.from({ length: 5 }).map((_, i) => (
             <Star
               key={i}
-              className={`w-5 h-5 ${i < product.researchRating ? 'text-brand-400 fill-brand-400' : 'text-gray-700'}`}
+              className={`w-4 h-4 ${i < product.researchRating ? 'text-brand-400 fill-brand-400' : 'text-gray-700'}`}
             />
           ))}
-          <span className="text-sm text-gray-500 ml-1">Quality Rating</span>
+          <span className="text-xs text-gray-500 ml-1">Quality Rating</span>
         </div>
 
         {/* Highlights */}
-        <div className="flex flex-wrap gap-2 mb-6">
+        <div className="flex flex-wrap gap-1.5 mb-5">
           {product.highlights.slice(0, 2).map((h) => (
-            <span key={h} className="text-sm text-gray-300 bg-white/5 rounded-lg px-3 py-1.5">
+            <span key={h} className="text-xs text-gray-300 bg-white/5 rounded-lg px-2.5 py-1">
               {h}
             </span>
           ))}
@@ -84,25 +89,25 @@ export function ProductCard({ product }: ProductCardProps) {
 
         {/* Price + Actions */}
         <div className="mt-auto">
-          <div className="flex items-center justify-between mb-4">
-            <span className="text-4xl font-black text-brand-400">${product.price}</span>
-            <span className="text-sm text-gray-500 font-medium">Phiogen</span>
+          <div className="flex items-center justify-between mb-3">
+            <span className={`${priceSize} font-black text-brand-400`}>${product.price}</span>
+            <span className="text-xs text-gray-500 font-medium">Phiogen</span>
           </div>
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2">
             <Link
               href={`/products/${product.slug}`}
-              className="flex-1 text-center py-3.5 text-base font-semibold text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-colors"
+              className="flex-1 text-center py-3 text-sm font-semibold text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-colors"
             >
-              Full Guide
+              Protocol Guide
             </Link>
             <a
               href={product.affiliateUrl}
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className="flex-1 flex items-center justify-center gap-1.5 py-3.5 text-base font-bold bg-brand-500 hover:bg-brand-400 text-black rounded-xl transition-colors"
+              className="flex-1 flex items-center justify-center gap-1.5 py-3 text-sm font-black bg-brand-500 hover:bg-brand-400 text-black rounded-xl transition-colors"
             >
               Buy Now
-              <ExternalLink className="w-4 h-4" />
+              <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>
         </div>

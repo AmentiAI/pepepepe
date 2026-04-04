@@ -74,3 +74,26 @@ body {
 .marquee-track:hover {
   animation-play-state: paused;
 }
+
+/* Mobile tap highlight */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent horizontal scroll on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Better touch targets on mobile */
+@media (max-width: 768px) {
+  a, button {
+    min-height: 44px;
+  }
+}
+
+/* Smooth image rendering */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}

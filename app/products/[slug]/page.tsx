@@ -9,6 +9,7 @@ import { allProducts, getProductBySlug } from '@/lib/products';
 import { AnimateIn } from '@/components/AnimateIn';
 import { RelatedLinks } from '@/components/RelatedLinks';
 import { productFaqs } from '@/lib/productFaqs';
+import { getDeepDive } from '@/lib/deepDive';
 
 export async function generateStaticParams() {
   return allProducts.map(p => ({ slug: p.slug }));
@@ -23,13 +24,13 @@ export async function generateMetadata({
   const product = getProductBySlug(slug);
   if (!product) return {};
   return {
-    title: product.seoTitle,
+    title: `Buy ${product.name} | Research-Grade · Best Price | PeptideProtocols`,
     description: product.shortDescription,
     alternates: {
       canonical: `https://peptideprotocols.com/products/${slug}`,
     },
     openGraph: {
-      title: product.seoTitle,
+      title: `Buy ${product.name} | PeptideProtocols`,
       description: product.shortDescription,
       url: `https://peptideprotocols.com/products/${slug}`,
       images: [{ url: `https://peptideprotocols.com${product.image}` }],
@@ -399,6 +400,8 @@ export default async function ProductPage({
 
   const accent = categoryAccent[product.category] ?? categoryAccent['healing'];
 
+  const deepDive = getDeepDive(product.slug);
+
   const synergies = product.synergies
     .map(s => allProducts.find(p => p.slug === s))
     .filter(Boolean) as typeof allProducts;
@@ -475,7 +478,7 @@ export default async function ProductPage({
           <AnimateIn>
             <div className={`bg-[#111] border ${accent.border} rounded-2xl overflow-hidden`}>
               {/* Product image */}
-              <div className={`relative h-72 ${accent.glow} flex items-center justify-center p-8`}>
+              <div className={`relative h-48 sm:h-72 ${accent.glow} flex items-center justify-center p-6 sm:p-8`}>
                 <img
                   src={product.image}
                   alt={product.name}
@@ -499,8 +502,8 @@ export default async function ProductPage({
                     <span className="text-sm text-gray-400 ml-1">Quality Rating</span>
                   </div>
                 </div>
-                <h1 className="text-4xl sm:text-5xl font-black text-white leading-tight mb-3">
-                  {product.name}
+                <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight mb-3">
+                  Buy {product.name}
                 </h1>
                 <p className="text-xl text-gray-400">{product.tagline}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
@@ -595,6 +598,102 @@ export default async function ProductPage({
             </div>
           </AnimateIn>
 
+          {/* ── Deep Dive Sections ────────────────────────────────── */}
+          {deepDive && (
+            <>
+              {/* Mechanism Deep Dive */}
+              <AnimateIn delay={0.22}>
+                <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
+                  <h2 className="text-2xl font-bold text-white mb-5">{deepDive.mechanismTitle}</h2>
+                  <div className="text-gray-300 leading-relaxed text-base space-y-4 whitespace-pre-line">
+                    {deepDive.mechanismBody}
+                  </div>
+                </div>
+              </AnimateIn>
+
+              {/* Research Evidence */}
+              <AnimateIn delay={0.24}>
+                <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
+                  <h2 className="text-2xl font-bold text-white mb-5">{deepDive.researchTitle}</h2>
+                  <div className="text-gray-300 leading-relaxed text-base space-y-4 whitespace-pre-line mb-6">
+                    {deepDive.researchBody}
+                  </div>
+                  {deepDive.studies.length > 0 && (
+                    <div className="border-t border-white/5 pt-5">
+                      <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Key Studies</h3>
+                      <div className="space-y-3">
+                        {deepDive.studies.map((s, i) => (
+                          <div key={i} className="flex gap-3">
+                            <div className="w-5 h-5 rounded-full bg-brand-500/10 border border-brand-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                              <span className="text-brand-400 text-xs font-bold">{i + 1}</span>
+                            </div>
+                            <div>
+                              <p className="text-xs text-gray-500 mb-0.5">{s.citation}</p>
+                              <p className="text-sm text-gray-300 leading-relaxed">{s.finding}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </AnimateIn>
+
+              {/* Safety Profile */}
+              <AnimateIn delay={0.26}>
+                <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
+                  <h2 className="text-2xl font-bold text-white mb-5">Safety Profile & Side Effects</h2>
+                  <div className="space-y-4">
+                    {deepDive.sideEffects.map((se, i) => (
+                      <div key={i} className="flex gap-4">
+                        <div className="shrink-0 mt-1">
+                          <span className={`inline-block w-2.5 h-2.5 rounded-full ${
+                            se.severity === 'low' ? 'bg-emerald-400' :
+                            se.severity === 'moderate' ? 'bg-yellow-400' :
+                            'bg-red-400'
+                          }`} />
+                        </div>
+                        <div>
+                          <div className="flex items-center gap-2 mb-1">
+                            <p className="font-semibold text-white text-sm">{se.name}</p>
+                            <span className={`text-xs px-2 py-0.5 rounded-full ${
+                              se.severity === 'low' ? 'bg-emerald-500/10 text-emerald-400' :
+                              se.severity === 'moderate' ? 'bg-yellow-500/10 text-yellow-400' :
+                              'bg-red-500/10 text-red-400'
+                            }`}>{se.severity}</span>
+                          </div>
+                          <p className="text-gray-400 text-sm leading-relaxed">{se.description}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </AnimateIn>
+
+              {/* Buyer's Guide */}
+              <AnimateIn delay={0.28}>
+                <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
+                  <h2 className="text-2xl font-bold text-white mb-5">{deepDive.buyersGuideTitle}</h2>
+                  <div className="text-gray-300 leading-relaxed text-base space-y-4 whitespace-pre-line">
+                    {deepDive.buyersGuideBody}
+                  </div>
+                </div>
+              </AnimateIn>
+
+              {/* vs. Alternatives */}
+              {deepDive.vsAlternativesTitle && deepDive.vsAlternativesBody && (
+                <AnimateIn delay={0.30}>
+                  <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
+                    <h2 className="text-2xl font-bold text-white mb-5">{deepDive.vsAlternativesTitle}</h2>
+                    <div className="text-gray-300 leading-relaxed text-base space-y-4 whitespace-pre-line">
+                      {deepDive.vsAlternativesBody}
+                    </div>
+                  </div>
+                </AnimateIn>
+              )}
+            </>
+          )}
+
           {/* Stack With These Peptides */}
           {synergies.filter(s => s.productType !== 'supply').length > 0 && (
             <AnimateIn delay={0.25}>
@@ -641,21 +740,30 @@ export default async function ProductPage({
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="flex items-center justify-between mb-5">
-                <h3 className="font-bold text-white">Get This Peptide</h3>
-                <span className="text-2xl font-black text-brand-400">${product.price}</span>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="font-bold text-white text-lg">Buy {product.name}</h3>
               </div>
+              <p className="text-3xl font-black text-brand-400 mb-5">${product.price}</p>
               <a
                 href={product.affiliateUrl}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="w-full flex items-center justify-center gap-2 py-3.5 bg-brand-500 hover:bg-brand-400 text-black font-bold rounded-xl text-sm transition-colors mb-3"
+                className="w-full flex items-center justify-center gap-2 py-4 bg-brand-500 hover:bg-brand-400 text-black font-black rounded-xl text-base transition-colors mb-2"
               >
-                Buy at Phiogen
+                Buy Now — ${product.price}
                 <ExternalLink className="w-4 h-4" />
               </a>
-              <p className="text-sm text-gray-500 text-center mb-5">
-                Sourced from Phiogen.
+              <a
+                href={product.affiliateUrl}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="w-full flex items-center justify-center gap-2 py-3 border border-brand-500/40 hover:border-brand-500 text-brand-400 hover:text-brand-300 font-semibold rounded-xl text-sm transition-colors mb-4"
+              >
+                View at Phiogen
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+              <p className="text-xs text-gray-500 text-center mb-5">
+                Research-grade · COA verified · Ships from Phiogen
               </p>
               <div className="border-t border-white/5 pt-5 space-y-3">
                 {[
@@ -722,6 +830,25 @@ export default async function ProductPage({
       )}
 
       <RelatedLinks pageKey={product.slug} />
+
+      {/* Mobile sticky buy bar */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-black/95 backdrop-blur-xl border-t border-white/10 p-4 flex items-center gap-3">
+        <div className="flex-1">
+          <p className="text-white font-bold text-sm truncate">{product.name}</p>
+          <p className="text-brand-400 font-black text-lg">${product.price}</p>
+        </div>
+        <a
+          href={product.affiliateUrl}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className="flex items-center gap-2 px-6 py-3.5 bg-brand-500 hover:bg-brand-400 text-black font-black rounded-xl text-sm transition-colors shrink-0"
+        >
+          Buy Now
+          <ExternalLink className="w-4 h-4" />
+        </a>
+      </div>
+      {/* Spacer for mobile sticky bar */}
+      <div className="lg:hidden h-24" />
     </div>
   );
 }
