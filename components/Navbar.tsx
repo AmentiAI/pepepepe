@@ -27,6 +27,17 @@ const navLinks = [
       { href: '/tanning', label: 'Tanning Peptides' },
     ],
   },
+  {
+    label: 'Guides',
+    children: [
+      { href: '/what-are-peptides', label: 'What Are Peptides?' },
+      { href: '/peptide-injection-guide', label: 'Injection Guide' },
+      { href: '/growth-hormone-peptides', label: 'GH Peptides' },
+      { href: '/muscle-building-peptides', label: 'Muscle Building' },
+      { href: '/longevity-peptides', label: 'Longevity Peptides' },
+      { href: '/semaglutide-protocol', label: 'Semaglutide Protocol' },
+    ],
+  },
   { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -35,6 +46,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   const [goalsOpen, setGoalsOpen] = useState(false);
   const [looksOpen, setLooksOpen] = useState(false);
+  const [guidesOpen, setGuidesOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/5 bg-black/80 backdrop-blur-xl">
@@ -57,14 +69,14 @@ export function Navbar() {
                 <div
                   key={link.label}
                   className="relative"
-                  onMouseEnter={() => link.label === 'Goals' ? setGoalsOpen(true) : setLooksOpen(true)}
-                  onMouseLeave={() => link.label === 'Goals' ? setGoalsOpen(false) : setLooksOpen(false)}
+                  onMouseEnter={() => link.label === 'Goals' ? setGoalsOpen(true) : link.label === 'Looks' ? setLooksOpen(true) : setGuidesOpen(true)}
+                  onMouseLeave={() => link.label === 'Goals' ? setGoalsOpen(false) : link.label === 'Looks' ? setLooksOpen(false) : setGuidesOpen(false)}
                 >
                   <button className="flex items-center gap-1 px-3 py-2 text-sm text-gray-400 hover:text-white transition-colors rounded-md">
                     {link.label}
                     <ChevronDown className="w-3 h-3" />
                   </button>
-                  {(link.label === 'Goals' ? goalsOpen : looksOpen) && (
+                  {(link.label === 'Goals' ? goalsOpen : link.label === 'Looks' ? looksOpen : guidesOpen) && (
                     <div className="absolute top-full left-0 mt-1 w-52 bg-[#111] border border-white/10 rounded-xl shadow-2xl overflow-hidden">
                       {link.children.map(child => (
                         <Link

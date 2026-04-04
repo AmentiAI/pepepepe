@@ -88,6 +88,12 @@ export function Footer() {
             <h4 className="text-base font-semibold text-white mb-4">Resources</h4>
             <ul className="space-y-2.5">
               {[
+                ['What Are Peptides?', '/what-are-peptides'],
+                ['Injection Guide', '/peptide-injection-guide'],
+                ['GH Peptides Guide', '/growth-hormone-peptides'],
+                ['Semaglutide Protocol', '/semaglutide-protocol'],
+                ['Longevity Peptides', '/longevity-peptides'],
+                ['Muscle Building', '/muscle-building-peptides'],
                 ['Beginner Guide', '/guide'],
                 ['FAQ', '/faq'],
                 ['Contact', '/contact'],

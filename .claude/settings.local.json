@@ -28,7 +28,8 @@
       "WebFetch(domain:phiogen.vercel.app)",
       "Bash(npm show:*)",
       "Bash(npm install:*)",
-      "Bash(npm audit:*)"
+      "Bash(npm audit:*)",
+      "Bash(echo \"BUILD_EXIT:$?\")"
     ]
   }
 }

@@ -321,6 +321,57 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { href: '/products/ghk-cu',             label: 'GHK-CU Copper Peptide',     desc: 'Follicle gene expression modulation for dermal papilla optimization.' },
     { href: '/hair',                        label: 'Hair Growth Peptides',       desc: 'The complete guide to peptide-driven hair restoration.' },
   ],
+
+  // ─── NEW GUIDE PAGES ────────────────────────────────────────────────────────
+
+  'growth-hormone-peptides': [
+    { href: '/products/cjc1295-ipamorelin', label: 'CJC-1295 / Ipamorelin Blend', desc: 'The most popular pre-formulated GH secretagogue stack.' },
+    { href: '/products/sermorelin-5mg',     label: 'Sermorelin 5mg',              desc: 'Classic GHRH 1–29 analogue — the beginner-friendly GH peptide.' },
+    { href: '/performance',                 label: 'Performance Hub',             desc: 'All performance peptides for muscle, recovery, and GH optimisation.' },
+    { href: '/muscle-building-peptides',    label: 'Muscle Building Peptides',    desc: 'How GH/IGF-1 axis peptides drive hypertrophy and lean mass.' },
+  ],
+
+  'what-are-peptides': [
+    { href: '/guide',                       label: 'Beginner Guide',              desc: 'Step-by-step introduction to research peptides and protocols.' },
+    { href: '/products',                    label: 'All Peptides',                desc: 'Browse 40+ research-grade peptides available from Phiogen.' },
+    { href: '/peptide-injection-guide',     label: 'Injection Guide',             desc: 'Reconstitution, dose calculation, and subcutaneous injection technique.' },
+    { href: '/healing',                     label: 'Healing Peptides',            desc: 'BPC-157, TB-500, and the science of accelerated tissue repair.' },
+  ],
+
+  'peptide-injection-guide': [
+    { href: '/what-are-peptides',           label: 'What Are Peptides?',          desc: 'Start here to understand peptide basics before your first injection.' },
+    { href: '/products/bpc157-10mg',        label: 'BPC-157 10mg',                desc: 'The most commonly injected research peptide — full protocol.' },
+    { href: '/growth-hormone-peptides',     label: 'GH Peptides Guide',           desc: 'CJC-1295 and Ipamorelin injection timing and dosing.' },
+    { href: '/semaglutide-protocol',        label: 'Semaglutide Protocol',        desc: 'Complete dosing and injection guide for semaglutide.' },
+  ],
+
+  'longevity-peptides': [
+    { href: '/products/epithalon-50mg',     label: 'Epithalon 50mg',              desc: 'Telomerase activator — the cornerstone of longevity protocols.' },
+    { href: '/products/foxo4-dri',          label: 'FOXO4-DRI',                   desc: 'Senolytic peptide targeting zombie cell clearance.' },
+    { href: '/anti-aging',                  label: 'Anti-Aging Hub',              desc: 'All anti-aging peptides and the hallmarks of aging they address.' },
+    { href: '/stacks',                      label: 'Protocol Stacks',             desc: 'Curated longevity stack protocols for annual cycling.' },
+  ],
+
+  'muscle-building-peptides': [
+    { href: '/products/cjc1295-ipamorelin', label: 'CJC-1295 / Ipamorelin',      desc: 'The foundational GH secretagogue stack for muscle and recomp.' },
+    { href: '/products/bpc157-10mg',        label: 'BPC-157 10mg',                desc: 'Recovery peptide that allows higher training frequency.' },
+    { href: '/growth-hormone-peptides',     label: 'GH Peptides Guide',           desc: 'Full breakdown of GHRH vs GHRP and how to build a GH stack.' },
+    { href: '/performance',                 label: 'Performance Hub',             desc: 'All performance-category peptides and their protocols.' },
+  ],
+
+  'semaglutide-protocol': [
+    { href: '/products/glp-1s-5mg',         label: 'Semaglutide 5mg',             desc: 'Research-grade semaglutide — STEP trial compound.' },
+    { href: '/products/glp-2t-15mg',        label: 'Tirzepatide 15mg',            desc: 'Dual GIP/GLP-1 agonist with superior weight loss vs semaglutide.' },
+    { href: '/peptides-for-weight-loss',    label: 'Weight Loss Peptides Guide',  desc: 'GLP-1 mechanism, AOD9604, and the complete fat loss peptide comparison.' },
+    { href: '/fat-loss',                    label: 'Fat Loss Hub',                desc: 'All fat loss protocols and GLP-1 comparison tools.' },
+  ],
+
+  'peptides-for-weight-loss': [
+    { href: '/semaglutide-protocol',        label: 'Semaglutide Protocol',        desc: 'Complete titration schedule and dosing guide for semaglutide.' },
+    { href: '/products/glp-2t-15mg',        label: 'Tirzepatide 15mg',            desc: 'Dual GIP/GLP-1 — the most effective GLP-1-class peptide for fat loss.' },
+    { href: '/fat-loss',                    label: 'Fat Loss Hub',                desc: 'All fat loss peptides with goal-based protocol matching.' },
+    { href: '/products/glp-1s-5mg',         label: 'Semaglutide 5mg',             desc: 'Research-grade semaglutide from Phiogen.' },
+  ],
 };
 
 export function getLinksFor(key: string): InternalLink[] {
