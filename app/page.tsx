@@ -15,7 +15,7 @@ const stats = [
   { value: '20', label: 'Premium peptides' },
   { value: '6', label: 'Protocol stacks' },
   { value: '4', label: 'Goal categories' },
-  { value: '100%', label: 'Apollo sourced' },
+  { value: '99.1%', label: 'Avg purity (Phiogen)' },
 ];
 
 const goals = [
@@ -61,7 +61,7 @@ export default function HomePage() {
               <AnimateIn delay={0.2}>
                 <p className="text-2xl text-gray-400 leading-relaxed mb-10 max-w-xl">
                   Complete peptide protocols for healing, fat loss, performance, and longevity.
-                  Real Apollo products. Real images. Real pricing.
+                  Research-grade Phiogen products. COA-verified purity. Real pricing.
                 </p>
               </AnimateIn>
 
@@ -250,7 +250,7 @@ export default function HomePage() {
               {
                 icon: <Shield className="w-6 h-6 text-brand-400" />,
                 title: 'Real products, real images',
-                desc: 'Every peptide in our catalog links directly to Apollo Peptide Sciences with your affiliate tracking. Product images pulled from Apollo\'s live catalog — no placeholders.',
+                desc: 'Every peptide in our catalog links directly to Phiogen with your affiliate tracking. Product images pulled from Apollo\'s live catalog — no placeholders.',
               },
               {
                 icon: <TrendingUp className="w-6 h-6 text-brand-400" />,

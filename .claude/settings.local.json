@@ -24,7 +24,8 @@
       "Bash(sed -i \"s/seoTitle: ''TB-500 10mg — Systemic Recovery Peptide Protocol | PeptideProtocols''/seoTitle: ''TB-500 Dosage \\\\& Protocol Guide — Injury Recovery Results | PeptideProtocols''/\" lib/products.ts)",
       "Bash(sed -i \"s/seoTitle: ''Semaglutide 5mg — GLP-1 Fat Loss Protocol | PeptideProtocols''/seoTitle: ''Semaglutide Dosage \\\\& Titration Guide — GLP-1 Fat Loss Protocol | PeptideProtocols''/\" lib/products.ts)",
       "Bash(sed -i \"s/seoTitle: ''Semaglutide 10mg — Extended GLP-1 Fat Loss Protocol | PeptideProtocols''/seoTitle: ''Semaglutide 10mg Dosage \\\\& Protocol Guide | PeptideProtocols''/\" lib/products.ts)",
-      "Bash(sed -i \"s/seoTitle: ''Semaglutide 15mg — Maximum Dose GLP-1 Protocol | PeptideProtocols''/seoTitle: ''Semaglutide 15mg Dosage \\\\& Maximum Dose Protocol | PeptideProtocols''/\" lib/products.ts)"
+      "Bash(sed -i \"s/seoTitle: ''Semaglutide 15mg — Maximum Dose GLP-1 Protocol | PeptideProtocols''/seoTitle: ''Semaglutide 15mg Dosage \\\\& Maximum Dose Protocol | PeptideProtocols''/\" lib/products.ts)",
+      "WebFetch(domain:phiogen.vercel.app)"
     ]
   }
 }

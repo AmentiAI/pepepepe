@@ -15,6 +15,16 @@ const navLinks = [
       { href: '/fat-loss', label: 'Fat Loss' },
       { href: '/performance', label: 'Performance' },
       { href: '/anti-aging', label: 'Anti-Aging' },
+      { href: '/cognitive', label: 'Cognitive & Nootropic' },
+    ],
+  },
+  {
+    label: 'Looks',
+    children: [
+      { href: '/looks-maxxing', label: 'Looks Maxxing Hub' },
+      { href: '/skin', label: 'Skin & Collagen' },
+      { href: '/hair', label: 'Hair Growth' },
+      { href: '/tanning', label: 'Tanning Peptides' },
     ],
   },
   { href: '/faq', label: 'FAQ' },
@@ -24,6 +34,7 @@ const navLinks = [
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [goalsOpen, setGoalsOpen] = useState(false);
+  const [looksOpen, setLooksOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/5 bg-black/80 backdrop-blur-xl">
@@ -43,21 +54,18 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) =>
               link.children ? (
-                <div key={link.label} className="relative">
-                  <button
-                    onMouseEnter={() => setGoalsOpen(true)}
-                    onMouseLeave={() => setGoalsOpen(false)}
-                    className="flex items-center gap-1 px-3 py-2 text-sm text-gray-400 hover:text-white transition-colors rounded-md"
-                  >
+                <div
+                  key={link.label}
+                  className="relative"
+                  onMouseEnter={() => link.label === 'Goals' ? setGoalsOpen(true) : setLooksOpen(true)}
+                  onMouseLeave={() => link.label === 'Goals' ? setGoalsOpen(false) : setLooksOpen(false)}
+                >
+                  <button className="flex items-center gap-1 px-3 py-2 text-sm text-gray-400 hover:text-white transition-colors rounded-md">
                     {link.label}
                     <ChevronDown className="w-3 h-3" />
                   </button>
-                  {goalsOpen && (
-                    <div
-                      onMouseEnter={() => setGoalsOpen(true)}
-                      onMouseLeave={() => setGoalsOpen(false)}
-                      className="absolute top-full left-0 mt-1 w-52 bg-[#111] border border-white/10 rounded-xl shadow-2xl overflow-hidden"
-                    >
+                  {(link.label === 'Goals' ? goalsOpen : looksOpen) && (
+                    <div className="absolute top-full left-0 mt-1 w-52 bg-[#111] border border-white/10 rounded-xl shadow-2xl overflow-hidden">
                       {link.children.map(child => (
                         <Link
                           key={child.href}

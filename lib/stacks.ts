@@ -233,6 +233,130 @@ NUTRITION REQUIREMENTS:
     highlights: ['Anabolism + recovery + injury prevention', 'No hormonal shutdown', 'Elite training amplifier'],
     seoTitle: 'Elite Performance Stack — CJC-1295/Ipa + IGF-1 LR3 + BPC-157 | PeptideProtocols',
   },
+  {
+    slug: 'looks-maxxing-stack',
+    name: 'Complete Looks Maxxing Stack',
+    tagline: 'GHK-CU + Melanotan II + SNAP-8 — the full-spectrum peptide protocol for skin, pigmentation, and appearance optimization',
+    goal: 'looks',
+    products: ['ghk-cu', 'melanotan-ii-10mg', 'snap-8', 'bacteriostatic-water-reconstitution-solution-10ml'],
+    description: `The Complete Looks Maxxing Stack is the most comprehensive appearance-focused peptide protocol on the market — combining three distinct mechanisms that address skin structure (GHK-CU), surface expression lines (SNAP-8), and melanin pigmentation (Melanotan II) simultaneously.
+
+GHK-CU (copper peptide) forms the backbone of this protocol. A naturally occurring tripeptide found in human plasma, saliva, and urine, GHK-CU levels decline sharply with age — from approximately 200 ng/mL at age 20 to 80 ng/mL by age 60. This decline corresponds closely with the collagen and elastin losses that define skin aging. Research by Dr. Loren Pickart demonstrated that GHK-CU modulates over 4,000 human genes — upregulating collagen Types I, III, and IV synthesis, elastin production, and TGF-β1 (the primary signal driving extracellular matrix remodeling), while simultaneously downregulating the matrix metalloproteinases that degrade existing collagen. The result is a net positive collagen balance that produces measurable improvements in skin thickness, hydration, and fine line depth. Clinical studies report 32–35% reduction in fine lines and significant improvement in skin firmness at 12 weeks.
+
+SNAP-8 (Acetyl Octapeptide-3) addresses dynamic expression lines through a fundamentally different mechanism. This octapeptide is an extended version of the SNARE complex-disrupting peptide Argireline, designed to partially inhibit the acetylcholine release that drives repeated facial muscle contraction. The result is neuromuscular relaxation analogous to Botox but with a topical delivery route and reversible, dose-dependent effect. Clinical studies show up to 63% reduction in expression line depth at 8 weeks of twice-daily application.
+
+Melanotan II drives the pigmentation component, activating MC1R receptors on melanocytes to preferentially produce eumelanin — the dark, photoprotective melanin responsible for natural brown complexion. The synergy with GHK-CU is notable: GHK-CU's collagen remodeling improves overall skin texture and smoothness, while Melanotan II adds the pigmentation dimension that creates an appearance of health and vitality. Together, the three compounds address the primary cosmetic metrics: collagen density, expression line reduction, and skin tone.`,
+    protocol: `MELANOTAN II (Weeks 1–8, Loading + Maintenance):
+Reconstitute: 10mg + 2ml bac water = 5,000mcg/ml
+• Loading (Weeks 1–3): 0.25–0.5mg subcutaneous, nightly
+• Maintenance (Week 4+): 0.5–1mg, 2× weekly
+• Evening administration recommended; minimal UV (15 min/day) accelerates results
+
+GHK-CU INJECTABLE (Weeks 1–12, continuous):
+Reconstitute: 50mg + 5ml bac water = 10,000mcg/ml
+• Dose: 1–2mg subcutaneous daily (abdomen or thigh)
+• Collagen remodeling is gradual — full effects emerge at 8–12 weeks
+• Continue through entire protocol
+
+SNAP-8 TOPICAL (Weeks 1–12, twice daily):
+• Apply 2–3 drops to expression line areas (forehead, crow's feet, nasolabial folds)
+• Morning and evening application; allow to absorb before moisturizer
+• Results progressive — 4 weeks for initial effect, 8 weeks for full reduction
+
+PROTOCOL NOTES:
+• Can run GHK-CU and SNAP-8 continuously after Melanotan II loading phase
+• Add 15–20 min daily moderate UV exposure during loading to maximize tanning response
+• SPF 30+ recommended for areas not targeting tan during non-tanning hours`,
+    difficulty: 'Intermediate',
+    timeframe: '8–12 weeks initial; GHK-CU and SNAP-8 can run continuously',
+    cost: 174.97,
+    highlights: ['3 distinct appearance mechanisms', 'Collagen + expression lines + pigmentation', '8-week visible results'],
+    seoTitle: 'Complete Looks Maxxing Stack — GHK-CU + Melanotan II + SNAP-8 Protocol | PeptideProtocols',
+  },
+  {
+    slug: 'skin-renewal-protocol',
+    name: 'Skin Renewal Protocol',
+    tagline: 'GHK-CU + SNAP-8 + BPC-157 — the collagen-first approach to peptide-driven skin restoration',
+    goal: 'looks',
+    products: ['ghk-cu', 'snap-8', 'bpc157-10mg', 'bacteriostatic-water-reconstitution-solution-10ml'],
+    description: `The Skin Renewal Protocol focuses exclusively on collagen and structural skin restoration — combining the three most research-backed peptides for skin quality improvement without the addition of melanocortin tanning agents.
+
+GHK-CU is the primary driver. The copper tripeptide works at the genetic level to reverse the collagen deficit that causes skin aging. As GHK-CU plasma levels decline with age, the genes responsible for collagen production, elastin synthesis, and antioxidant defense are progressively silenced. Topical and injectable GHK-CU re-activates this genetic program — upregulating collagen synthesis, restoring proper matrix metalloproteinase balance, and driving the TGF-β1 signaling that rebuilds extracellular matrix architecture. The clinical evidence is substantial: a double-blind trial published in the Journal of Cosmetic Dermatology demonstrated 32% reduction in fine line depth and 35% improvement in skin density at 12 weeks of GHK-CU application. A separate study confirmed increased dermal thickness and improved skin tone uniformity.
+
+BPC-157 adds the vascular component that GHK-CU cannot address alone. Healthy skin requires dense, functional capillary networks to deliver oxygen, nutrients, and signaling molecules to fibroblasts and keratinocytes. BPC-157 is the most potent angiogenic peptide available — stimulating VEGF (vascular endothelial growth factor) production and promoting new capillary formation. This improved dermal vascularity not only enhances the delivery of GHK-CU's effects but directly improves skin color, luminosity, and the characteristic "glow" associated with healthy skin. The healing and scar-reduction properties of BPC-157 also address existing texture irregularities.
+
+SNAP-8 completes the protocol by targeting the expression line dimension that neither GHK-CU nor BPC-157 addresses. Collagen building cannot reverse lines formed by decades of repeated muscle contraction — but SNAP-8 can. The octapeptide's partial neuromuscular inhibition at the SNARE complex level produces a topical Botox-like effect that reduces the dynamic forces causing these lines, allowing the collagen-building effects of GHK-CU to gradually smooth them from beneath.`,
+    protocol: `GHK-CU INJECTABLE (Continuous, 12 weeks):
+Reconstitute: 50mg + 5ml bac water = 10,000mcg/ml
+• Dose: 1–2mg subcutaneous daily (abdomen or thigh)
+• Injectable form reaches dermal fibroblasts systemically — more complete coverage than topical alone
+• Noticeable improvements begin at 4–6 weeks; full collagen rebuilding effect at 12 weeks
+
+BPC-157 INJECTABLE (Weeks 1–8, then cycle):
+Reconstitute: 10mg + 2ml bac water = 5,000mcg/ml
+• Dose: 250–500mcg subcutaneous daily (any site)
+• Angiogenic effects improve dermal circulation within 2–4 weeks
+• Run 8-week courses; 4 weeks off; repeat as desired
+
+SNAP-8 TOPICAL (Continuous, twice daily):
+• Apply 2–3 drops to expression line areas (forehead, crow's feet, nasolabial folds)
+• Morning + evening; allow 2–3 minutes absorption before applying other skincare
+• Clinical trial protocol: twice-daily application for 8 continuous weeks
+• Can be continued indefinitely — no receptor desensitization or tolerance
+
+MONTH-BY-MONTH EXPECTATIONS:
+• Month 1: Improved skin hydration and tone; early expression line softening from SNAP-8
+• Month 2: Measurable fine line reduction; improved luminosity from BPC-157 vascularity
+• Month 3: Collagen density changes visible; skin firmness and texture significantly improved`,
+    difficulty: 'Intermediate',
+    timeframe: '12 weeks for full protocol; GHK-CU and SNAP-8 can run continuously thereafter',
+    cost: 169.97,
+    highlights: ['3 collagen mechanisms', 'Injectable + topical combination', '12-week transformation'],
+    seoTitle: 'Skin Renewal Protocol — GHK-CU + SNAP-8 + BPC-157 for Collagen Restoration | PeptideProtocols',
+  },
+  {
+    slug: 'hair-restoration-stack',
+    name: 'Hair Restoration Stack',
+    tagline: 'TB-500 + BPC-157 + GHK-CU — the three-mechanism approach to peptide-driven hair growth and follicle restoration',
+    goal: 'looks',
+    products: ['tb500-10mg', 'bpc157-10mg', 'ghk-cu', 'bacteriostatic-water-reconstitution-solution-10ml'],
+    description: `The Hair Restoration Stack combines the three peptides with the most direct evidence for hair follicle activation — approaching hair loss from three mechanistically distinct angles: follicle stem cell activation (TB-500), dermal vascularity and fibroblast support (BPC-157), and follicle gene expression modulation (GHK-CU).
+
+Hair follicle cycling — the transition between anagen (growth), catagen (transition), and telogen (rest) phases — is fundamentally a stem cell activity problem. Follicle bulge stem cells must be properly activated to initiate each new anagen phase. In androgenetic alopecia and age-related thinning, this activation signal becomes progressively impaired. TB-500 (Thymosin Beta-4) is the only peptide with direct clinical evidence for promoting hair follicle stem cell activation. Research published in the Journal of Investigative Dermatology demonstrated that Thymosin Beta-4 activates follicle stem cells and promotes anagen phase initiation. In a human alopecia trial, TB-500 treatment produced significant hair count increases and terminal hair conversion from vellus (fine, unpigmented) to terminal (thick, pigmented) hair.
+
+BPC-157 addresses the vascular component of hair loss — a dimension often overlooked in conventional hair loss treatment. Healthy anagen follicles require dense capillary networks to deliver the oxygen and nutrients required for rapid cell division during active growth. Miniaturized follicles in androgenetic alopecia show characteristic dermal vascularity loss alongside follicle shrinkage. BPC-157's robust angiogenic mechanism (VEGF stimulation, capillary formation) restores this vascularity — creating the nutrient delivery infrastructure that functional follicles require.
+
+GHK-CU modulates the gene expression environment of the follicle dermal papilla — the signaling hub that controls follicle size, growth rate, and hair shaft thickness. GHK-CU has been shown to increase follicle size in culture, upregulate the dermal papilla cells that determine hair shaft diameter, and extend the anagen growth phase. Its collagen-building effects also improve the structural integrity of the follicular anchor in the dermis — maintaining the environment that large, productive follicles require.`,
+    protocol: `TB-500 (Weeks 1–8, Loading; then Maintenance):
+Reconstitute: 10mg + 2ml bac water = 5,000mcg/ml
+• Loading (Weeks 1–4): 2.5mg twice weekly subcutaneous (any site — systemic peptide)
+• Loading (Weeks 5–8): 2.5mg once weekly
+• Maintenance (Week 9+): 2mg every 10–14 days
+• Follicle stem cell activation effects require 8–12 weeks to translate into visible hair growth
+
+BPC-157 (Continuous, 8–12 weeks):
+Reconstitute: 10mg + 2ml bac water = 5,000mcg/ml
+• Dose: 250–500mcg subcutaneous daily
+• Inject near scalp base (suboccipital/posterior neck) or standard abdominal site for systemic effect
+• Run continuously with TB-500; vascularity effects support follicle nutrition throughout protocol
+
+GHK-CU (Continuous, 12+ weeks):
+Reconstitute: 50mg + 5ml bac water = 10,000mcg/ml
+• Dose: 1–2mg subcutaneous daily (any site)
+• Additionally: apply GHK-CU topical solution directly to scalp if available
+• Gene expression changes in follicle dermal papilla require sustained exposure — minimum 12 weeks
+• Can run indefinitely; no observed desensitization or downregulation
+
+EXPECTED TIMELINE:
+• Weeks 4–8: Reduced shedding; early improvement in scalp vascular fullness
+• Weeks 8–16: New hair emergence in affected areas; thickening of existing miniaturized hairs
+• Weeks 16–24: Full assessment of hair count change and terminal hair conversion`,
+    difficulty: 'Intermediate',
+    timeframe: '16–24 weeks for full follicle restoration assessment',
+    cost: 179.97,
+    highlights: ['Stem cell activation + vascularity + gene expression', 'Clinical TB-500 hair data', '16-24 week transformation'],
+    seoTitle: 'Hair Restoration Stack — TB-500 + BPC-157 + GHK-CU Protocol | PeptideProtocols',
+  },
 ];
 
 export function getStackBySlug(slug: string): Stack | undefined {

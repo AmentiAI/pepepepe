@@ -86,7 +86,7 @@ export function ProductCard({ product }: ProductCardProps) {
         <div className="mt-auto">
           <div className="flex items-center justify-between mb-4">
             <span className="text-4xl font-black text-brand-400">${product.price}</span>
-            <span className="text-sm text-gray-500 font-medium">Apollo Peptides</span>
+            <span className="text-sm text-gray-500 font-medium">Phiogen</span>
           </div>
           <div className="flex items-center gap-2.5">
             <Link

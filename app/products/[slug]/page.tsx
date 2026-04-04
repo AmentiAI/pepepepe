@@ -431,14 +431,14 @@ export default async function ProductPage({
     name: product.name,
     description: product.shortDescription,
     image: `https://peptideprotocols.com${product.image}`,
-    brand: { '@type': 'Brand', name: 'Apollo Peptide Sciences' },
+    brand: { '@type': 'Brand', name: 'Phiogen' },
     offers: {
       '@type': 'Offer',
       url: product.affiliateUrl,
       priceCurrency: 'USD',
       price: String(product.price),
       availability: 'https://schema.org/InStock',
-      seller: { '@type': 'Organization', name: 'Apollo Peptide Sciences' },
+      seller: { '@type': 'Organization', name: 'Phiogen' },
     },
   };
 
@@ -651,18 +651,18 @@ export default async function ProductPage({
                 rel="noopener noreferrer nofollow"
                 className="w-full flex items-center justify-center gap-2 py-3.5 bg-brand-500 hover:bg-brand-400 text-black font-bold rounded-xl text-sm transition-colors mb-3"
               >
-                Buy at Apollo Peptides
+                Buy at Phiogen
                 <ExternalLink className="w-4 h-4" />
               </a>
               <p className="text-sm text-gray-500 text-center mb-5">
-                Sourced from Apollo Peptide Sciences.
+                Sourced from Phiogen.
               </p>
               <div className="border-t border-white/5 pt-5 space-y-3">
                 {[
                   ['Category', product.category.replace('-', ' ')],
                   ['Type', product.productType],
                   ['Quality Rating', `${'★'.repeat(product.researchRating)}${'☆'.repeat(5 - product.researchRating)}`],
-                  ['Vendor', 'Apollo Peptide Sciences'],
+                  ['Vendor', 'Phiogen'],
                 ].map(([label, value]) => (
                   <div key={label} className="flex justify-between text-sm">
                     <span className="text-gray-500">{label}</span>

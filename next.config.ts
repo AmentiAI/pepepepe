@@ -3,9 +3,8 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
-      { protocol: 'https', hostname: 'apollopeptidesciences.com' },
+      { protocol: 'https', hostname: 'phiogen.vercel.app' },
       { protocol: 'https', hostname: 'cdn.shopify.com' },
-      { protocol: 'https', hostname: 'images.ctfassets.net' },
     ],
   },
 };

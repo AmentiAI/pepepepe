@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="border-t border-white/5 bg-black mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
@@ -53,6 +53,26 @@ export function Footer() {
                 ['Performance', '/performance'],
                 ['Anti-Aging', '/anti-aging'],
                 ['Protocol Stacks', '/stacks'],
+                ['Cognitive & Nootropic', '/cognitive'],
+              ].map(([label, href]) => (
+                <li key={href}>
+                  <Link href={href} className="text-base text-gray-400 hover:text-brand-400 transition-colors">
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Looks */}
+          <div>
+            <h4 className="text-base font-semibold text-white mb-4">Looks Maxxing</h4>
+            <ul className="space-y-2.5">
+              {[
+                ['Looks Maxxing Hub', '/looks-maxxing'],
+                ['Skin & Collagen', '/skin'],
+                ['Hair Growth', '/hair'],
+                ['Tanning Peptides', '/tanning'],
               ].map(([label, href]) => (
                 <li key={href}>
                   <Link href={href} className="text-base text-gray-400 hover:text-brand-400 transition-colors">
@@ -89,7 +109,7 @@ export function Footer() {
               © {new Date().getFullYear()} PeptideProtocols. All rights reserved.
             </p>
             <p className="text-sm text-gray-500">
-              Powered by Apollo Peptide Sciences.
+              Powered by <a href="https://phiogen.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-brand-400 transition-colors">Phiogen</a> — Research-Grade Peptides.
             </p>
           </div>
         </div>

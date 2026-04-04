@@ -4,7 +4,7 @@ import { ProductsClient } from './ProductsClient';
 export const metadata: Metadata = {
   title: 'All Peptides | PeptideProtocols',
   description:
-    'Browse all 20 premium peptides — complete dosing protocols, synergy maps, and ordering from Apollo Peptide Sciences.',
+    'Browse 60+ research-grade peptides — complete dosing protocols, synergy maps, and ordering from Phiogen. BPC-157, Semaglutide, Semax, Selank, FOXO4-DRI, MOTS-c, and more.',
 };
 
 export default function ProductsPage() {

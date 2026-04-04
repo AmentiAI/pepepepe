@@ -150,7 +150,7 @@ export default function HealingPage() {
       <div className="flex items-center justify-between mb-8">
         <div>
           <p className="text-gray-500 text-lg">{products.length} healing & recovery peptides</p>
-          <p className="text-gray-600 text-sm mt-1">Sourced from Apollo Peptide Sciences</p>
+          <p className="text-gray-600 text-sm mt-1">Sourced from Phiogen</p>
         </div>
       </div>
 

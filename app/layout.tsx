@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: '%s | PeptideProtocols',
   },
   description:
-    'Premium peptide protocols with real Apollo Peptides products. Complete guides for BPC-157, TB-500, Semaglutide, Tirzepatide, Retatrutide, GHK-CU, Epithalon, and more.',
+    'Premium peptide protocols with research-grade Phiogen products. Complete guides for BPC-157, TB-500, Semaglutide, Tirzepatide, Retatrutide, GHK-CU, Epithalon, and more.',
   metadataBase: new URL('https://peptideprotocols.com'),
   openGraph: {
     type: 'website',

@@ -183,6 +183,80 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { href: '/stacks/longevity-anti-aging-stack',     label: 'Longevity Anti-Aging Stack',  desc: 'All three longevity mechanisms in one coordinated protocol.' },
   ],
 
+  // ─── COGNITIVE PAGES ───────────────────────────────────────────────────────
+
+  cognitive: [
+    { href: '/products/n-acetyl-semax-30mg',  label: 'N-Acetyl Semax Amidate',    desc: 'BDNF upregulation and neuroplasticity — the most potent semax form available.' },
+    { href: '/products/na-selank-10mg',        label: 'NA-Selank Amidate',          desc: 'Anxiolytic without sedation — enkephalinase inhibitor for GABAergic anxiety reduction.' },
+    { href: '/products/dsip-5mg',             label: 'DSIP 5mg',                   desc: 'Deep slow-wave sleep + nocturnal GH release enhancement.' },
+    { href: '/products/methylene-blue-50ml',  label: 'Methylene Blue',             desc: 'Mitochondrial electron carrier for neuronal energy optimization and cognitive enhancement.' },
+  ],
+
+  'n-acetyl-semax-30mg': [
+    { href: '/cognitive',                     label: 'Cognitive Peptides Guide',   desc: 'All four cognitive peptide mechanisms explained.' },
+    { href: '/products/na-selank-10mg',        label: 'NA-Selank Amidate',          desc: 'Stack Semax + Selank for combined focus and anxiety reduction.' },
+    { href: '/products/dsip-5mg',             label: 'DSIP 5mg',                   desc: 'Sleep optimization to support the neuroplasticity effects of Semax.' },
+    { href: '/products/methylene-blue-50ml',  label: 'Methylene Blue',             desc: 'Add mitochondrial energy support to your Semax cognitive protocol.' },
+  ],
+
+  'na-selank-10mg': [
+    { href: '/cognitive',                     label: 'Cognitive Peptides Guide',   desc: 'Compare all cognitive peptide mechanisms.' },
+    { href: '/products/n-acetyl-semax-30mg',  label: 'N-Acetyl Semax Amidate',    desc: 'Stack with Semax for anxiety-free cognitive enhancement.' },
+    { href: '/products/dsip-5mg',             label: 'DSIP 5mg',                   desc: 'Deep sleep optimization to complement Selank\'s anxiolytic effects.' },
+    { href: '/anti-aging',                    label: 'Anti-Aging Peptide Guide',   desc: 'Combine cognitive optimization with longevity protocols.' },
+  ],
+
+  'dsip-5mg': [
+    { href: '/cognitive',                     label: 'Cognitive Peptides Guide',   desc: 'All cognitive and sleep peptide mechanisms explained.' },
+    { href: '/products/cjc-ipa-blend-10mg',   label: 'CJC-1295/Ipamorelin Blend', desc: 'Stack DSIP with GH peptides for nocturnal GH optimization during deep sleep.' },
+    { href: '/products/n-acetyl-semax-30mg',  label: 'N-Acetyl Semax Amidate',    desc: 'Daytime cognitive enhancement to pair with DSIP nighttime sleep optimization.' },
+    { href: '/performance',                   label: 'Performance Peptide Guide',  desc: 'GH optimization through DSIP-enhanced slow-wave sleep.' },
+  ],
+
+  // ─── LOOKS MAXXING PAGES ───────────────────────────────────────────────────
+
+  'looks-maxxing': [
+    { href: '/skin',                              label: 'Skin & Collagen Guide',        desc: 'GHK-CU, SNAP-8, and BPC-157 for collagen rebuilding and skin optimization.' },
+    { href: '/hair',                              label: 'Hair Growth Peptides',          desc: 'TB-500, BPC-157, and GHK-CU for follicle restoration and hair regrowth.' },
+    { href: '/tanning',                           label: 'Tanning Peptides Guide',        desc: 'Melanotan II and PT-141 for deep, even pigmentation.' },
+    { href: '/stacks/looks-maxxing-stack',        label: 'Complete Looks Maxxing Stack',  desc: 'GHK-CU + Melanotan II + SNAP-8 in one structured protocol.' },
+  ],
+
+  skin: [
+    { href: '/products/ghk-cu',                   label: 'GHK-CU Copper Peptide',         desc: '4,000+ genes modulated for collagen synthesis and skin restoration.' },
+    { href: '/products/snap-8',                   label: 'SNAP-8 Topical Peptide',         desc: '63% expression line reduction — the topical Botox alternative.' },
+    { href: '/stacks/skin-renewal-protocol',      label: 'Skin Renewal Protocol',          desc: 'GHK-CU + SNAP-8 + BPC-157 in one structured skin restoration stack.' },
+    { href: '/looks-maxxing',                     label: 'Looks Maxxing Hub',              desc: 'The complete guide to peptide-based appearance optimization.' },
+  ],
+
+  hair: [
+    { href: '/products/tb500-10mg',               label: 'TB-500 10mg',                    desc: 'Thymosin Beta-4 — clinical evidence for follicle stem cell activation.' },
+    { href: '/products/bpc157-10mg',              label: 'BPC-157 10mg',                   desc: 'Scalp angiogenesis and dermal vascularity for follicle nutrition.' },
+    { href: '/stacks/hair-restoration-stack',     label: 'Hair Restoration Stack',         desc: 'TB-500 + BPC-157 + GHK-CU — the three-mechanism hair protocol.' },
+    { href: '/looks-maxxing',                     label: 'Looks Maxxing Hub',              desc: 'Tanning, skin, hair, and body composition — the complete guide.' },
+  ],
+
+  tanning: [
+    { href: '/products/melanotan-ii-10mg',        label: 'Melanotan II 10mg',              desc: 'Deep eumelanin pigmentation via MC1R agonism — the most potent tanning peptide.' },
+    { href: '/products/pt-141-10mg',              label: 'PT-141 10mg',                    desc: 'Better-tolerated melanocortin peptide — FDA-evaluated bremelanotide.' },
+    { href: '/stacks/looks-maxxing-stack',        label: 'Complete Looks Maxxing Stack',   desc: 'Add skin and collagen peptides to your tanning protocol.' },
+    { href: '/looks-maxxing',                     label: 'Looks Maxxing Hub',              desc: 'The full spectrum of peptide appearance optimization.' },
+  ],
+
+  'melanotan-ii-10mg': [
+    { href: '/tanning',                           label: 'Tanning Peptides Guide',         desc: 'Melanocortin receptor science and full tanning protocols explained.' },
+    { href: '/products/pt-141-10mg',             label: 'PT-141 10mg',                    desc: 'The better-tolerated alternative with a longer half-life and milder side effects.' },
+    { href: '/stacks/looks-maxxing-stack',        label: 'Complete Looks Maxxing Stack',   desc: 'Stack Melanotan II with GHK-CU and SNAP-8 for full appearance optimization.' },
+    { href: '/looks-maxxing',                     label: 'Looks Maxxing Hub',              desc: 'All four pillars of peptide appearance optimization.' },
+  ],
+
+  'pt-141-10mg': [
+    { href: '/tanning',                           label: 'Tanning Peptides Guide',         desc: 'Compare PT-141 and Melanotan II side-by-side with clinical data.' },
+    { href: '/products/melanotan-ii-10mg',        label: 'Melanotan II 10mg',              desc: 'The more potent tanning peptide for deeper pigmentation results.' },
+    { href: '/stacks/looks-maxxing-stack',        label: 'Complete Looks Maxxing Stack',   desc: 'Combine melanocortin peptides with skin and collagen protocols.' },
+    { href: '/looks-maxxing',                     label: 'Looks Maxxing Hub',              desc: 'Skin, hair, tanning, and body — the complete appearance guide.' },
+  ],
+
   // ─── STACK PAGES ───────────────────────────────────────────────────────────
 
   'healing-recovery-stack': [
@@ -225,6 +299,27 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { href: '/products/igf-1lr3',           label: 'IGF-1 LR3',                 desc: 'Satellite cell activation for permanent muscle fiber creation.' },
     { href: '/products/bpc157-10mg',        label: 'BPC-157 10mg',              desc: 'Continuous injury prevention that keeps training loads sustainable.' },
     { href: '/performance',                 label: 'Performance Peptide Guide', desc: 'Why the GH/IGF-1 axis outperforms anabolic steroids for sustainable gains.' },
+  ],
+
+  'looks-maxxing-stack': [
+    { href: '/products/ghk-cu',             label: 'GHK-CU Copper Peptide',    desc: 'The collagen and gene expression backbone of this protocol.' },
+    { href: '/products/snap-8',             label: 'SNAP-8 Topical Peptide',   desc: 'Expression line reduction — the topical component of this stack.' },
+    { href: '/products/melanotan-ii-10mg',  label: 'Melanotan II 10mg',         desc: 'Deep eumelanin pigmentation — the tanning component.' },
+    { href: '/looks-maxxing',               label: 'Looks Maxxing Hub',         desc: 'All four pillars of peptide appearance optimization explained.' },
+  ],
+
+  'skin-renewal-protocol': [
+    { href: '/products/ghk-cu',             label: 'GHK-CU Copper Peptide',    desc: 'Primary collagen rebuilder — modulates 4,000+ skin repair genes.' },
+    { href: '/products/snap-8',             label: 'SNAP-8 Topical Peptide',   desc: 'Expression line reduction to complement structural collagen rebuilding.' },
+    { href: '/products/bpc157-10mg',        label: 'BPC-157 10mg',             desc: 'Dermal angiogenesis for improved skin vascularity and luminosity.' },
+    { href: '/skin',                        label: 'Skin & Collagen Guide',    desc: 'The complete science of peptide skin optimization.' },
+  ],
+
+  'hair-restoration-stack': [
+    { href: '/products/tb500-10mg',         label: 'TB-500 10mg',               desc: 'Follicle stem cell activation — the primary driver of this protocol.' },
+    { href: '/products/bpc157-10mg',        label: 'BPC-157 10mg',              desc: 'Scalp angiogenesis — restores the vascularity follicles need to grow.' },
+    { href: '/products/ghk-cu',             label: 'GHK-CU Copper Peptide',     desc: 'Follicle gene expression modulation for dermal papilla optimization.' },
+    { href: '/hair',                        label: 'Hair Growth Peptides',       desc: 'The complete guide to peptide-driven hair restoration.' },
   ],
 };
 

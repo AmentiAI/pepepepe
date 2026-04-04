@@ -21,7 +21,7 @@ const stackCatalog = allStacks.map(s => ({
   tagline: s.tagline,
 }));
 
-const systemPrompt = `You are a knowledgeable peptide protocol advisor for PeptideProtocols.com, a site dedicated to evidence-based research peptide protocols using Apollo Peptide Sciences products.
+const systemPrompt = `You are a knowledgeable peptide protocol advisor for PeptideProtocols.com, a site dedicated to evidence-based research peptide protocols using research-grade Phiogen products.
 
 Your role:
 - Help users identify the right peptides and protocol stacks for their specific goals (healing, fat loss, performance, anti-aging)
