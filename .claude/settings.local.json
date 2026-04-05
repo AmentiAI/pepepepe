@@ -31,7 +31,8 @@
       "Bash(npm audit:*)",
       "Bash(echo \"BUILD_EXIT:$?\")",
       "Bash(echo \"EXIT:$?\")",
-      "Bash(echo \"TSC_EXIT:$?\")"
+      "Bash(echo \"TSC_EXIT:$?\")",
+      "Bash(ls /mnt/c/Users/Wilso/pepepepe/app/*.tsx /mnt/c/Users/Wilso/pepepepe/app/**/*.tsx)"
     ]
   }
 }

@@ -74,7 +74,7 @@ export default function PeptideInjectionGuidePage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-white/5">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-500/10 via-transparent to-transparent" />
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-medium mb-6">
             <FlaskConical className="w-3.5 h-3.5" />
             Step-by-Step Protocol Guide
@@ -96,7 +96,7 @@ export default function PeptideInjectionGuidePage() {
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12 sm:space-y-20">
 
         {/* Disclaimer */}
         <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-xl p-5 flex gap-3">
@@ -108,7 +108,7 @@ export default function PeptideInjectionGuidePage() {
 
         {/* What you need */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">What You Need: Complete Supply List</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">What You Need: Complete Supply List</h2>
           <div className="space-y-3">
             {supplies.map(s => (
               <div key={s.item} className="bg-[#111] border border-white/10 rounded-xl p-5 flex gap-4">
@@ -124,7 +124,7 @@ export default function PeptideInjectionGuidePage() {
 
         {/* Bacteriostatic water */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">Why Bacteriostatic Water (Not Saline, Not Sterile Water)</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Why Bacteriostatic Water (Not Saline, Not Sterile Water)</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed">
             <p>
               The choice of solvent is not trivial. Bacteriostatic water (BW) contains 0.9% benzyl alcohol as a preservative, which inhibits bacterial growth and allows the reconstituted solution to be stored safely in the refrigerator for 28–60 days after opening. This multi-use property makes it the standard solvent for peptide research protocols where the vial will be accessed multiple times over weeks.
@@ -143,11 +143,11 @@ export default function PeptideInjectionGuidePage() {
 
         {/* Reconstitution steps */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Reconstitution: Step-by-Step</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Reconstitution: Step-by-Step</h2>
           <div className="space-y-4">
             {reconSteps.map(step => (
               <div key={step.n} className="bg-[#111] border border-white/10 rounded-2xl p-6 flex gap-6">
-                <div className="text-3xl font-black text-brand-500/30 shrink-0 w-12">{step.n}</div>
+                <div className="text-2xl sm:text-3xl font-black text-brand-500/30 shrink-0 w-12">{step.n}</div>
                 <div>
                   <h3 className="font-bold text-lg mb-2">{step.title}</h3>
                   <p className="text-gray-400 leading-relaxed text-sm">{step.detail}</p>
@@ -159,7 +159,7 @@ export default function PeptideInjectionGuidePage() {
 
         {/* Dose calculation */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">Dose Calculation: The Math Made Simple</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Dose Calculation: The Math Made Simple</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed mb-8">
             <p>
               The most common source of dosing errors is not understanding that adding more water does not reduce the peptide — it changes the concentration. The formula is straightforward:
@@ -199,7 +199,7 @@ export default function PeptideInjectionGuidePage() {
 
         {/* Injection steps */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Subcutaneous Injection: Step-by-Step</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Subcutaneous Injection: Step-by-Step</h2>
           <p className="text-gray-400 mb-6 leading-relaxed">
             Subcutaneous (SC) injection delivers the peptide into the fat layer just below the skin. This is the preferred route for nearly all research peptides. The abdomen (2–4 inches from the navel) is the most popular site because of consistent fat coverage, easy access, and good absorption characteristics.
           </p>
@@ -220,7 +220,7 @@ export default function PeptideInjectionGuidePage() {
 
         {/* Site rotation */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">Injection Site Rotation</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Injection Site Rotation</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed mb-6">
             <p>
               Repeating injections at the same site causes localised lipodystrophy — changes in the fat tissue that result in lumps, divots, or hardened areas. This is the same problem encountered by diabetics who inject insulin at the same spot repeatedly. Systematic site rotation prevents this and also ensures consistent absorption, as heavily used sites can develop fibrous tissue that slows peptide uptake.
@@ -253,7 +253,7 @@ export default function PeptideInjectionGuidePage() {
 
         {/* Troubleshooting */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Troubleshooting Common Issues</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Troubleshooting Common Issues</h2>
           <div className="space-y-4">
             {[
               {
@@ -290,7 +290,7 @@ export default function PeptideInjectionGuidePage() {
 
         {/* Storage */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Storage Guidelines</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Storage Guidelines</h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {[
               {
@@ -324,7 +324,7 @@ export default function PeptideInjectionGuidePage() {
 
         {/* Related guides */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Related Guides</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Related Guides</h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {[
               { title: 'BPC-157 Complete Protocol', href: '/products/bpc157-10mg', desc: 'Dosing, timing, and injection sites for BPC-157.' },

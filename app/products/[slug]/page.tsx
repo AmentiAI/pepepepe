@@ -743,7 +743,7 @@ export default async function ProductPage({
               <div className="flex items-center justify-between mb-2">
                 <h3 className="font-bold text-white text-lg">Buy {product.name}</h3>
               </div>
-              <p className="text-3xl font-black text-brand-400 mb-5">${product.price}</p>
+              <p className="text-2xl sm:text-3xl font-black text-brand-400 mb-5">${product.price}</p>
               <a
                 href={product.affiliateUrl}
                 target="_blank"

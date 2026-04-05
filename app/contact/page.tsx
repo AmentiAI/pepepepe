@@ -27,7 +27,7 @@ export default function ContactPage() {
 
   if (submitted) {
     return (
-      <div className="max-w-2xl mx-auto px-4 py-32 text-center">
+      <div className="max-w-2xl mx-auto px-4 py-16 sm:py-32 text-center">
         <div className="w-16 h-16 bg-brand-500/20 border border-brand-500/30 rounded-full flex items-center justify-center mx-auto mb-6">
           <CheckCircle2 className="w-8 h-8 text-brand-400" />
         </div>

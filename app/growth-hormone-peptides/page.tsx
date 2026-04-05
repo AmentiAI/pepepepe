@@ -92,7 +92,7 @@ export default function GrowthHormonePeptidesPage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-white/5">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-500/10 via-transparent to-transparent" />
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-medium mb-6">
             <FlaskConical className="w-3.5 h-3.5" />
             GH Secretagogues — Research Guide
@@ -114,11 +114,11 @@ export default function GrowthHormonePeptidesPage() {
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12 sm:space-y-20">
 
         {/* How GH Release Works */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">How Growth Hormone Release Actually Works</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">How Growth Hormone Release Actually Works</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed">
             <p>
               Growth hormone is not secreted continuously. The pituitary releases GH in discrete pulses — typically 6 to 12 per day in young adults — with the largest pulse occurring roughly 60–90 minutes after sleep onset during slow-wave sleep. This pulsatile pattern is not a quirk; it is biologically essential. Continuous GH exposure desensitises receptors and blunts downstream IGF-1 signalling. Pharmacologic strategies that try to raise GH all day long (like synthetic GH injections) are trading receptor sensitivity for peak levels, which is why research into secretagogues that preserve the pulse architecture has accelerated dramatically.
@@ -134,7 +134,7 @@ export default function GrowthHormonePeptidesPage() {
 
         {/* GHRH Analogues */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">GHRH Analogues: Sermorelin vs CJC-1295 vs Tesamorelin</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">GHRH Analogues: Sermorelin vs CJC-1295 vs Tesamorelin</h2>
           <p className="text-gray-400 mb-8 leading-relaxed">
             All three are synthetic versions of endogenous GHRH (44 amino acids). They differ primarily in half-life — a distinction that has profound practical implications.
           </p>
@@ -181,7 +181,7 @@ export default function GrowthHormonePeptidesPage() {
 
         {/* GHRPs */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">GHRPs: Ipamorelin vs GHRP-2 vs GHRP-6 vs Hexarelin</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">GHRPs: Ipamorelin vs GHRP-2 vs GHRP-6 vs Hexarelin</h2>
           <p className="text-gray-400 mb-8 leading-relaxed">
             GHRPs act at the ghrelin receptor (GHS-R1a), amplifying GHRH signal and suppressing somatostatin. They differ critically in selectivity — how specifically they target GH release vs. stimulating cortisol, prolactin, and appetite.
           </p>
@@ -228,7 +228,7 @@ export default function GrowthHormonePeptidesPage() {
 
         {/* Comparison Table */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Full GH Peptide Comparison Table</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Full GH Peptide Comparison Table</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
@@ -256,7 +256,7 @@ export default function GrowthHormonePeptidesPage() {
 
         {/* Stacking */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">Building a GH Peptide Stack</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Building a GH Peptide Stack</h2>
           <p className="text-gray-400 mb-8 leading-relaxed">
             The synergy between a GHRH analogue and a GHRP is well-documented. A landmark 1997 paper by Bowers et al. showed that combining GHRH with GHRP-6 produced GH pulses approximately 7–10× greater than either compound alone. The mechanism is dual-axis stimulation: GHRH loads the somatotrophs and GHRP suppresses somatostatin while independently stimulating GHS-R1a. The practical implication is that lower doses of each compound, stacked together, outperform high doses of either alone.
           </p>
@@ -291,7 +291,7 @@ export default function GrowthHormonePeptidesPage() {
 
         {/* IGF-1 and downstream */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">IGF-1: The Downstream Mediator</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">IGF-1: The Downstream Mediator</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed">
             <p>
               The anabolic and lipolytic effects attributed to GH are largely mediated by insulin-like growth factor 1 (IGF-1), produced primarily in the liver in response to GH signalling. IGF-1 acts on muscle satellite cells to drive protein synthesis, on adipocytes to stimulate lipolysis, and on chondrocytes to support joint and connective tissue maintenance. In a healthy young adult, IGF-1 should fall in the upper-middle range for their age group; chronic low IGF-1 correlates strongly with accelerated body fat accumulation, reduced lean mass, impaired recovery, and poor sleep architecture.
@@ -304,7 +304,7 @@ export default function GrowthHormonePeptidesPage() {
 
         {/* Timing optimisation */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">Timing Optimisation: Why Fasting and Sleep Matter</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Timing Optimisation: Why Fasting and Sleep Matter</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed">
             <p>
               Insulin and GH exist in a reciprocal relationship. Elevated insulin — from a recent carbohydrate-containing meal — suppresses GH secretion directly at the pituitary and reduces GHRH receptor sensitivity. This is why virtually all clinical GH peptide protocols specify injecting in a fasted state, defined as at least 2 hours post-meal and ideally 3+ hours. For the pre-bed injection, the standard recommendation is no food containing significant carbohydrates for 2 hours beforehand. A small amount of protein (e.g., a casein shake or chicken) appears to have minimal blunting effect.
@@ -317,7 +317,7 @@ export default function GrowthHormonePeptidesPage() {
 
         {/* Side effects */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Side Effects and Risk Profile</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Side Effects and Risk Profile</h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {[
               {
@@ -364,7 +364,7 @@ export default function GrowthHormonePeptidesPage() {
 
         {/* Products */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">GH Peptides Available from Phiogen</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">GH Peptides Available from Phiogen</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { name: 'CJC-1295 / Ipamorelin Blend', slug: 'cjc1295-ipamorelin', desc: 'Pre-formulated stack — 2 mg CJC-1295 No DAC + 2 mg Ipamorelin per vial.' },
@@ -393,7 +393,7 @@ export default function GrowthHormonePeptidesPage() {
 
         {/* FAQ */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {[
               {
@@ -429,8 +429,8 @@ export default function GrowthHormonePeptidesPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-10 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Build Your GH Protocol?</h2>
+        <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-6 sm:p-10 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Build Your GH Protocol?</h2>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
             All GH secretagogues above are available research-grade from Phiogen. Start with our most popular stack — CJC-1295 / Ipamorelin — or view individual compounds.
           </p>

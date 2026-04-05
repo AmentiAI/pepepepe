@@ -158,7 +158,7 @@ export default function LooksMaxxingPage() {
       {/* The 4 Pillars */}
       <AnimateIn delay={0.05}>
         <div className="mb-16">
-          <h2 className="text-3xl font-black text-white mb-3">The 4 Pillars of Peptide Looks Maxxing</h2>
+          <h2 className="text-2xl sm:text-3xl font-black text-white mb-3">The 4 Pillars of Peptide Looks Maxxing</h2>
           <p className="text-gray-400 text-lg mb-8">Each pillar targets a distinct biological system. Real appearance optimization requires addressing all four.</p>
           <div className="grid sm:grid-cols-2 gap-6">
             {pillars.map((pillar) => {
@@ -258,7 +258,7 @@ export default function LooksMaxxingPage() {
       {looksStacks.length > 0 && (
         <AnimateIn delay={0.14}>
           <div className="mb-16">
-            <h2 className="text-3xl font-black text-white mb-3">Looks Maxxing Protocol Stacks</h2>
+            <h2 className="text-2xl sm:text-3xl font-black text-white mb-3">Looks Maxxing Protocol Stacks</h2>
             <p className="text-gray-400 text-lg mb-8">Pre-built multi-peptide protocols designed for specific appearance goals.</p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {looksStacks.map((stack, i) => (

@@ -161,7 +161,7 @@ export default function PeptidesForWeightLossPage() {
             { value: '4', label: 'Distinct weight loss mechanisms available', color: 'text-emerald-400' },
           ].map(stat => (
             <div key={stat.label} className="bg-[#111] border border-white/5 rounded-2xl p-5 text-center">
-              <div className={`text-3xl font-black mb-2 ${stat.color}`}>{stat.value}</div>
+              <div className={`text-2xl sm:text-3xl font-black mb-2 ${stat.color}`}>{stat.value}</div>
               <div className="text-gray-500 text-sm leading-tight">{stat.label}</div>
             </div>
           ))}
@@ -171,7 +171,7 @@ export default function PeptidesForWeightLossPage() {
       {/* How weight loss peptides work */}
       <AnimateIn delay={0.06}>
         <div className="mb-16">
-          <h2 className="text-3xl font-black text-white mb-3">How Weight Loss Peptides Work</h2>
+          <h2 className="text-2xl sm:text-3xl font-black text-white mb-3">How Weight Loss Peptides Work</h2>
           <p className="text-gray-400 text-lg mb-8 max-w-3xl">Unlike stimulants or diuretics, peptide-based weight loss works through the same biological pathways that regulate hunger, satiety, and energy expenditure — just activated more potently than natural levels allow.</p>
           <div className="grid sm:grid-cols-2 gap-6">
             {mechanismCards.map(card => {
@@ -339,7 +339,7 @@ export default function PeptidesForWeightLossPage() {
       {/* FAQ */}
       <AnimateIn delay={0.15}>
         <div className="mb-14">
-          <h2 className="text-3xl font-black text-white mb-8">Frequently Asked Questions — Peptides for Weight Loss</h2>
+          <h2 className="text-2xl sm:text-3xl font-black text-white mb-8">Frequently Asked Questions — Peptides for Weight Loss</h2>
           <div className="space-y-4">
             {faq.map(item => (
               <div key={item.q} className="bg-[#111] border border-white/5 rounded-2xl p-6">

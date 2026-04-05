@@ -93,7 +93,7 @@ export default function HairPage() {
             { value: '100+', label: 'BPC-157 published studies on tissue repair', color: 'text-brand-400' },
           ].map(stat => (
             <div key={stat.label} className="bg-[#111] border border-white/5 rounded-2xl p-5 text-center">
-              <div className={`text-3xl font-black mb-2 ${stat.color}`}>{stat.value}</div>
+              <div className={`text-2xl sm:text-3xl font-black mb-2 ${stat.color}`}>{stat.value}</div>
               <div className="text-gray-500 text-sm leading-tight">{stat.label}</div>
             </div>
           ))}

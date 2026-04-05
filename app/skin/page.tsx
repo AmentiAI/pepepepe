@@ -104,7 +104,7 @@ export default function SkinPage() {
             { value: '63%', label: 'Expression line reduction (SNAP-8)', color: 'text-brand-400' },
           ].map(stat => (
             <div key={stat.label} className="bg-[#111] border border-white/5 rounded-2xl p-5 text-center">
-              <div className={`text-3xl font-black mb-2 ${stat.color}`}>{stat.value}</div>
+              <div className={`text-2xl sm:text-3xl font-black mb-2 ${stat.color}`}>{stat.value}</div>
               <div className="text-gray-500 text-sm leading-tight">{stat.label}</div>
             </div>
           ))}
@@ -120,7 +120,7 @@ export default function SkinPage() {
             {collagenMechanisms.map((m) => (
               <div key={m.step} className={`border rounded-2xl p-6 ${m.color}`}>
                 <div className="flex items-start gap-5">
-                  <span className="text-3xl font-black opacity-30 shrink-0 leading-none mt-1">{m.step}</span>
+                  <span className="text-2xl sm:text-3xl font-black opacity-30 shrink-0 leading-none mt-1">{m.step}</span>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <p className="text-white font-bold text-lg">{m.title}</p>

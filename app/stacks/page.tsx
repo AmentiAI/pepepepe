@@ -75,7 +75,7 @@ export default function StacksPage() {
                     </div>
                   )}
                   <div className="ml-auto text-right flex-shrink-0">
-                    <p className="text-3xl font-black text-brand-400">${stack.cost.toFixed(0)}</p>
+                    <p className="text-2xl sm:text-3xl font-black text-brand-400">${stack.cost.toFixed(0)}</p>
                     <p className="text-xs text-gray-600">/ protocol</p>
                   </div>
                 </div>

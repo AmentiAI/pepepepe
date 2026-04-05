@@ -46,7 +46,7 @@ export default function SemaglutideProtocolPage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-white/5">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-500/10 via-transparent to-transparent" />
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-medium mb-6">
             <TrendingDown className="w-3.5 h-3.5" />
             GLP-1 Protocol Guide
@@ -68,11 +68,11 @@ export default function SemaglutideProtocolPage() {
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12 sm:space-y-20">
 
         {/* What is semaglutide */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">What Is Semaglutide and How Does It Work?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">What Is Semaglutide and How Does It Work?</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed">
             <p>
               Semaglutide is a synthetic analogue of glucagon-like peptide-1 (GLP-1), a 31-amino-acid incretin hormone secreted by L-cells in the small intestine in response to food intake. Native GLP-1 has a half-life of approximately 2 minutes due to rapid degradation by the enzyme DPP-4 (dipeptidyl peptidase-4). Semaglutide extends this to approximately 7 days through two structural modifications: a C-18 fatty diacid chain attached to lysine at position 26 (enabling albumin binding and slowing renal filtration) and substitution of alanine with 2-aminoisobutyric acid at position 8 (preventing DPP-4 cleavage).
@@ -88,7 +88,7 @@ export default function SemaglutideProtocolPage() {
 
         {/* STEP trial data */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">STEP Trial Clinical Data</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">STEP Trial Clinical Data</h2>
           <p className="text-gray-400 mb-6 leading-relaxed">
             The STEP (Semaglutide Treatment Effect in People with Obesity) programme comprises four Phase III trials published in NEJM, Lancet, and JAMA between 2021–2022, providing the strongest clinical evidence base for any GLP-1 agonist in obesity management.
           </p>
@@ -126,7 +126,7 @@ export default function SemaglutideProtocolPage() {
 
         {/* Titration schedule */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Semaglutide Titration Schedule</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Semaglutide Titration Schedule</h2>
           <p className="text-gray-400 mb-6 leading-relaxed">
             Dose escalation is the single most important element of a successful semaglutide protocol. Going too fast dramatically increases GI side effects and dropout rates. The schedule below mirrors the FDA-approved Wegovy titration, which was designed to minimise nausea while reaching therapeutic doses in approximately 17–20 weeks.
           </p>
@@ -151,7 +151,7 @@ export default function SemaglutideProtocolPage() {
 
         {/* Injection protocol */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">Injection Protocol: When and Where</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Injection Protocol: When and Where</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed mb-6">
             <p>
               Semaglutide is injected subcutaneously once weekly. Preferred sites are the abdomen (2–4 inches from the navel), outer thigh, and upper arm. Because semaglutide has a 7-day half-life, the timing of the weekly injection matters less than consistency — choose a day of the week and stick to it. If you miss a dose by up to 5 days, inject as soon as you remember. If more than 5 days have passed, skip that week&apos;s dose and resume on your regular schedule.
@@ -194,7 +194,7 @@ export default function SemaglutideProtocolPage() {
 
         {/* Nutrition timing */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Nutrition Strategy on Semaglutide</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Nutrition Strategy on Semaglutide</h2>
           <div className="space-y-3 mb-8">
             {foodTiming.map(f => (
               <div key={f.timing} className="flex gap-4 bg-[#111] border border-white/10 rounded-xl p-5">
@@ -215,7 +215,7 @@ export default function SemaglutideProtocolPage() {
 
         {/* Side effects */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Side Effects and Management</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Side Effects and Management</h2>
           <div className="space-y-4">
             {sideEffects.map(se => (
               <div key={se.se} className="bg-[#111] border border-white/10 rounded-xl p-5 flex gap-4">
@@ -237,7 +237,7 @@ export default function SemaglutideProtocolPage() {
 
         {/* Sema vs tirze */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">Semaglutide vs Tirzepatide: Which Is Better?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Semaglutide vs Tirzepatide: Which Is Better?</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed mb-6">
             <p>
               Tirzepatide (Mounjaro/Zepbound) is a dual GIP/GLP-1 receptor agonist — it activates both the glucose-dependent insulinotropic peptide receptor (GIPR) and GLP-1R simultaneously. Phase III SURMOUNT-1 trial results showed 22.5% mean weight loss at 72 weeks at the 15 mg/week dose, compared to semaglutide&apos;s 14.9% at 68 weeks. The SURMOUNT-5 trial directly comparing the two showed tirzepatide superior to semaglutide for weight loss at equivalent timepoints.
@@ -278,7 +278,7 @@ export default function SemaglutideProtocolPage() {
 
         {/* FAQ */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Semaglutide Protocol FAQ</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Semaglutide Protocol FAQ</h2>
           <div className="space-y-4">
             {[
               {
@@ -315,7 +315,7 @@ export default function SemaglutideProtocolPage() {
 
         {/* Products */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">GLP-1 Peptides from Phiogen</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">GLP-1 Peptides from Phiogen</h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {[
               { name: 'Semaglutide 5mg', slug: 'glp-1s-5mg', desc: 'Research-grade semaglutide. STEP trial compound. Third-party tested ≥98% purity.' },
@@ -340,8 +340,8 @@ export default function SemaglutideProtocolPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-10 text-center">
-          <h2 className="text-3xl font-bold mb-4">Start Your Fat Loss Protocol</h2>
+        <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-6 sm:p-10 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Start Your Fat Loss Protocol</h2>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
             Read the complete GLP-1 comparison guide or explore our curated fat loss stacks for optimal protocols.
           </p>

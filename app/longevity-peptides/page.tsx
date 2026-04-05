@@ -92,7 +92,7 @@ export default function LongevityPeptidesPage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-white/5">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-500/10 via-transparent to-transparent" />
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-medium mb-6">
             <Dna className="w-3.5 h-3.5" />
             Anti-Aging Science — Research Guide
@@ -114,11 +114,11 @@ export default function LongevityPeptidesPage() {
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12 sm:space-y-20">
 
         {/* Hallmarks of aging */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">The Hallmarks of Aging — and Which Peptides Target Them</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">The Hallmarks of Aging — and Which Peptides Target Them</h2>
           <p className="text-gray-400 mb-8 leading-relaxed">
             In their seminal 2013 Cell paper, López-Otín et al. defined the molecular and cellular hallmarks of aging — the underlying drivers of age-related decline that are conserved across species. Research peptides are uniquely positioned to address these hallmarks because they can mimic endogenous signalling molecules that regulate these exact processes.
           </p>
@@ -147,7 +147,7 @@ export default function LongevityPeptidesPage() {
 
         {/* Telomeres */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">Telomeres and Epithalon: The Evidence</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Telomeres and Epithalon: The Evidence</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed">
             <p>
               Telomeres are repetitive DNA sequences (TTAGGG in humans) that cap chromosome ends and protect genomic integrity during cell division. With each replication, telomeres shorten by 50–200 base pairs due to the &quot;end replication problem.&quot; When telomeres reach a critical length (~3 kb), cells enter replicative senescence or apoptosis. Telomere length is positively correlated with biological age and inversely correlated with age-related disease risk in large epidemiological studies.
@@ -163,7 +163,7 @@ export default function LongevityPeptidesPage() {
 
         {/* Senescent cells */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">Senescent Cells and FOXO4-DRI: The Zombie Cell Killer</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Senescent Cells and FOXO4-DRI: The Zombie Cell Killer</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed">
             <p>
               Cellular senescence is a state of permanent cell cycle arrest that serves an initial protective function — stopping the replication of damaged cells — but becomes harmful when senescent cells accumulate with age. These &quot;zombie cells&quot; resist apoptosis while secreting a destructive cocktail of inflammatory cytokines, proteases, and growth factors called the Senescence-Associated Secretory Phenotype (SASP). SASP creates a chronic inflammatory microenvironment that drives age-related pathologies including fibrosis, neurodegeneration, and carcinogenesis in adjacent tissue.
@@ -179,7 +179,7 @@ export default function LongevityPeptidesPage() {
 
         {/* Mitochondria */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">Mitochondrial Dysfunction: MOTS-c and SS-31</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Mitochondrial Dysfunction: MOTS-c and SS-31</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed">
             <p>
               Mitochondria are not static organelles — they are dynamic signalling hubs that coordinate metabolism, calcium handling, apoptosis, and immune responses. Mitochondrial dysfunction is both a hallmark of aging and a driver of other hallmarks: dysfunctional mitochondria produce excess reactive oxygen species (ROS) that damage DNA, proteins, and lipids; impair ATP production that cells need for repair functions; and release signals (cytosolic mtDNA, cardiolipin fragments) that activate inflammatory pathways including the cGAS-STING pathway.
@@ -195,7 +195,7 @@ export default function LongevityPeptidesPage() {
 
         {/* Peptide profiles */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Longevity Peptide Profiles</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Longevity Peptide Profiles</h2>
           <div className="space-y-6">
             {peptideProfiles.map(p => (
               <div key={p.name} className="bg-[#111] border border-white/10 rounded-2xl p-6">
@@ -228,7 +228,7 @@ export default function LongevityPeptidesPage() {
 
         {/* Protocol stack */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">Structuring a Longevity Protocol</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Structuring a Longevity Protocol</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed mb-8">
             <p>
               Unlike acute-use peptides (BPC-157 for injury, GLP-1s for weight loss), longevity peptides are typically used in cycles of weeks to months, with repeat cycles over years. The rationale is that the hallmarks of aging accumulate gradually and require sustained intervention to meaningfully shift. Most protocols therefore use a &quot;pulse and rest&quot; structure — intensive cycles of a few weeks followed by rest periods — to avoid receptor desensitisation and allow biological reset.
@@ -259,7 +259,7 @@ export default function LongevityPeptidesPage() {
 
         {/* Biomarker monitoring */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Biomarker Monitoring for Longevity Protocols</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Biomarker Monitoring for Longevity Protocols</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               { marker: 'Telomere Length (TL)', test: 'SpectraCell Telomere Test or LifeLength', frequency: 'Annual', target: 'Maintain or increase relative to age peers' },
@@ -283,7 +283,7 @@ export default function LongevityPeptidesPage() {
 
         {/* FAQ */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Longevity Peptide FAQ</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Longevity Peptide FAQ</h2>
           <div className="space-y-4">
             {[
               {
@@ -316,7 +316,7 @@ export default function LongevityPeptidesPage() {
 
         {/* Products */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Longevity Peptides from Phiogen</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Longevity Peptides from Phiogen</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { name: 'Epithalon 50mg', slug: 'epithalon-50mg', desc: 'Telomerase activator. Russian clinical data. Multi-year cycle protocol.' },
@@ -344,8 +344,8 @@ export default function LongevityPeptidesPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-10 text-center">
-          <h2 className="text-3xl font-bold mb-4">Explore the Anti-Aging Protocol</h2>
+        <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-6 sm:p-10 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Explore the Anti-Aging Protocol</h2>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
             View our curated anti-aging stacks or browse all longevity-category peptides from Phiogen.
           </p>

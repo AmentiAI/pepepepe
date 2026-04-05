@@ -110,7 +110,7 @@ export default function MuscleBuildingPeptidesPage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-white/5">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-500/10 via-transparent to-transparent" />
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-medium mb-6">
             <Zap className="w-3.5 h-3.5" />
             Performance & Anabolic Peptides
@@ -132,11 +132,11 @@ export default function MuscleBuildingPeptidesPage() {
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12 sm:space-y-20">
 
         {/* How peptides build muscle */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">How Research Peptides Support Muscle Growth</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">How Research Peptides Support Muscle Growth</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed mb-8">
             <p>
               Muscle hypertrophy — the increase in muscle fibre cross-sectional area — is driven by the net balance between protein synthesis and protein breakdown. Any intervention that shifts this balance toward synthesis, or that reduces the downtime caused by injury, accelerates progress. Research peptides address both sides of this equation through mechanisms distinct from anabolic steroids.
@@ -168,7 +168,7 @@ export default function MuscleBuildingPeptidesPage() {
 
         {/* GH/IGF-1 deep dive */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">The GH / IGF-1 Axis: Deep Dive</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">The GH / IGF-1 Axis: Deep Dive</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed">
             <p>
               When GH secretagogues stimulate a GH pulse, GH circulates to target tissues — liver, muscle, adipose, bone — where it binds the GH receptor (GHR) and triggers JAK-STAT signalling (primarily STAT5b). In the liver, this drives IGF-1 gene transcription and secretion into the bloodstream. Serum IGF-1 then acts on muscle cells via the IGF-1 receptor (IGF-1R), activating the PI3K/Akt/mTORC1 pathway — the same pathway that responds to dietary protein and resistance training.
@@ -187,7 +187,7 @@ export default function MuscleBuildingPeptidesPage() {
 
         {/* BPC-157 and training */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">BPC-157 and TB-500: The Recovery Multiplier</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">BPC-157 and TB-500: The Recovery Multiplier</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed">
             <p>
               The limiting factor in natural muscle building is not usually anabolic potential — it is recovery capacity. Most serious trainees can generate more training stimulus than their connective tissue and nervous system can recover from. BPC-157 and TB-500 address this bottleneck directly.
@@ -206,7 +206,7 @@ export default function MuscleBuildingPeptidesPage() {
 
         {/* Peptide profiles table */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Muscle-Building Peptide Profiles</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Muscle-Building Peptide Profiles</h2>
           <div className="space-y-5">
             {peptideData.map(p => (
               <div key={p.name} className="bg-[#111] border border-white/10 rounded-2xl p-6">
@@ -243,7 +243,7 @@ export default function MuscleBuildingPeptidesPage() {
 
         {/* 12-week programme */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">12-Week Muscle Building Peptide Programme</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">12-Week Muscle Building Peptide Programme</h2>
           <p className="text-gray-400 mb-6 leading-relaxed">
             This programme periodises both training and peptide protocols to maximise anabolic stimulus, recovery capacity, and hormonal optimisation across three distinct phases.
           </p>
@@ -272,7 +272,7 @@ export default function MuscleBuildingPeptidesPage() {
 
         {/* Nutrition */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">Nutrition: Maximising Peptide Anabolic Signalling</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Nutrition: Maximising Peptide Anabolic Signalling</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed mb-6">
             <p>
               Peptides amplify anabolic signalling, but dietary protein provides the amino acids that protein synthesis actually requires. The mTORC1 pathway activated by IGF-1 and resistance exercise is also amino-acid sensitive — leucine specifically acts as a nutrient signal to mTORC1 via CASTOR1 and Sestrin 2 pathways. Protein intake of 1.6–2.2 g/kg body weight is supported by meta-analyses as the range maximising lean mass accretion in resistance-trained individuals.
@@ -298,7 +298,7 @@ export default function MuscleBuildingPeptidesPage() {
 
         {/* FAQ */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {[
               {
@@ -334,8 +334,8 @@ export default function MuscleBuildingPeptidesPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-10 text-center">
-          <h2 className="text-3xl font-bold mb-4">Build Your Muscle Peptide Stack</h2>
+        <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-6 sm:p-10 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Build Your Muscle Peptide Stack</h2>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
             Start with the CJC-1295 / Ipamorelin blend and BPC-157 — the most researched and widely used combination for natural athletes.
           </p>

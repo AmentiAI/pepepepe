@@ -196,7 +196,7 @@ export default function ComparePage() {
       {/* Mechanism explainer */}
       <AnimateIn delay={0.1}>
         <div className="mb-16">
-          <h2 className="text-3xl font-black text-white mb-3">Why agonism count matters</h2>
+          <h2 className="text-2xl sm:text-3xl font-black text-white mb-3">Why agonism count matters</h2>
           <p className="text-gray-400 text-lg mb-8 max-w-3xl leading-relaxed">
             Each additional receptor agonism adds an independent appetite and metabolic mechanism. More pathways means more total effect — but also more complexity and side effect burden.
           </p>

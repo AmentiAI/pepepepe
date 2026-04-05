@@ -38,7 +38,7 @@ export default function HomePage() {
           <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-blue-500/3 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-24">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <AnimateIn>
@@ -169,14 +169,14 @@ export default function HomePage() {
 
       {/* ── Featured stack ───────────────────────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20">
-        <div className="bg-gradient-to-br from-brand-950/60 to-black border border-brand-500/20 rounded-3xl p-6 sm:p-8 md:p-12">
+        <div className="bg-gradient-to-br from-brand-950/60 to-black border border-brand-500/20 rounded-3xl p-6 sm:p-8 md:p-6 sm:p-12">
           <AnimateIn>
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
               <div className="max-w-xl">
                 <span className="inline-block text-xs font-semibold text-brand-400 bg-brand-500/10 border border-brand-500/20 rounded-full px-3 py-1 mb-4">
                   Featured Stack
                 </span>
-                <h2 className="text-3xl font-black text-white mb-3">{featuredStack.name}</h2>
+                <h2 className="text-2xl sm:text-3xl font-black text-white mb-3">{featuredStack.name}</h2>
                 <p className="text-gray-400 mb-4">{featuredStack.tagline}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   {featuredStack.highlights.map((h) => (
@@ -201,7 +201,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="text-center md:text-right">
-                <p className="text-5xl font-black text-brand-400">${featuredStack.cost.toFixed(0)}</p>
+                <p className="text-4xl sm:text-5xl font-black text-brand-400">${featuredStack.cost.toFixed(0)}</p>
                 <p className="text-gray-500 text-sm mt-1">Stack total / protocol</p>
                 <p className="text-xs text-gray-600 mt-1">{featuredStack.difficulty} level</p>
               </div>
@@ -244,10 +244,10 @@ export default function HomePage() {
       </section>
 
       {/* ── Why section ──────────────────────────────────────────── */}
-      <section className="border-t border-white/5 bg-[#111]/30 py-24">
+      <section className="border-t border-white/5 bg-[#111]/30 py-14 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateIn>
-            <h2 className="text-3xl font-black text-white text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-black text-white text-center mb-12">
               Why PeptideProtocols?
             </h2>
           </AnimateIn>
@@ -284,7 +284,7 @@ export default function HomePage() {
       </section>
 
       {/* ── CTA ──────────────────────────────────────────────────── */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-24 text-center">
         <AnimateIn>
           <h2 className="text-4xl font-black text-white mb-4">
             Ready to build your stack?

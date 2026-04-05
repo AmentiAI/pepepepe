@@ -62,7 +62,7 @@ export default function WhatArePeptidesPage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-white/5">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-500/10 via-transparent to-transparent" />
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-medium mb-6">
             <FlaskConical className="w-3.5 h-3.5" />
             Beginner&apos;s Guide — Start Here
@@ -84,11 +84,11 @@ export default function WhatArePeptidesPage() {
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12 sm:space-y-20">
 
         {/* What is a peptide */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">What Exactly Is a Peptide?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">What Exactly Is a Peptide?</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed">
             <p>
               A peptide is a molecule made of two or more amino acids joined together by peptide bonds — the same type of bond that links amino acids into proteins. The distinction between a peptide and a protein is simply size: by convention, chains of fewer than 50 amino acids are called peptides; longer chains are proteins. In practice the line blurs, and some biologically important peptides are 40+ amino acids long.
@@ -107,7 +107,7 @@ export default function WhatArePeptidesPage() {
 
         {/* How peptides work */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">How Do Peptides Work in the Body?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">How Do Peptides Work in the Body?</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed mb-8">
             <p>
               Peptides work as signalling molecules. They bind to specific cell surface receptors — G protein-coupled receptors (GPCRs), receptor tyrosine kinases, or nuclear receptors — and trigger intracellular signalling cascades that change gene expression, protein synthesis, or cellular behaviour.
@@ -160,7 +160,7 @@ export default function WhatArePeptidesPage() {
 
         {/* Administration */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">How Are Research Peptides Administered?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">How Are Research Peptides Administered?</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed mb-8">
             <p>
               Most research peptides are administered via subcutaneous (SC) injection because peptides are broken down by digestive enzymes in the gastrointestinal tract before reaching systemic circulation. Oral bioavailability for standard peptides is typically less than 1–5% without special formulation strategies. SC injection delivers the compound to the subcutaneous fat layer, where it is slowly absorbed into the bloodstream via the capillary network, typically achieving peak plasma levels in 15–60 minutes depending on the peptide&apos;s molecular weight and lipophilicity.
@@ -190,7 +190,7 @@ export default function WhatArePeptidesPage() {
 
         {/* Types of research peptides */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Types of Research Peptides by Goal</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Types of Research Peptides by Goal</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {categories.map(({ icon: Icon, title, examples, href, desc }) => (
               <Link key={href} href={href} className="bg-[#111] border border-white/10 hover:border-brand-500/40 rounded-2xl p-6 transition-colors group">
@@ -216,7 +216,7 @@ export default function WhatArePeptidesPage() {
 
         {/* Peptides vs drugs */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Research Peptides vs. Pharmaceutical Drugs</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Research Peptides vs. Pharmaceutical Drugs</h2>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm">
               <thead>
@@ -249,7 +249,7 @@ export default function WhatArePeptidesPage() {
 
         {/* Safety */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Peptide Safety: What the Research Shows</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Peptide Safety: What the Research Shows</h2>
           <div className="prose prose-invert max-w-none text-gray-300 space-y-4 leading-relaxed mb-8">
             <p>
               The safety profile of peptides is generally favourable compared to many traditional pharmaceutical compounds, for several structural reasons. First, peptides are metabolised by ubiquitous peptidases throughout the body — not just by hepatic enzymes — reducing the likelihood of liver toxicity that can occur with small-molecule drugs. Second, because peptides mimic endogenous signalling molecules, they typically work within physiologic receptor systems that evolved to handle them, rather than forcing entirely novel biochemical pathways.
@@ -271,7 +271,7 @@ export default function WhatArePeptidesPage() {
 
         {/* Most researched peptides */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">The Most Researched Peptides — Quick Reference</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">The Most Researched Peptides — Quick Reference</h2>
           <div className="space-y-3">
             {[
               { name: 'BPC-157', type: 'Healing / Cytoprotective', evidence: 'Extensive animal studies; Phase II human Crohn\'s data', mechanism: 'VEGF upregulation, NO synthase, growth factor activation', link: '/products/bpc157-10mg' },
@@ -300,7 +300,7 @@ export default function WhatArePeptidesPage() {
 
         {/* FAQ */}
         <section>
-          <h2 className="text-3xl font-bold mb-6">Beginner FAQ</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Beginner FAQ</h2>
           <div className="space-y-4">
             {[
               {
@@ -337,8 +337,8 @@ export default function WhatArePeptidesPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-10 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Explore Research Peptides?</h2>
+        <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-6 sm:p-10 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Explore Research Peptides?</h2>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
             Browse all 40+ research-grade peptides available from Phiogen, or read our beginner guide to understand protocols, dosing, and reconstitution step-by-step.
           </p>

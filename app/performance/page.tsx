@@ -102,7 +102,7 @@ export default function PerformancePage() {
           <div className="relative space-y-3">
             {axisSteps.map((step, i) => (
               <div key={i} className={`flex gap-5 bg-[#111] border rounded-2xl p-5 ${step.color.split(' ')[1]}`}>
-                <div className={`text-3xl font-black shrink-0 ${step.color.split(' ')[0]} opacity-30 w-10`}>{step.step}</div>
+                <div className={`text-2xl sm:text-3xl font-black shrink-0 ${step.color.split(' ')[0]} opacity-30 w-10`}>{step.step}</div>
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center gap-3 mb-1">
                     <span className={`font-black text-lg ${step.color.split(' ')[0]}`}>{step.molecule}</span>

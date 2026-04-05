@@ -81,7 +81,7 @@ export default function CognitivePage() {
             { value: '130yr', label: 'Methylene blue clinical history', color: 'text-amber-400' },
           ].map(stat => (
             <div key={stat.label} className="bg-[#111] border border-white/5 rounded-2xl p-5 text-center">
-              <div className={`text-3xl font-black mb-2 ${stat.color}`}>{stat.value}</div>
+              <div className={`text-2xl sm:text-3xl font-black mb-2 ${stat.color}`}>{stat.value}</div>
               <div className="text-gray-500 text-sm leading-tight">{stat.label}</div>
             </div>
           ))}
