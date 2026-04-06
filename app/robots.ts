@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://peptideprotocols.com/sitemap.xml',
+    sitemap: 'https://maxxingpeptides.com/sitemap.xml',
   };
 }

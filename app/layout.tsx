@@ -6,24 +6,24 @@ import { ChatWidget } from '@/components/ChatWidget';
 
 export const metadata: Metadata = {
   title: {
-    default: 'PeptideProtocols — Evidence-Based Peptide Protocols for Healing, Fat Loss & Longevity',
-    template: '%s | PeptideProtocols',
+    default: 'MaxxingPeptides — Evidence-Based Peptide Protocols for Healing, Fat Loss & Longevity',
+    template: '%s | MaxxingPeptides',
   },
   description:
     'Premium peptide protocols with research-grade Phiogen products. Complete guides for BPC-157, TB-500, Semaglutide, Tirzepatide, Retatrutide, GHK-CU, Epithalon, and more.',
-  metadataBase: new URL('https://peptideprotocols.com'),
+  metadataBase: new URL('https://maxxingpeptides.com'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://peptideprotocols.com',
-    siteName: 'PeptideProtocols',
-    title: 'PeptideProtocols — Evidence-Based Peptide Protocols',
+    url: 'https://maxxingpeptides.com',
+    siteName: 'MaxxingPeptides',
+    title: 'MaxxingPeptides — Evidence-Based Peptide Protocols',
     description: 'Premium peptide protocols for healing, fat loss, performance, and anti-aging.',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'PeptideProtocols' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'MaxxingPeptides' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PeptideProtocols — Evidence-Based Peptide Protocols',
+    title: 'MaxxingPeptides — Evidence-Based Peptide Protocols',
     description: 'Premium peptide protocols for healing, fat loss, performance, and anti-aging.',
     images: ['/og-image.png'],
   },
@@ -37,17 +37,17 @@ export const metadata: Metadata = {
 const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'PeptideProtocols',
-  url: 'https://peptideprotocols.com',
-  logo: 'https://peptideprotocols.com/og-image.png',
+  name: 'MaxxingPeptides',
+  url: 'https://maxxingpeptides.com',
+  logo: 'https://maxxingpeptides.com/og-image.png',
   description: 'Premium peptide protocols for healing, fat loss, performance, and longevity.',
 };
 
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'PeptideProtocols',
-  url: 'https://peptideprotocols.com',
+  name: 'MaxxingPeptides',
+  url: 'https://maxxingpeptides.com',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

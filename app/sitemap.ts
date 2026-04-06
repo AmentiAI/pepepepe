@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { allProducts } from '@/lib/products';
 import { allStacks } from '@/lib/stacks';
 
-const BASE = 'https://peptideprotocols.com';
+const BASE = 'https://maxxingpeptides.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [

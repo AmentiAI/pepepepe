@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FlaskConical, TrendingDown, Shield, AlertTriangle, ChevronRight, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Semaglutide Protocol: Complete Dosage Guide & Titration Schedule | PeptideProtocols',
+  title: 'Semaglutide Protocol: Complete Dosage Guide & Titration Schedule | MaxxingPeptides',
   description:
     'The complete semaglutide protocol guide — starting doses, titration schedule, injection timing, side effect management, and how to maximise fat loss results. Based on STEP clinical trial data.',
 };

@@ -97,8 +97,8 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Semaglutide, Tirzepatide & Retatrutide — GLP-1 Peptides for Fat Loss',
   description: 'The complete GLP-1 class comparison: semaglutide vs tirzepatide vs retatrutide vs cagrisema. Clinical weight loss data, titration protocols, and dosing guides.',
-  url: 'https://peptideprotocols.com/fat-loss',
-  publisher: { '@type': 'Organization', name: 'PeptideProtocols', url: 'https://peptideprotocols.com' },
+  url: 'https://maxxingpeptides.com/fat-loss',
+  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptides.com' },
 };
 
 export default function FatLossPage() {

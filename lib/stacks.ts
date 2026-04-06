@@ -47,7 +47,7 @@ Use 29–31g insulin syringes. Rotate injection sites to prevent scar tissue. Re
     timeframe: '4–8 weeks for acute injury; 8–12 weeks for chronic',
     cost: 179.97,
     highlights: ['All three repair phases covered', 'Local + systemic reach', '4–8 week protocol'],
-    seoTitle: 'Healing & Recovery Stack — BPC-157 + TB-500 + GHK-CU Protocol | PeptideProtocols',
+    seoTitle: 'Healing & Recovery Stack — BPC-157 + TB-500 + GHK-CU Protocol | MaxxingPeptides',
   },
   {
     slug: 'beginner-fat-loss-protocol',
@@ -83,7 +83,7 @@ SIDE EFFECT MANAGEMENT:
     timeframe: '12–20 weeks for first protocol',
     cost: 89.98,
     highlights: ['20-week beginner supply', 'Full titration guide', 'Same as Ozempic/Wegovy'],
-    seoTitle: 'Beginner Semaglutide Fat Loss Protocol | PeptideProtocols',
+    seoTitle: 'Beginner Semaglutide Fat Loss Protocol | MaxxingPeptides',
   },
   {
     slug: 'advanced-recomp-stack',
@@ -118,7 +118,7 @@ MONITORING: Weekly weight. Monthly DEXA/InBody if available — track fat vs. le
     timeframe: '12–24 weeks',
     cost: 209.98,
     highlights: ['Simultaneous fat loss + muscle gain', 'Dual GLP-1/GIP + GH', '12–24 week recomp'],
-    seoTitle: 'Advanced Body Recomposition Stack — Tirzepatide + CJC-1295/Ipamorelin | PeptideProtocols',
+    seoTitle: 'Advanced Body Recomposition Stack — Tirzepatide + CJC-1295/Ipamorelin | MaxxingPeptides',
   },
   {
     slug: 'gh-optimization-stack',
@@ -152,7 +152,7 @@ CYCLE EXAMPLE:
     timeframe: '12–16 week cycle, repeat 2–3× per year',
     cost: 139.98,
     highlights: ['Complete GH axis coverage', 'Muscle hyperplasia', '12–16 week cycle'],
-    seoTitle: 'GH Optimization Stack — CJC-1295/Ipamorelin + IGF-1 LR3 Protocol | PeptideProtocols',
+    seoTitle: 'GH Optimization Stack — CJC-1295/Ipamorelin + IGF-1 LR3 Protocol | MaxxingPeptides',
   },
   {
     slug: 'longevity-anti-aging-stack',
@@ -193,7 +193,7 @@ COMBINED 20-DAY COURSE:
     timeframe: 'Ongoing — 2–3 intensive courses per year',
     cost: 269.97,
     highlights: ['Three aging pathways', 'Khavinson Epithalon protocol', '15-year human study data'],
-    seoTitle: 'Longevity Anti-Aging Stack — Epithalon + GHK-CU + NAD+ Protocol | PeptideProtocols',
+    seoTitle: 'Longevity Anti-Aging Stack — Epithalon + GHK-CU + NAD+ Protocol | MaxxingPeptides',
   },
   {
     slug: 'elite-performance-stack',
@@ -231,7 +231,7 @@ NUTRITION REQUIREMENTS:
     timeframe: '12–16 week cycles, 2–3 per year',
     cost: 199.97,
     highlights: ['Anabolism + recovery + injury prevention', 'No hormonal shutdown', 'Elite training amplifier'],
-    seoTitle: 'Elite Performance Stack — CJC-1295/Ipa + IGF-1 LR3 + BPC-157 | PeptideProtocols',
+    seoTitle: 'Elite Performance Stack — CJC-1295/Ipa + IGF-1 LR3 + BPC-157 | MaxxingPeptides',
   },
   {
     slug: 'looks-maxxing-stack',
@@ -271,7 +271,7 @@ PROTOCOL NOTES:
     timeframe: '8–12 weeks initial; GHK-CU and SNAP-8 can run continuously',
     cost: 174.97,
     highlights: ['3 distinct appearance mechanisms', 'Collagen + expression lines + pigmentation', '8-week visible results'],
-    seoTitle: 'Complete Looks Maxxing Stack — GHK-CU + Melanotan II + SNAP-8 Protocol | PeptideProtocols',
+    seoTitle: 'Complete Looks Maxxing Stack — GHK-CU + Melanotan II + SNAP-8 Protocol | MaxxingPeptides',
   },
   {
     slug: 'skin-renewal-protocol',
@@ -312,7 +312,7 @@ MONTH-BY-MONTH EXPECTATIONS:
     timeframe: '12 weeks for full protocol; GHK-CU and SNAP-8 can run continuously thereafter',
     cost: 169.97,
     highlights: ['3 collagen mechanisms', 'Injectable + topical combination', '12-week transformation'],
-    seoTitle: 'Skin Renewal Protocol — GHK-CU + SNAP-8 + BPC-157 for Collagen Restoration | PeptideProtocols',
+    seoTitle: 'Skin Renewal Protocol — GHK-CU + SNAP-8 + BPC-157 for Collagen Restoration | MaxxingPeptides',
   },
   {
     slug: 'hair-restoration-stack',
@@ -355,7 +355,7 @@ EXPECTED TIMELINE:
     timeframe: '16–24 weeks for full follicle restoration assessment',
     cost: 179.97,
     highlights: ['Stem cell activation + vascularity + gene expression', 'Clinical TB-500 hair data', '16-24 week transformation'],
-    seoTitle: 'Hair Restoration Stack — TB-500 + BPC-157 + GHK-CU Protocol | PeptideProtocols',
+    seoTitle: 'Hair Restoration Stack — TB-500 + BPC-157 + GHK-CU Protocol | MaxxingPeptides',
   },
 ];
 

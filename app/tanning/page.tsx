@@ -63,8 +63,8 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Tanning Peptides — Melanotan II & PT-141 Protocol Guide',
   description: 'Complete guide to melanocortin tanning peptides covering MC receptor biology, clinical evidence, and protocols.',
-  url: 'https://peptideprotocols.com/tanning',
-  publisher: { '@type': 'Organization', name: 'PeptideProtocols', url: 'https://peptideprotocols.com' },
+  url: 'https://maxxingpeptides.com/tanning',
+  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptides.com' },
 };
 
 export default function TanningPage() {

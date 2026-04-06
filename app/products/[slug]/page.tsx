@@ -24,16 +24,16 @@ export async function generateMetadata({
   const product = getProductBySlug(slug);
   if (!product) return {};
   return {
-    title: `Buy ${product.name} | Research-Grade · Best Price | PeptideProtocols`,
+    title: `Buy ${product.name} | Research-Grade · Best Price | MaxxingPeptides`,
     description: product.shortDescription,
     alternates: {
-      canonical: `https://peptideprotocols.com/products/${slug}`,
+      canonical: `https://maxxingpeptides.com/products/${slug}`,
     },
     openGraph: {
-      title: `Buy ${product.name} | PeptideProtocols`,
+      title: `Buy ${product.name} | MaxxingPeptides`,
       description: product.shortDescription,
-      url: `https://peptideprotocols.com/products/${slug}`,
-      images: [{ url: `https://peptideprotocols.com${product.image}` }],
+      url: `https://maxxingpeptides.com/products/${slug}`,
+      images: [{ url: `https://maxxingpeptides.com${product.image}` }],
     },
   };
 }
@@ -412,9 +412,9 @@ export default async function ProductPage({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://peptideprotocols.com' },
-      { '@type': 'ListItem', position: 2, name: 'All Peptides', item: 'https://peptideprotocols.com/products' },
-      { '@type': 'ListItem', position: 3, name: product.name, item: `https://peptideprotocols.com/products/${product.slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://maxxingpeptides.com' },
+      { '@type': 'ListItem', position: 2, name: 'All Peptides', item: 'https://maxxingpeptides.com/products' },
+      { '@type': 'ListItem', position: 3, name: product.name, item: `https://maxxingpeptides.com/products/${product.slug}` },
     ],
   };
 
@@ -433,7 +433,7 @@ export default async function ProductPage({
     '@type': 'Product',
     name: product.name,
     description: product.shortDescription,
-    image: `https://peptideprotocols.com${product.image}`,
+    image: `https://maxxingpeptides.com${product.image}`,
     brand: { '@type': 'Brand', name: 'Phiogen' },
     offers: {
       '@type': 'Offer',

@@ -248,7 +248,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateIn>
             <h2 className="text-2xl sm:text-3xl font-black text-white text-center mb-12">
-              Why PeptideProtocols?
+              Why MaxxingPeptides?
             </h2>
           </AnimateIn>
           <div className="grid md:grid-cols-3 gap-8">

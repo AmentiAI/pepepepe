@@ -23,12 +23,12 @@ export async function generateMetadata({
     title: stack.seoTitle,
     description: stack.tagline,
     alternates: {
-      canonical: `https://peptideprotocols.com/stacks/${slug}`,
+      canonical: `https://maxxingpeptides.com/stacks/${slug}`,
     },
     openGraph: {
       title: stack.seoTitle,
       description: stack.tagline,
-      url: `https://peptideprotocols.com/stacks/${slug}`,
+      url: `https://maxxingpeptides.com/stacks/${slug}`,
     },
   };
 }
@@ -59,9 +59,9 @@ export default async function StackPage({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://peptideprotocols.com' },
-      { '@type': 'ListItem', position: 2, name: 'Protocol Stacks', item: 'https://peptideprotocols.com/stacks' },
-      { '@type': 'ListItem', position: 3, name: stack.name, item: `https://peptideprotocols.com/stacks/${stack.slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://maxxingpeptides.com' },
+      { '@type': 'ListItem', position: 2, name: 'Protocol Stacks', item: 'https://maxxingpeptides.com/stacks' },
+      { '@type': 'ListItem', position: 3, name: stack.name, item: `https://maxxingpeptides.com/stacks/${stack.slug}` },
     ],
   };
 

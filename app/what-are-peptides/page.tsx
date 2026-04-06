@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FlaskConical, Zap, Shield, TrendingUp, Brain, ChevronRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'What Are Peptides? The Complete Beginner\'s Guide to Research Peptides | PeptideProtocols',
+  title: 'What Are Peptides? The Complete Beginner\'s Guide to Research Peptides | MaxxingPeptides',
   description:
     'Learn what peptides are, how they work in the body, the difference between research peptides and drugs, and which peptides are used for healing, fat loss, anti-aging, and cognitive enhancement.',
 };

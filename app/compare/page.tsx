@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   description:
     'Head-to-head comparison of every GLP-1 class peptide: semaglutide vs tirzepatide vs retatrutide vs CagriSema. Clinical weight loss data, mechanism differences, dosing, and who each compound is for.',
   alternates: {
-    canonical: 'https://peptideprotocols.com/compare',
+    canonical: 'https://maxxingpeptides.com/compare',
   },
   openGraph: {
     title: 'Semaglutide vs Tirzepatide vs Retatrutide — GLP-1 Comparison',
     description: 'Clinical weight loss data, mechanisms, dosing, and head-to-head results for every GLP-1 class fat loss peptide.',
-    url: 'https://peptideprotocols.com/compare',
+    url: 'https://maxxingpeptides.com/compare',
   },
 };
 
@@ -127,8 +127,8 @@ const comparisonSchema = {
   headline: 'Semaglutide vs Tirzepatide vs Retatrutide — GLP-1 Comparison Guide',
   description:
     'Head-to-head comparison of semaglutide, tirzepatide, retatrutide, and CagriSema. Clinical weight loss data, mechanism differences, dosing protocols, and recommendation framework.',
-  url: 'https://peptideprotocols.com/compare',
-  publisher: { '@type': 'Organization', name: 'PeptideProtocols', url: 'https://peptideprotocols.com' },
+  url: 'https://maxxingpeptides.com/compare',
+  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptides.com' },
 };
 
 export default function ComparePage() {

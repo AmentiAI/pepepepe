@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FlaskConical, Dna, Zap, Shield, ChevronRight, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Longevity Peptides: Anti-Aging Protocols for Lifespan & Healthspan | PeptideProtocols',
+  title: 'Longevity Peptides: Anti-Aging Protocols for Lifespan & Healthspan | MaxxingPeptides',
   description:
     'Explore the science of longevity peptides — Epithalon, FOXO4-DRI, MOTS-c, SS-31, Thymosin Alpha-1, and more. Learn the mechanisms behind anti-aging protocols targeting telomeres, senescent cells, and mitochondria.',
 };

@@ -68,8 +68,8 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'CJC-1295, Ipamorelin & IGF-1 LR3 — GH Secretagogue Performance Peptides',
   description: 'Growth hormone secretagogues for muscle building, body recomposition, and athletic recovery. CJC-1295/Ipamorelin amplifies natural GH pulses. IGF-1 LR3 drives muscle hyperplasia.',
-  url: 'https://peptideprotocols.com/performance',
-  publisher: { '@type': 'Organization', name: 'PeptideProtocols', url: 'https://peptideprotocols.com' },
+  url: 'https://maxxingpeptides.com/performance',
+  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptides.com' },
 };
 
 export default function PerformancePage() {

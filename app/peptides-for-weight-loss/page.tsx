@@ -114,8 +114,8 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Peptides for Weight Loss — Complete GLP-1 and Metabolic Peptide Guide',
   description: 'Evidence-based guide comparing semaglutide, tirzepatide, retatrutide, AOD9604, and other weight loss peptides with clinical data.',
-  url: 'https://peptideprotocols.com/peptides-for-weight-loss',
-  publisher: { '@type': 'Organization', name: 'PeptideProtocols', url: 'https://peptideprotocols.com' },
+  url: 'https://maxxingpeptides.com/peptides-for-weight-loss',
+  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptides.com' },
 };
 
 export default function PeptidesForWeightLossPage() {

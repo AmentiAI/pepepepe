@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FlaskConical, Zap, TrendingUp, Shield, ChevronRight, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Peptides for Muscle Growth: Anabolic Peptides Guide | PeptideProtocols',
+  title: 'Peptides for Muscle Growth: Anabolic Peptides Guide | MaxxingPeptides',
   description:
     'Complete guide to anabolic peptides for muscle building — GH secretagogues, BPC-157 for injury prevention, TB-500 for recovery, and advanced protocol stacks. Understand the mechanisms behind peptide-driven hypertrophy.',
 };

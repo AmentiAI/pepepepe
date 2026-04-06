@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FlaskConical, AlertTriangle, CheckCircle, ChevronRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'How to Inject Peptides: Complete Reconstitution & Injection Guide | PeptideProtocols',
+  title: 'How to Inject Peptides: Complete Reconstitution & Injection Guide | MaxxingPeptides',
   description:
     'Step-by-step guide to reconstituting research peptides with bacteriostatic water, calculating doses, drawing injections, and administering subcutaneous and intramuscular peptide injections safely.',
 };

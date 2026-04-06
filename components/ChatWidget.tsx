@@ -15,7 +15,7 @@ export function ChatWidget() {
     {
       role: 'assistant',
       content:
-        "Hi! I'm your PeptideProtocols advisor. Tell me your goals — healing, fat loss, performance, or anti-aging — and I'll recommend the right peptide protocol for you.",
+        "Hi! I'm your MaxxingPeptides advisor. Tell me your goals — healing, fat loss, performance, or anti-aging — and I'll recommend the right peptide protocol for you.",
     },
   ]);
   const [input, setInput] = useState('');

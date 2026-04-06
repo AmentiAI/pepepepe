@@ -112,7 +112,7 @@ export function Footer() {
         <div className="border-t border-white/5 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} PeptideProtocols. All rights reserved.
+              © {new Date().getFullYear()} MaxxingPeptides. All rights reserved.
             </p>
             <p className="text-sm text-gray-500">
               Powered by <a href="https://phiogen.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-brand-400 transition-colors">Phiogen</a> — Research-Grade Peptides.

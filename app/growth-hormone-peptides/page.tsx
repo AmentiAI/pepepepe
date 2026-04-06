@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Zap, TrendingUp, Clock, Shield, ChevronRight, FlaskConical, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Growth Hormone Peptides: Complete Guide to GH Secretagogues | PeptideProtocols',
+  title: 'Growth Hormone Peptides: Complete Guide to GH Secretagogues | MaxxingPeptides',
   description:
     'The definitive guide to growth hormone peptides — CJC-1295, Ipamorelin, Sermorelin, GHRP-2, Tesamorelin, and more. Compare GH secretagogues, build the perfect stack, and understand dosing protocols.',
 };

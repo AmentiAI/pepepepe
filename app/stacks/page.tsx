@@ -6,7 +6,7 @@ import { allStacks } from '@/lib/stacks';
 import { allProducts } from '@/lib/products';
 
 export const metadata: Metadata = {
-  title: 'Peptide Protocol Stacks — Complete Multi-Compound Guides | PeptideProtocols',
+  title: 'Peptide Protocol Stacks — Complete Multi-Compound Guides | MaxxingPeptides',
   description:
     'Six expert-designed peptide stacks for healing, fat loss, performance, and anti-aging. Each protocol includes synergy rationale, dosing schedules, reconstitution instructions, and Phiogen sourcing.',
 };

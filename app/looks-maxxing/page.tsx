@@ -114,8 +114,8 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Looks Maxxing with Peptides — Science-Based Appearance Optimization Guide',
   description: 'The complete peptide guide to appearance optimization covering skin collagen, hair growth, tanning, and body composition.',
-  url: 'https://peptideprotocols.com/looks-maxxing',
-  publisher: { '@type': 'Organization', name: 'PeptideProtocols', url: 'https://peptideprotocols.com' },
+  url: 'https://maxxingpeptides.com/looks-maxxing',
+  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptides.com' },
 };
 
 export default function LooksMaxxingPage() {

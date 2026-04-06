@@ -68,8 +68,8 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Skin & Collagen Peptides — GHK-CU, SNAP-8 & BPC-157 Protocol Guide',
   description: 'Research-based guide to peptides for skin quality and collagen synthesis covering mechanisms, clinical data, and protocols.',
-  url: 'https://peptideprotocols.com/skin',
-  publisher: { '@type': 'Organization', name: 'PeptideProtocols', url: 'https://peptideprotocols.com' },
+  url: 'https://maxxingpeptides.com/skin',
+  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptides.com' },
 };
 
 export default function SkinPage() {
