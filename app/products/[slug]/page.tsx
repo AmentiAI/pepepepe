@@ -11,7 +11,7 @@ import { RelatedLinks } from '@/components/RelatedLinks';
 import { productFaqs } from '@/lib/productFaqs';
 import { getDeepDive } from '@/lib/deepDive';
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return allProducts.map(p => ({ slug: p.slug }));
 }
 
@@ -23,17 +23,27 @@ export async function generateMetadata({
   const { slug } = await params;
   const product = getProductBySlug(slug);
   if (!product) return {};
+  const titleStr = `Buy ${product.name} — Research-Grade Peptide Protocol | MaxxingPeptides`;
+  const desc = product.shortDescription.slice(0, 155);
   return {
-    title: `Buy ${product.name} | Research-Grade · Best Price | MaxxingPeptides`,
+    title: { absolute: titleStr },
     description: product.shortDescription,
     alternates: {
       canonical: `https://maxxingpeptides.com/products/${slug}`,
     },
     openGraph: {
-      title: `Buy ${product.name} | MaxxingPeptides`,
+      title: titleStr,
       description: product.shortDescription,
       url: `https://maxxingpeptides.com/products/${slug}`,
-      images: [{ url: `https://maxxingpeptides.com${product.image}` }],
+      siteName: 'MaxxingPeptides',
+      type: 'website',
+      images: [{ url: `https://maxxingpeptides.com${product.image}`, alt: product.name }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: titleStr,
+      description: desc,
+      images: [`https://maxxingpeptides.com${product.image}`],
     },
   };
 }
@@ -434,14 +444,15 @@ export default async function ProductPage({
     name: product.name,
     description: product.shortDescription,
     image: `https://maxxingpeptides.com${product.image}`,
-    brand: { '@type': 'Brand', name: 'Phiogen' },
+    sku: product.slug,
+    brand: { '@type': 'Brand', name: 'MaxxingPeptides' },
     offers: {
       '@type': 'Offer',
-      url: product.affiliateUrl,
+      url: `https://maxxingpeptides.com/products/${product.slug}`,
       priceCurrency: 'USD',
       price: String(product.price),
       availability: 'https://schema.org/InStock',
-      seller: { '@type': 'Organization', name: 'Phiogen' },
+      seller: { '@type': 'Organization', name: 'MaxxingPeptides' },
     },
   };
 
@@ -462,13 +473,15 @@ export default async function ProductPage({
         />
       )}
       {/* Breadcrumb */}
-      <Link
-        href="/products"
-        className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-brand-400 transition-colors mb-8"
-      >
-        <ArrowLeft className="w-4 h-4" />
-        All Peptides
-      </Link>
+      <nav aria-label="Breadcrumb" className="mb-8">
+        <ol className="flex items-center gap-1.5 text-sm text-gray-500">
+          <li><Link href="/" className="hover:text-brand-400 transition-colors">Home</Link></li>
+          <li className="text-gray-700">/</li>
+          <li><Link href="/products" className="hover:text-brand-400 transition-colors">All Peptides</Link></li>
+          <li className="text-gray-700">/</li>
+          <li className="text-gray-400 truncate max-w-[200px]">{product.name}</li>
+        </ol>
+      </nav>
 
       <div className="grid lg:grid-cols-3 gap-10">
         {/* ── Main content ─────────────────────────────────────────── */}

@@ -10,7 +10,19 @@ export const metadata: Metadata = {
     template: '%s | MaxxingPeptides',
   },
   description:
-    'Premium peptide protocols with research-grade Phiogen products. Complete guides for BPC-157, TB-500, Semaglutide, Tirzepatide, Retatrutide, GHK-CU, Epithalon, and more.',
+    'Research-grade peptide protocols for healing, fat loss, and longevity. Buy BPC-157, Semaglutide −14.9%, Retatrutide −24.2%, TB-500, GHK-CU, and Epithalon — COA-verified, ships from Phiogen.',
+  keywords: [
+    'buy peptides online',
+    'maxxing peptides',
+    'maxxingpeptides',
+    'BPC-157 protocol',
+    'semaglutide buy',
+    'retatrutide protocol',
+    'tirzepatide peptide',
+    'GHK-CU anti-aging',
+    'peptide fat loss protocol',
+    'research peptides 2026',
+  ],
   metadataBase: new URL('https://maxxingpeptides.com'),
   openGraph: {
     type: 'website',
