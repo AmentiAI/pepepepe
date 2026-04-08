@@ -59,7 +59,7 @@ export function Navbar() {
               <FlaskConical className="w-4 h-4 text-brand-400" />
             </div>
             <span className="font-bold text-white text-lg tracking-tight">
-              Peptide<span className="text-brand-400">Protocols</span>
+              Maxxing<span className="text-brand-400">Peptides</span>
             </span>
           </Link>
 
