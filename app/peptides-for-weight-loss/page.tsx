@@ -354,7 +354,7 @@ export default function PeptidesForWeightLossPage() {
       {/* Products */}
       <div className="mb-8">
         <h2 className="text-2xl font-black text-white mb-2">Weight Loss Peptides</h2>
-        <p className="text-gray-500 text-sm">Top-ranked fat loss compounds — sourced from Phiogen with COA-verified purity</p>
+        <p className="text-gray-500 text-sm">Top-ranked fat loss compounds — sourced from Apollo with COA-verified purity</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
         {weightLossProducts.map((product, i) => (

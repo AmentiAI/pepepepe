@@ -91,7 +91,7 @@ export function ProductCard({ product, large = false }: ProductCardProps) {
         <div className="mt-auto">
           <div className="flex items-center justify-between mb-3">
             <span className={`${priceSize} font-black text-brand-400`}>${product.price}</span>
-            <span className="text-xs text-gray-500 font-medium">Phiogen</span>
+            <span className="text-xs text-gray-500 font-medium">Apollo</span>
           </div>
           <div className="flex items-center gap-2">
             <Link

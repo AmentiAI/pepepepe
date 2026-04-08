@@ -316,19 +316,16 @@ export default function LongevityPeptidesPage() {
 
         {/* Products */}
         <section>
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Longevity Peptides from Phiogen</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Longevity Peptides from Apollo</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { name: 'Epithalon 50mg', slug: 'epithalon-50mg', desc: 'Telomerase activator. Russian clinical data. Multi-year cycle protocol.' },
-              { name: 'FOXO4-DRI', slug: 'foxo4-dri', desc: 'Senolytic peptide. Selective apoptosis of senescent cells.' },
-              { name: 'MOTS-c 10mg', slug: 'mots-c-10mg', desc: 'Mitochondria-derived peptide. AMPK activation and metabolic restoration.' },
-              { name: 'SS-31 (Elamipretide)', slug: 'ss-31', desc: 'Cardiolipin-binding mitochondrial protector. Phase II heart failure data.' },
-              { name: 'Thymosin Alpha-1 5mg', slug: 'thymosin-alpha-1-5mg', desc: 'Immune restoration peptide. Approved in 37+ countries for immune modulation.' },
-              { name: 'GHK-Cu 50mg', slug: 'ghk-cu-50mg', desc: 'Copper tripeptide. Collagen synthesis, DNA repair, anti-inflammatory.' },
+              { name: 'GHK-CU 50mg', slug: 'ghk-cu', desc: 'Copper tripeptide. 4,000+ genes modulated for collagen synthesis, DNA repair, and anti-inflammatory activity.' },
+              { name: 'NAD+ 500mg', slug: 'nad', desc: 'Mitochondrial co-enzyme. Restores cellular energy, activates sirtuins, supports DNA repair.' },
             ].map(p => (
               <a
                 key={p.slug}
-                href={`https://phiogen.vercel.app/products/${p.slug}`}
+                href={`/go/${p.slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#111] border border-white/10 hover:border-brand-500/40 rounded-2xl p-5 transition-colors group"
@@ -336,7 +333,7 @@ export default function LongevityPeptidesPage() {
                 <h3 className="font-semibold mb-2 group-hover:text-brand-400 transition-colors">{p.name}</h3>
                 <p className="text-gray-400 text-sm mb-3 leading-relaxed">{p.desc}</p>
                 <span className="text-brand-400 text-sm font-medium flex items-center gap-1">
-                  View at Phiogen <ChevronRight className="w-3.5 h-3.5" />
+                  Buy at Apollo <ChevronRight className="w-3.5 h-3.5" />
                 </span>
               </a>
             ))}
@@ -347,7 +344,7 @@ export default function LongevityPeptidesPage() {
         <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-6 sm:p-10 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Explore the Anti-Aging Protocol</h2>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
-            View our curated anti-aging stacks or browse all longevity-category peptides from Phiogen.
+            View our curated anti-aging stacks or browse all longevity-category peptides from Apollo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/anti-aging" className="px-6 py-3 bg-brand-500 hover:bg-brand-400 text-black font-bold rounded-xl transition-colors">

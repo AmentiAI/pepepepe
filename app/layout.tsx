@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: '%s | MaxxingPeptides',
   },
   description:
-    'Research-grade peptide protocols for healing, fat loss, and longevity. Buy BPC-157, Semaglutide −14.9%, Retatrutide −24.2%, TB-500, GHK-CU, and Epithalon — COA-verified, ships from Phiogen.',
+    'Research-grade peptide protocols for healing, fat loss, and longevity. Buy BPC-157, Semaglutide −14.9%, Retatrutide −24.2%, TB-500, GHK-CU, and Epithalon — COA-verified, from Apollo Peptide Sciences.',
   keywords: [
     'buy peptides online',
     'maxxing peptides',

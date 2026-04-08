@@ -278,10 +278,8 @@ export default function WhatArePeptidesPage() {
               { name: 'TB-500 (Thymosin β4)', type: 'Healing / Regenerative', evidence: 'Phase II in epidermolysis bullosa; extensive animal data', mechanism: 'Actin sequestration, stem cell mobilisation, angiogenesis', link: '/products/tb500-10mg' },
               { name: 'CJC-1295 / Ipamorelin', type: 'GH Secretagogue Stack', evidence: 'Phase I/II human trials for each compound independently', mechanism: 'GHRH receptor + GHS-R1a dual stimulation', link: '/products/cjc1295-ipamorelin' },
               { name: 'Semaglutide', type: 'GLP-1 Agonist / Fat Loss', evidence: 'FDA-approved (Wegovy, Ozempic); 68-week Phase III STEP-1', mechanism: 'GLP-1R agonism → appetite reduction, gastric emptying slowing', link: '/products/glp-1s-5mg' },
-              { name: 'Semax', type: 'Cognitive / Neuropeptide', evidence: 'Russian clinical approval; BDNF upregulation data', mechanism: 'BDNF/NGF synthesis, dopamine/serotonin modulation', link: '/products/semax-amidate' },
-              { name: 'GHK-Cu', type: 'Skin / Collagen', evidence: 'Multiple human skin studies; wound healing RCTs', mechanism: 'Collagen I/III transcription, MMP suppression, VEGF', link: '/products/ghk-cu-50mg' },
+              { name: 'GHK-Cu', type: 'Skin / Collagen', evidence: 'Multiple human skin studies; wound healing RCTs', mechanism: 'Collagen I/III transcription, MMP suppression, VEGF', link: '/products/ghk-cu' },
               { name: 'Epithalon', type: 'Anti-Aging / Longevity', evidence: 'Russian clinical data; multiple animal lifespan studies', mechanism: 'Telomerase activation, pineal gland melatonin restoration', link: '/products/epithalon-50mg' },
-              { name: 'FOXO4-DRI', type: 'Senolytic', evidence: 'Mouse healthspan studies; no human trials yet', mechanism: 'Disrupts FOXO4-p53 complex in senescent cells → apoptosis', link: '/products/foxo4-dri' },
             ].map(p => (
               <Link key={p.name} href={p.link} className="flex items-start gap-4 bg-[#111] border border-white/10 hover:border-brand-500/30 rounded-xl p-5 transition-colors group">
                 <div className="flex-1 min-w-0">
@@ -321,7 +319,7 @@ export default function WhatArePeptidesPage() {
               },
               {
                 q: 'How do I know if my peptides are high quality?',
-                a: 'Look for vendors who provide third-party certificates of analysis (CoA) from accredited analytical labs showing HPLC purity ≥98% and mass spectrometry confirmation of the correct molecular weight. Reputable vendors like Phiogen provide this documentation. Avoid vendors who cannot provide CoA on request or who have suspiciously low prices that may indicate compromised quality control.',
+                a: 'Look for vendors who provide third-party certificates of analysis (CoA) from accredited analytical labs showing HPLC purity ≥98% and mass spectrometry confirmation of the correct molecular weight. Reputable vendors like Apollo Peptide Sciences provide this documentation. Avoid vendors who cannot provide CoA on request or who have suspiciously low prices that may indicate compromised quality control.',
               },
               {
                 q: 'What peptide should a complete beginner start with?',
@@ -340,7 +338,7 @@ export default function WhatArePeptidesPage() {
         <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-6 sm:p-10 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Explore Research Peptides?</h2>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
-            Browse all 40+ research-grade peptides available from Phiogen, or read our beginner guide to understand protocols, dosing, and reconstitution step-by-step.
+            Browse all 40+ research-grade peptides available from Apollo, or read our beginner guide to understand protocols, dosing, and reconstitution step-by-step.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/guide" className="px-6 py-3 bg-brand-500 hover:bg-brand-400 text-black font-bold rounded-xl transition-colors">

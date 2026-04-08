@@ -235,24 +235,18 @@ NUTRITION REQUIREMENTS:
   },
   {
     slug: 'looks-maxxing-stack',
-    name: 'Complete Looks Maxxing Stack',
-    tagline: 'GHK-CU + Melanotan II + SNAP-8 — the full-spectrum peptide protocol for skin, pigmentation, and appearance optimization',
+    name: 'Complete Skin & Anti-Aging Stack',
+    tagline: 'GHK-CU + SNAP-8 — the full-spectrum peptide protocol for skin structure and expression line reduction',
     goal: 'looks',
-    products: ['ghk-cu', 'melanotan-ii-10mg', 'snap-8', 'bacteriostatic-water-reconstitution-solution-10ml'],
-    description: `The Complete Looks Maxxing Stack is the most comprehensive appearance-focused peptide protocol on the market — combining three distinct mechanisms that address skin structure (GHK-CU), surface expression lines (SNAP-8), and melanin pigmentation (Melanotan II) simultaneously.
+    products: ['ghk-cu', 'snap-8', 'bacteriostatic-water-reconstitution-solution-10ml'],
+    description: `The Complete Skin & Anti-Aging Stack is a focused appearance protocol combining two distinct mechanisms that address skin structure (GHK-CU) and surface expression lines (SNAP-8) simultaneously.
 
 GHK-CU (copper peptide) forms the backbone of this protocol. A naturally occurring tripeptide found in human plasma, saliva, and urine, GHK-CU levels decline sharply with age — from approximately 200 ng/mL at age 20 to 80 ng/mL by age 60. This decline corresponds closely with the collagen and elastin losses that define skin aging. Research by Dr. Loren Pickart demonstrated that GHK-CU modulates over 4,000 human genes — upregulating collagen Types I, III, and IV synthesis, elastin production, and TGF-β1 (the primary signal driving extracellular matrix remodeling), while simultaneously downregulating the matrix metalloproteinases that degrade existing collagen. The result is a net positive collagen balance that produces measurable improvements in skin thickness, hydration, and fine line depth. Clinical studies report 32–35% reduction in fine lines and significant improvement in skin firmness at 12 weeks.
 
 SNAP-8 (Acetyl Octapeptide-3) addresses dynamic expression lines through a fundamentally different mechanism. This octapeptide is an extended version of the SNARE complex-disrupting peptide Argireline, designed to partially inhibit the acetylcholine release that drives repeated facial muscle contraction. The result is neuromuscular relaxation analogous to Botox but with a topical delivery route and reversible, dose-dependent effect. Clinical studies show up to 63% reduction in expression line depth at 8 weeks of twice-daily application.
 
-Melanotan II drives the pigmentation component, activating MC1R receptors on melanocytes to preferentially produce eumelanin — the dark, photoprotective melanin responsible for natural brown complexion. The synergy with GHK-CU is notable: GHK-CU's collagen remodeling improves overall skin texture and smoothness, while Melanotan II adds the pigmentation dimension that creates an appearance of health and vitality. Together, the three compounds address the primary cosmetic metrics: collagen density, expression line reduction, and skin tone.`,
-    protocol: `MELANOTAN II (Weeks 1–8, Loading + Maintenance):
-Reconstitute: 10mg + 2ml bac water = 5,000mcg/ml
-• Loading (Weeks 1–3): 0.25–0.5mg subcutaneous, nightly
-• Maintenance (Week 4+): 0.5–1mg, 2× weekly
-• Evening administration recommended; minimal UV (15 min/day) accelerates results
-
-GHK-CU INJECTABLE (Weeks 1–12, continuous):
+Together, the two compounds address the primary structural cosmetic metrics: collagen density and expression line reduction. GHK-CU's collagen remodeling improves overall skin texture, thickness, and smoothness from the inside out, while SNAP-8 reduces the dynamic forces that drive and deepen expression lines — allowing the collagen rebuilding effects to smooth them from beneath.`,
+    protocol: `GHK-CU INJECTABLE (Weeks 1–12, continuous):
 Reconstitute: 50mg + 5ml bac water = 10,000mcg/ml
 • Dose: 1–2mg subcutaneous daily (abdomen or thigh)
 • Collagen remodeling is gradual — full effects emerge at 8–12 weeks
@@ -264,14 +258,13 @@ SNAP-8 TOPICAL (Weeks 1–12, twice daily):
 • Results progressive — 4 weeks for initial effect, 8 weeks for full reduction
 
 PROTOCOL NOTES:
-• Can run GHK-CU and SNAP-8 continuously after Melanotan II loading phase
-• Add 15–20 min daily moderate UV exposure during loading to maximize tanning response
-• SPF 30+ recommended for areas not targeting tan during non-tanning hours`,
+• Both GHK-CU and SNAP-8 can be run continuously beyond the initial 12 weeks
+• No receptor desensitization or tolerance with either compound`,
     difficulty: 'Intermediate',
     timeframe: '8–12 weeks initial; GHK-CU and SNAP-8 can run continuously',
-    cost: 174.97,
-    highlights: ['3 distinct appearance mechanisms', 'Collagen + expression lines + pigmentation', '8-week visible results'],
-    seoTitle: 'Complete Looks Maxxing Stack — GHK-CU + Melanotan II + SNAP-8 Protocol | MaxxingPeptides',
+    cost: 129.98,
+    highlights: ['2 complementary skin mechanisms', 'Collagen rebuilding + expression line reduction', '8-week visible results'],
+    seoTitle: 'Complete Skin & Anti-Aging Stack — GHK-CU + SNAP-8 Protocol | MaxxingPeptides',
   },
   {
     slug: 'skin-renewal-protocol',

@@ -115,7 +115,7 @@ export function Footer() {
               © {new Date().getFullYear()} MaxxingPeptides. All rights reserved.
             </p>
             <p className="text-sm text-gray-500">
-              Powered by <a href="https://phiogen.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-brand-400 transition-colors">Phiogen</a> — Research-Grade Peptides.
+              Research-grade peptides sourced from <a href="/go/shop" target="_blank" rel="noopener noreferrer" className="hover:text-brand-400 transition-colors">Apollo Peptide Sciences</a>.
             </p>
           </div>
         </div>

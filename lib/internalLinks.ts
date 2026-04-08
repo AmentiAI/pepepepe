@@ -186,31 +186,10 @@ export const internalLinks: Record<string, InternalLink[]> = {
   // ─── COGNITIVE PAGES ───────────────────────────────────────────────────────
 
   cognitive: [
-    { href: '/products/n-acetyl-semax-30mg',  label: 'N-Acetyl Semax Amidate',    desc: 'BDNF upregulation and neuroplasticity — the most potent semax form available.' },
-    { href: '/products/na-selank-10mg',        label: 'NA-Selank Amidate',          desc: 'Anxiolytic without sedation — enkephalinase inhibitor for GABAergic anxiety reduction.' },
-    { href: '/products/dsip-5mg',             label: 'DSIP 5mg',                   desc: 'Deep slow-wave sleep + nocturnal GH release enhancement.' },
-    { href: '/products/methylene-blue-50ml',  label: 'Methylene Blue',             desc: 'Mitochondrial electron carrier for neuronal energy optimization and cognitive enhancement.' },
-  ],
-
-  'n-acetyl-semax-30mg': [
-    { href: '/cognitive',                     label: 'Cognitive Peptides Guide',   desc: 'All four cognitive peptide mechanisms explained.' },
-    { href: '/products/na-selank-10mg',        label: 'NA-Selank Amidate',          desc: 'Stack Semax + Selank for combined focus and anxiety reduction.' },
-    { href: '/products/dsip-5mg',             label: 'DSIP 5mg',                   desc: 'Sleep optimization to support the neuroplasticity effects of Semax.' },
-    { href: '/products/methylene-blue-50ml',  label: 'Methylene Blue',             desc: 'Add mitochondrial energy support to your Semax cognitive protocol.' },
-  ],
-
-  'na-selank-10mg': [
-    { href: '/cognitive',                     label: 'Cognitive Peptides Guide',   desc: 'Compare all cognitive peptide mechanisms.' },
-    { href: '/products/n-acetyl-semax-30mg',  label: 'N-Acetyl Semax Amidate',    desc: 'Stack with Semax for anxiety-free cognitive enhancement.' },
-    { href: '/products/dsip-5mg',             label: 'DSIP 5mg',                   desc: 'Deep sleep optimization to complement Selank\'s anxiolytic effects.' },
-    { href: '/anti-aging',                    label: 'Anti-Aging Peptide Guide',   desc: 'Combine cognitive optimization with longevity protocols.' },
-  ],
-
-  'dsip-5mg': [
-    { href: '/cognitive',                     label: 'Cognitive Peptides Guide',   desc: 'All cognitive and sleep peptide mechanisms explained.' },
-    { href: '/products/cjc-ipa-blend-10mg',   label: 'CJC-1295/Ipamorelin Blend', desc: 'Stack DSIP with GH peptides for nocturnal GH optimization during deep sleep.' },
-    { href: '/products/n-acetyl-semax-30mg',  label: 'N-Acetyl Semax Amidate',    desc: 'Daytime cognitive enhancement to pair with DSIP nighttime sleep optimization.' },
-    { href: '/performance',                   label: 'Performance Peptide Guide',  desc: 'GH optimization through DSIP-enhanced slow-wave sleep.' },
+    { href: '/what-are-peptides',             label: 'What Are Peptides?',          desc: 'Beginner guide covering all peptide categories including cognitive neuropeptides.' },
+    { href: '/products/ghk-cu',               label: 'GHK-CU Copper Peptide',       desc: 'Upregulates NGF and BDNF — neuroprotective effects alongside collagen and skin benefits.' },
+    { href: '/anti-aging',                    label: 'Anti-Aging Peptide Guide',    desc: 'Longevity peptides with overlapping cognitive and brain health mechanisms.' },
+    { href: '/products/nad',                  label: 'NAD+ 500mg',                  desc: 'Mitochondrial energy restoration supports neuronal function and cognitive clarity.' },
   ],
 
   // ─── LOOKS MAXXING PAGES ───────────────────────────────────────────────────
@@ -218,8 +197,8 @@ export const internalLinks: Record<string, InternalLink[]> = {
   'looks-maxxing': [
     { href: '/skin',                              label: 'Skin & Collagen Guide',        desc: 'GHK-CU, SNAP-8, and BPC-157 for collagen rebuilding and skin optimization.' },
     { href: '/hair',                              label: 'Hair Growth Peptides',          desc: 'TB-500, BPC-157, and GHK-CU for follicle restoration and hair regrowth.' },
-    { href: '/tanning',                           label: 'Tanning Peptides Guide',        desc: 'Melanotan II and PT-141 for deep, even pigmentation.' },
-    { href: '/stacks/looks-maxxing-stack',        label: 'Complete Looks Maxxing Stack',  desc: 'GHK-CU + Melanotan II + SNAP-8 in one structured protocol.' },
+    { href: '/stacks/looks-maxxing-stack',        label: 'Complete Skin & Anti-Aging Stack', desc: 'GHK-CU + SNAP-8 — the full-spectrum peptide skin and expression line protocol.' },
+    { href: '/stacks/skin-renewal-protocol',      label: 'Skin Renewal Protocol',        desc: 'GHK-CU + SNAP-8 + BPC-157 for structural collagen restoration.' },
   ],
 
   skin: [
@@ -237,24 +216,10 @@ export const internalLinks: Record<string, InternalLink[]> = {
   ],
 
   tanning: [
-    { href: '/products/melanotan-ii-10mg',        label: 'Melanotan II 10mg',              desc: 'Deep eumelanin pigmentation via MC1R agonism — the most potent tanning peptide.' },
-    { href: '/products/pt-141-10mg',              label: 'PT-141 10mg',                    desc: 'Better-tolerated melanocortin peptide — FDA-evaluated bremelanotide.' },
-    { href: '/stacks/looks-maxxing-stack',        label: 'Complete Looks Maxxing Stack',   desc: 'Add skin and collagen peptides to your tanning protocol.' },
     { href: '/looks-maxxing',                     label: 'Looks Maxxing Hub',              desc: 'The full spectrum of peptide appearance optimization.' },
-  ],
-
-  'melanotan-ii-10mg': [
-    { href: '/tanning',                           label: 'Tanning Peptides Guide',         desc: 'Melanocortin receptor science and full tanning protocols explained.' },
-    { href: '/products/pt-141-10mg',             label: 'PT-141 10mg',                    desc: 'The better-tolerated alternative with a longer half-life and milder side effects.' },
-    { href: '/stacks/looks-maxxing-stack',        label: 'Complete Looks Maxxing Stack',   desc: 'Stack Melanotan II with GHK-CU and SNAP-8 for full appearance optimization.' },
-    { href: '/looks-maxxing',                     label: 'Looks Maxxing Hub',              desc: 'All four pillars of peptide appearance optimization.' },
-  ],
-
-  'pt-141-10mg': [
-    { href: '/tanning',                           label: 'Tanning Peptides Guide',         desc: 'Compare PT-141 and Melanotan II side-by-side with clinical data.' },
-    { href: '/products/melanotan-ii-10mg',        label: 'Melanotan II 10mg',              desc: 'The more potent tanning peptide for deeper pigmentation results.' },
-    { href: '/stacks/looks-maxxing-stack',        label: 'Complete Looks Maxxing Stack',   desc: 'Combine melanocortin peptides with skin and collagen protocols.' },
-    { href: '/looks-maxxing',                     label: 'Looks Maxxing Hub',              desc: 'Skin, hair, tanning, and body — the complete appearance guide.' },
+    { href: '/products/ghk-cu',                   label: 'GHK-CU Copper Peptide',          desc: 'Structural skin improvement to complement any tanning or appearance protocol.' },
+    { href: '/stacks/looks-maxxing-stack',        label: 'Complete Skin & Anti-Aging Stack', desc: 'GHK-CU + SNAP-8 — the collagen and expression line protocol.' },
+    { href: '/skin',                              label: 'Skin & Collagen Guide',           desc: 'GHK-CU, SNAP-8, and BPC-157 for peptide-driven skin optimization.' },
   ],
 
   // ─── STACK PAGES ───────────────────────────────────────────────────────────
@@ -304,8 +269,8 @@ export const internalLinks: Record<string, InternalLink[]> = {
   'looks-maxxing-stack': [
     { href: '/products/ghk-cu',             label: 'GHK-CU Copper Peptide',    desc: 'The collagen and gene expression backbone of this protocol.' },
     { href: '/products/snap-8',             label: 'SNAP-8 Topical Peptide',   desc: 'Expression line reduction — the topical component of this stack.' },
-    { href: '/products/melanotan-ii-10mg',  label: 'Melanotan II 10mg',         desc: 'Deep eumelanin pigmentation — the tanning component.' },
-    { href: '/looks-maxxing',               label: 'Looks Maxxing Hub',         desc: 'All four pillars of peptide appearance optimization explained.' },
+    { href: '/stacks/skin-renewal-protocol', label: 'Skin Renewal Protocol',   desc: 'Add BPC-157 for dermal vascularity and luminosity alongside GHK-CU and SNAP-8.' },
+    { href: '/looks-maxxing',               label: 'Looks Maxxing Hub',         desc: 'The complete guide to peptide-based appearance optimization.' },
   ],
 
   'skin-renewal-protocol': [
@@ -326,14 +291,14 @@ export const internalLinks: Record<string, InternalLink[]> = {
 
   'growth-hormone-peptides': [
     { href: '/products/cjc1295-ipamorelin', label: 'CJC-1295 / Ipamorelin Blend', desc: 'The most popular pre-formulated GH secretagogue stack.' },
-    { href: '/products/sermorelin-5mg',     label: 'Sermorelin 5mg',              desc: 'Classic GHRH 1–29 analogue — the beginner-friendly GH peptide.' },
+    { href: '/products/igf-1lr3',           label: 'IGF-1 LR3',                   desc: 'Downstream IGF-1 axis activation for satellite cell-driven muscle hyperplasia.' },
     { href: '/performance',                 label: 'Performance Hub',             desc: 'All performance peptides for muscle, recovery, and GH optimisation.' },
     { href: '/muscle-building-peptides',    label: 'Muscle Building Peptides',    desc: 'How GH/IGF-1 axis peptides drive hypertrophy and lean mass.' },
   ],
 
   'what-are-peptides': [
     { href: '/guide',                       label: 'Beginner Guide',              desc: 'Step-by-step introduction to research peptides and protocols.' },
-    { href: '/products',                    label: 'All Peptides',                desc: 'Browse 40+ research-grade peptides available from Phiogen.' },
+    { href: '/products',                    label: 'All Peptides',                desc: 'Browse 40+ research-grade peptides available from Apollo.' },
     { href: '/peptide-injection-guide',     label: 'Injection Guide',             desc: 'Reconstitution, dose calculation, and subcutaneous injection technique.' },
     { href: '/healing',                     label: 'Healing Peptides',            desc: 'BPC-157, TB-500, and the science of accelerated tissue repair.' },
   ],
@@ -347,9 +312,9 @@ export const internalLinks: Record<string, InternalLink[]> = {
 
   'longevity-peptides': [
     { href: '/products/epithalon-50mg',     label: 'Epithalon 50mg',              desc: 'Telomerase activator — the cornerstone of longevity protocols.' },
-    { href: '/products/foxo4-dri',          label: 'FOXO4-DRI',                   desc: 'Senolytic peptide targeting zombie cell clearance.' },
+    { href: '/products/nad',               label: 'NAD+ 500mg',                   desc: 'Mitochondrial co-enzyme for cellular energy and DNA repair restoration.' },
     { href: '/anti-aging',                  label: 'Anti-Aging Hub',              desc: 'All anti-aging peptides and the hallmarks of aging they address.' },
-    { href: '/stacks',                      label: 'Protocol Stacks',             desc: 'Curated longevity stack protocols for annual cycling.' },
+    { href: '/stacks/longevity-anti-aging-stack', label: 'Longevity Anti-Aging Stack', desc: 'Epithalon + GHK-CU + NAD+ — the complete three-pathway longevity protocol.' },
   ],
 
   'muscle-building-peptides': [
@@ -370,7 +335,7 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { href: '/semaglutide-protocol',        label: 'Semaglutide Protocol',        desc: 'Complete titration schedule and dosing guide for semaglutide.' },
     { href: '/products/glp-2t-15mg',        label: 'Tirzepatide 15mg',            desc: 'Dual GIP/GLP-1 — the most effective GLP-1-class peptide for fat loss.' },
     { href: '/fat-loss',                    label: 'Fat Loss Hub',                desc: 'All fat loss peptides with goal-based protocol matching.' },
-    { href: '/products/glp-1s-5mg',         label: 'Semaglutide 5mg',             desc: 'Research-grade semaglutide from Phiogen.' },
+    { href: '/products/glp-1s-5mg',         label: 'GLP-1 S 5mg',                 desc: 'Research-grade semaglutide from Apollo.' },
   ],
 };
 

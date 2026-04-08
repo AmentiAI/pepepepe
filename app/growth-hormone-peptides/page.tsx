@@ -364,19 +364,15 @@ export default function GrowthHormonePeptidesPage() {
 
         {/* Products */}
         <section>
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6">GH Peptides Available from Phiogen</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">GH Peptides Available from Apollo</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { name: 'CJC-1295 / Ipamorelin Blend', slug: 'cjc1295-ipamorelin', desc: 'Pre-formulated stack — 2 mg CJC-1295 No DAC + 2 mg Ipamorelin per vial.' },
-              { name: 'Sermorelin 5mg', slug: 'sermorelin-5mg', desc: 'Classic GHRH analogue (1–29). Ideal for beginners and HRT replacement protocols.' },
-              { name: 'Ipamorelin 5mg', slug: 'ipamorelin-5mg', desc: 'The cleanest GHRP — selective GH release, no cortisol or appetite spikes.' },
-              { name: 'GHRP-2 5mg', slug: 'ghrp-2-5mg', desc: 'Maximum GH pulse amplitude. Best stacked with a GHRH analogue.' },
-              { name: 'Tesamorelin 2mg', slug: 'tesamorelin-2mg', desc: 'FDA-approved GHRH analogue. Clinically proven visceral fat reduction.' },
-              { name: 'CJC-1295 No DAC 5mg', slug: 'cjc1295-no-dac-5mg', desc: 'Pulsatile GHRH analogue. 30-minute half-life for perfect physiologic rhythm.' },
+              { name: 'IGF-1 LR3', slug: 'igf-1lr3', desc: 'Long R3 IGF-1. Satellite cell activation for muscle hyperplasia and permanent fiber growth.' },
             ].map(p => (
               <a
                 key={p.slug}
-                href={`https://phiogen.vercel.app/products/${p.slug}`}
+                href={`/go/${p.slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#111] border border-white/10 hover:border-brand-500/40 rounded-2xl p-5 transition-colors group"
@@ -384,7 +380,7 @@ export default function GrowthHormonePeptidesPage() {
                 <h3 className="font-semibold mb-2 group-hover:text-brand-400 transition-colors">{p.name}</h3>
                 <p className="text-gray-400 text-sm mb-3 leading-relaxed">{p.desc}</p>
                 <span className="text-brand-400 text-sm font-medium flex items-center gap-1">
-                  View at Phiogen <ChevronRight className="w-3.5 h-3.5" />
+                  Buy at Apollo <ChevronRight className="w-3.5 h-3.5" />
                 </span>
               </a>
             ))}
@@ -432,7 +428,7 @@ export default function GrowthHormonePeptidesPage() {
         <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-6 sm:p-10 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Build Your GH Protocol?</h2>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
-            All GH secretagogues above are available research-grade from Phiogen. Start with our most popular stack — CJC-1295 / Ipamorelin — or view individual compounds.
+            All GH secretagogues above are available research-grade from Apollo Peptide Sciences. Start with our most popular stack — CJC-1295 / Ipamorelin — or view individual compounds.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/products/cjc1295-ipamorelin" className="px-6 py-3 bg-brand-500 hover:bg-brand-400 text-black font-bold rounded-xl transition-colors">

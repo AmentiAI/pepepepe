@@ -12,7 +12,7 @@ const anabolicMechanisms = [
   {
     icon: Zap,
     name: 'GH / IGF-1 Axis',
-    peptides: 'CJC-1295, Ipamorelin, GHRP-2, Sermorelin',
+    peptides: 'CJC-1295/Ipamorelin, IGF-1 LR3',
     detail: 'GH secretagogues stimulate pulsatile GH release → liver IGF-1 production → muscle satellite cell activation, protein synthesis, myofibrillar hypertrophy, and anti-catabolic nitrogen retention.',
   },
   {
@@ -64,22 +64,13 @@ const peptideData = [
     link: '/products/tb500-10mg',
   },
   {
-    name: 'GHRP-2 5mg',
-    type: 'GHRP — Max GH Output',
-    anabolicMech: 'Largest acute GH pulses of any GHRP → amplified IGF-1 → nitrogen retention',
-    protocol: '100–200 mcg 2–3× daily, stacked with GHRH analogue',
-    trainingBenefit: 'Maximum GH pulse amplitude — best for aggressive recomp or muscle-building phase',
-    cycle: '12 weeks on, 4 off',
-    link: '/products/ghrp-2-5mg',
-  },
-  {
-    name: 'Sermorelin 5mg',
-    type: 'GHRH Analogue — Beginner Friendly',
-    anabolicMech: 'Native GHRH 1–29 fragment; pituitary somatotroph stimulation',
-    protocol: '200–300 mcg SC pre-bed (single injection protocol) or 2× daily',
-    trainingBenefit: 'Improved sleep, recovery, body recomp — best entry-level GH peptide',
-    cycle: '12–16 weeks; lower desensitisation risk than GHRPs',
-    link: '/products/sermorelin-5mg',
+    name: 'IGF-1 LR3',
+    type: 'IGF-1 Analogue — Satellite Cell Activator',
+    anabolicMech: 'Long-acting IGF-1 → direct satellite cell activation at trained muscle → hyperplasia (new fiber creation)',
+    protocol: '20–50 mcg IM into trained muscle immediately post-workout; cycle 4–6 weeks on, 4–6 weeks off',
+    trainingBenefit: 'Permanent muscle fiber creation (hyperplasia) rather than just enlargement — most potent anabolic peptide for long-term gains',
+    cycle: '4–6 week cycles within a 12–16 week CJC/Ipa run',
+    link: '/products/igf-1lr3',
   },
 ];
 

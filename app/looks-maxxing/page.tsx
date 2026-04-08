@@ -36,13 +36,13 @@ const pillars = [
   },
   {
     icon: Sun,
-    title: 'Tanning & Pigmentation',
-    href: '/tanning',
+    title: 'Anti-Aging & Longevity',
+    href: '/anti-aging',
     color: 'border-amber-500/30 bg-amber-500/5 text-amber-400',
     badge: 'bg-amber-500/10 border-amber-500/20',
-    peptides: 'Melanotan II · PT-141',
-    description: 'Drive deep eumelanin pigmentation through direct melanocortin receptor activation — without requiring UV exposure as the primary trigger.',
-    stats: 'Visible tanning in 4 injections (clinical)',
+    peptides: 'Epithalon · NAD+ · GHK-CU',
+    description: 'Reverse biological aging at the cellular level — telomere restoration, mitochondrial energy, and gene expression reset for lasting skin and systemic rejuvenation.',
+    stats: '15-year human study data (Epithalon)',
   },
   {
     icon: TrendingUp,
@@ -72,14 +72,6 @@ const topPeptides = [
     benefit: 'Expression line depth reduction up to 63%',
     evidence: 'Strong',
     color: 'text-violet-400',
-  },
-  {
-    name: 'Melanotan II',
-    slug: 'melanotan-ii-10mg',
-    mechanism: 'MC1R/MC3R/MC4R agonism → eumelanin synthesis',
-    benefit: 'Deep, even tanning without primary UV',
-    evidence: 'Clinical Phase I/II',
-    color: 'text-amber-400',
   },
   {
     name: 'TB-500',
