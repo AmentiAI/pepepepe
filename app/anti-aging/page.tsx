@@ -57,8 +57,8 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Epithalon, GHK-CU & NAD+ — Longevity Peptides Targeting the Hallmarks of Aging',
   description: 'Longevity peptides mapped to the molecular biology of aging. Epithalon activates telomerase. GHK-CU resets gene expression. NAD+ restores mitochondrial function.',
-  url: 'https://maxxingpeptides.com/anti-aging',
-  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptides.com' },
+  url: 'https://maxxingpeptide.com/anti-aging',
+  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptide.com' },
 };
 
 export default function AntiAgingPage() {

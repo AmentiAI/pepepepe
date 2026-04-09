@@ -57,8 +57,8 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Hair Growth Peptides — TB-500, BPC-157 & GHK-CU for Hair Restoration',
   description: 'Research-based guide to peptides for hair growth covering follicle stem cells, scalp vascularity, and gene expression mechanisms.',
-  url: 'https://maxxingpeptides.com/hair',
-  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptides.com' },
+  url: 'https://maxxingpeptide.com/hair',
+  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptide.com' },
 };
 
 export default function HairPage() {

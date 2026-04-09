@@ -29,21 +29,21 @@ export async function generateMetadata({
     title: { absolute: titleStr },
     description: product.shortDescription,
     alternates: {
-      canonical: `https://maxxingpeptides.com/products/${slug}`,
+      canonical: `https://maxxingpeptide.com/products/${slug}`,
     },
     openGraph: {
       title: titleStr,
       description: product.shortDescription,
-      url: `https://maxxingpeptides.com/products/${slug}`,
+      url: `https://maxxingpeptide.com/products/${slug}`,
       siteName: 'MaxxingPeptides',
       type: 'website',
-      images: [{ url: `https://maxxingpeptides.com${product.image}`, alt: product.name }],
+      images: [{ url: `https://maxxingpeptide.com${product.image}`, alt: product.name }],
     },
     twitter: {
       card: 'summary_large_image',
       title: titleStr,
       description: desc,
-      images: [`https://maxxingpeptides.com${product.image}`],
+      images: [`https://maxxingpeptide.com${product.image}`],
     },
   };
 }
@@ -422,9 +422,9 @@ export default async function ProductPage({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://maxxingpeptides.com' },
-      { '@type': 'ListItem', position: 2, name: 'All Peptides', item: 'https://maxxingpeptides.com/products' },
-      { '@type': 'ListItem', position: 3, name: product.name, item: `https://maxxingpeptides.com/products/${product.slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://maxxingpeptide.com' },
+      { '@type': 'ListItem', position: 2, name: 'All Peptides', item: 'https://maxxingpeptide.com/products' },
+      { '@type': 'ListItem', position: 3, name: product.name, item: `https://maxxingpeptide.com/products/${product.slug}` },
     ],
   };
 
@@ -443,12 +443,12 @@ export default async function ProductPage({
     '@type': 'Product',
     name: product.name,
     description: product.shortDescription,
-    image: `https://maxxingpeptides.com${product.image}`,
+    image: `https://maxxingpeptide.com${product.image}`,
     sku: product.slug,
     brand: { '@type': 'Brand', name: 'MaxxingPeptides' },
     offers: {
       '@type': 'Offer',
-      url: `https://maxxingpeptides.com/products/${product.slug}`,
+      url: `https://maxxingpeptide.com/products/${product.slug}`,
       priceCurrency: 'USD',
       price: String(product.price),
       availability: 'https://schema.org/InStock',

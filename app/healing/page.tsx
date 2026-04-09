@@ -51,8 +51,8 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'BPC-157, TB-500 & GHK-CU — Peptides for Injury Repair & Tissue Healing',
   description: 'The complete guide to healing peptides. BPC-157 repairs tendons, gut, and nerves. TB-500 mobilizes stem cells systemically. GHK-CU modulates 4,000+ genes for collagen remodeling.',
-  url: 'https://maxxingpeptides.com/healing',
-  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptides.com' },
+  url: 'https://maxxingpeptide.com/healing',
+  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptide.com' },
 };
 
 export default function HealingPage() {

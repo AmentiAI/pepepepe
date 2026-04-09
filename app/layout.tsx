@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     'peptide fat loss protocol',
     'research peptides 2026',
   ],
-  metadataBase: new URL('https://maxxingpeptides.com'),
+  metadataBase: new URL('https://maxxingpeptide.com'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://maxxingpeptides.com',
+    url: 'https://maxxingpeptide.com',
     siteName: 'MaxxingPeptides',
     title: 'MaxxingPeptides — Evidence-Based Peptide Protocols',
     description: 'Premium peptide protocols for healing, fat loss, performance, and anti-aging.',
@@ -50,8 +50,8 @@ const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'MaxxingPeptides',
-  url: 'https://maxxingpeptides.com',
-  logo: 'https://maxxingpeptides.com/og-image.png',
+  url: 'https://maxxingpeptide.com',
+  logo: 'https://maxxingpeptide.com/og-image.png',
   description: 'Premium peptide protocols for healing, fat loss, performance, and longevity.',
 };
 
@@ -59,7 +59,7 @@ const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'MaxxingPeptides',
-  url: 'https://maxxingpeptides.com',
+  url: 'https://maxxingpeptide.com',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

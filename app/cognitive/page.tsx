@@ -47,8 +47,8 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Cognitive & Nootropic Peptides — Semax, Selank & DSIP',
   description: 'Research-based guide to cognitive peptides covering BDNF, GABAergic anxiolysis, sleep architecture, and mitochondrial mechanisms.',
-  url: 'https://maxxingpeptides.com/cognitive',
-  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptides.com' },
+  url: 'https://maxxingpeptide.com/cognitive',
+  publisher: { '@type': 'Organization', name: 'MaxxingPeptides', url: 'https://maxxingpeptide.com' },
 };
 
 export default function CognitivePage() {
