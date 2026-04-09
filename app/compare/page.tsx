@@ -145,7 +145,7 @@ export default function ComparePage() {
             <TrendingDown className="w-4 h-4 text-brand-400" />
             <span className="text-sm font-semibold text-brand-300">Full clinical comparison</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-black text-white mb-5 leading-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white mb-5 leading-tight">
             Semaglutide vs Tirzepatide<br />
             vs <span className="gradient-text">Retatrutide</span>
           </h1>

@@ -73,7 +73,7 @@ export default function HairPage() {
             <Wind className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 font-bold text-sm">Hair Growth Peptides</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
             Restore Follicle Biology.<br />
             <span className="gradient-text">Regrow What Was Lost.</span>
           </h1>

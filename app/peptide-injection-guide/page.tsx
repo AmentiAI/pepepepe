@@ -231,7 +231,7 @@ export default function PeptideInjectionGuidePage() {
           </div>
           <div className="bg-[#111] border border-white/10 rounded-xl p-6">
             <h3 className="font-semibold mb-3 text-brand-400">8-Site Rotation Map (2 Injections/Day)</h3>
-            <div className="grid grid-cols-4 gap-2 text-center text-sm">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 text-center text-sm">
               {[
                 { site: 'Abd. Upper-R', day: 'Mon AM' },
                 { site: 'Abd. Upper-L', day: 'Mon PM' },

@@ -74,7 +74,7 @@ export default function AntiAgingPage() {
           <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/20 rounded-full px-4 py-2 mb-6">
             <span className="text-purple-400 font-bold text-sm">Longevity & Anti-Aging Peptides</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
             Target the Molecular<br />
             <span className="gradient-text">Roots of Aging.</span>
           </h1>
@@ -120,7 +120,7 @@ export default function AntiAgingPage() {
           <p className="text-gray-400 text-base mb-6">Anti-aging peptides are run in structured courses, not continuous daily use — matching the clinical protocols that produced proven results.</p>
           <div className="space-y-3">
             {courseSchedule.map(row => (
-              <div key={row.peptide} className="grid sm:grid-cols-4 gap-3 p-4 bg-white/5 rounded-xl items-start">
+              <div key={row.peptide} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 p-4 bg-white/5 rounded-xl items-start">
                 <div>
                   <p className="text-purple-300 font-bold">{row.peptide}</p>
                   <p className="text-xs text-gray-600 mt-0.5">{row.dose}</p>

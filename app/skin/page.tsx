@@ -84,7 +84,7 @@ export default function SkinPage() {
             <Droplets className="w-4 h-4 text-violet-400" />
             <span className="text-violet-400 font-bold text-sm">Skin & Collagen Peptides</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
             Rebuild Collagen.<br />
             <span className="gradient-text">Reverse Skin Aging.</span>
           </h1>

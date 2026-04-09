@@ -130,7 +130,7 @@ export default function PeptidesForWeightLossPage() {
             <TrendingDown className="w-4 h-4 text-blue-400" />
             <span className="text-blue-400 font-bold text-sm">Peptides for Weight Loss</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
             The Science of<br />
             <span className="gradient-text">Peptide-Driven Fat Loss.</span>
           </h1>

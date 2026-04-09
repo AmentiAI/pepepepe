@@ -49,7 +49,7 @@ export default function HomePage() {
               </AnimateIn>
 
               <AnimateIn delay={0.1}>
-                <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight mb-6">
+                <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight mb-6">
                   Peptide
                   <br />
                   <span className="gradient-text">protocols</span>

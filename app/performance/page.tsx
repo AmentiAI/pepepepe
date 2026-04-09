@@ -85,7 +85,7 @@ export default function PerformancePage() {
           <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-4 py-2 mb-6">
             <span className="text-amber-400 font-bold text-sm">GH Secretagogue Peptides</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
             Stimulate Your Own<br />
             <span className="gradient-text">Growth Hormone Axis.</span>
           </h1>

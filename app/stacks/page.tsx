@@ -33,7 +33,7 @@ export default function StacksPage() {
             <Layers className="w-4 h-4 text-brand-400" />
             <span className="text-sm font-semibold text-brand-300">6 complete protocols</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-black text-white mb-5 leading-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white mb-5 leading-tight">
             Peptide Protocol <span className="gradient-text">Stacks</span>
           </h1>
           <p className="text-gray-400 text-xl max-w-3xl leading-relaxed">
