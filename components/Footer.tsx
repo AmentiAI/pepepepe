@@ -115,7 +115,7 @@ export function Footer() {
               © {new Date().getFullYear()} MaxxingPeptides. All rights reserved.
             </p>
             <p className="text-sm text-gray-500">
-              Research-grade peptides sourced from <a href="/go/shop" target="_blank" rel="noopener noreferrer" className="hover:text-brand-400 transition-colors">Apollo Peptide Sciences</a>.
+              Research-grade peptides sourced from <a href="/go/shop" target="_blank" rel="noopener noreferrer" className="hover:text-brand-400 transition-colors">Phiogen</a>.
             </p>
           </div>
         </div>

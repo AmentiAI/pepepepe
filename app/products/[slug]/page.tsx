@@ -772,18 +772,18 @@ export default async function ProductPage({
                 rel="noopener noreferrer nofollow"
                 className="w-full flex items-center justify-center gap-2 py-3 border border-brand-500/40 hover:border-brand-500 text-brand-400 hover:text-brand-300 font-semibold rounded-xl text-sm transition-colors mb-4"
               >
-                Buy at Apollo
+                Buy at Phiogen
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
               <p className="text-xs text-gray-500 text-center mb-5">
-                Research-grade · COA verified · Apollo Peptide Sciences
+                Research-grade · COA verified · Phiogen
               </p>
               <div className="border-t border-white/5 pt-5 space-y-3">
                 {[
                   ['Category', product.category.replace('-', ' ')],
                   ['Type', product.productType],
                   ['Quality Rating', `${'★'.repeat(product.researchRating)}${'☆'.repeat(5 - product.researchRating)}`],
-                  ['Vendor', 'Apollo'],
+                  ['Vendor', 'Phiogen'],
                 ].map(([label, value]) => (
                   <div key={label} className="flex justify-between text-sm">
                     <span className="text-gray-500">{label}</span>

@@ -83,7 +83,7 @@ export default function GuidePage() {
                 Unlike traditional supplements, which provide raw material your body might be deficient in, peptides are precise molecular instructions. BPC-157 doesn&apos;t supplement a nutrient — it directly signals fibroblast proliferation, angiogenesis, and growth hormone receptor upregulation at the cellular level.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                MaxxingPeptides covers four goal categories: healing and recovery, fat loss, performance, and anti-aging. Every compound is sourced through Apollo Peptide Sciences and selected for mechanism clarity, documented human use, and protocol specificity.
+                MaxxingPeptides covers four goal categories: healing and recovery, fat loss, performance, and anti-aging. Every compound is sourced through Phiogen and selected for mechanism clarity, documented human use, and protocol specificity.
               </p>
             </div>
           </section>

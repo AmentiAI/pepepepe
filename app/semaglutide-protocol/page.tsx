@@ -315,7 +315,7 @@ export default function SemaglutideProtocolPage() {
 
         {/* Products */}
         <section>
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6">GLP-1 Peptides from Apollo</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">GLP-1 Peptides from Phiogen</h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {[
               { name: 'GLP-1 S 5mg', slug: 'glp-1s-5mg', desc: 'Research-grade semaglutide. STEP trial compound. Third-party tested ≥98% purity.' },
@@ -332,7 +332,7 @@ export default function SemaglutideProtocolPage() {
                 <h3 className="font-semibold mb-2 group-hover:text-brand-400 transition-colors">{p.name}</h3>
                 <p className="text-gray-400 text-sm mb-3 leading-relaxed">{p.desc}</p>
                 <span className="text-brand-400 text-sm font-medium flex items-center gap-1">
-                  Buy at Apollo <ChevronRight className="w-3.5 h-3.5" />
+                  Buy at Phiogen <ChevronRight className="w-3.5 h-3.5" />
                 </span>
               </a>
             ))}

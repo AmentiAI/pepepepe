@@ -319,7 +319,7 @@ export default function WhatArePeptidesPage() {
               },
               {
                 q: 'How do I know if my peptides are high quality?',
-                a: 'Look for vendors who provide third-party certificates of analysis (CoA) from accredited analytical labs showing HPLC purity ≥98% and mass spectrometry confirmation of the correct molecular weight. Reputable vendors like Apollo Peptide Sciences provide this documentation. Avoid vendors who cannot provide CoA on request or who have suspiciously low prices that may indicate compromised quality control.',
+                a: 'Look for vendors who provide third-party certificates of analysis (CoA) from accredited analytical labs showing HPLC purity ≥98% and mass spectrometry confirmation of the correct molecular weight. Reputable vendors like Phiogen provide this documentation. Avoid vendors who cannot provide CoA on request or who have suspiciously low prices that may indicate compromised quality control.',
               },
               {
                 q: 'What peptide should a complete beginner start with?',
@@ -338,7 +338,7 @@ export default function WhatArePeptidesPage() {
         <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-6 sm:p-10 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Explore Research Peptides?</h2>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
-            Browse all 40+ research-grade peptides available from Apollo, or read our beginner guide to understand protocols, dosing, and reconstitution step-by-step.
+            Browse all 40+ research-grade peptides available from Phiogen, or read our beginner guide to understand protocols, dosing, and reconstitution step-by-step.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/guide" className="px-6 py-3 bg-brand-500 hover:bg-brand-400 text-black font-bold rounded-xl transition-colors">
