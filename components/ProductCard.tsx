@@ -32,7 +32,10 @@ export function ProductCard({ product, large = false }: ProductCardProps) {
   const priceSize = large ? 'text-4xl sm:text-5xl' : 'text-3xl sm:text-4xl';
 
   return (
-    <div className="group relative bg-[#111] border border-white/5 hover:border-white/10 rounded-2xl overflow-hidden card-hover flex flex-col">
+    <Link
+      href={`/products/${product.slug}`}
+      className="group relative bg-[#111] border border-white/5 hover:border-white/10 rounded-2xl overflow-hidden card-hover flex flex-col"
+    >
       {/* Product Image */}
       <div className={`relative ${imgH} bg-gradient-to-br ${glow} overflow-hidden shrink-0 flex items-center justify-center`}>
         <img
@@ -93,25 +96,23 @@ export function ProductCard({ product, large = false }: ProductCardProps) {
             <span className={`${priceSize} font-black text-brand-400`}>${product.price}</span>
             <span className="text-xs text-gray-500 font-medium">Phiogen</span>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2" onClick={(e) => e.preventDefault()}>
             <a
-              href={product.affiliateUrl}
+              href={`/go/${product.slug}`}
               target="_blank"
               rel="noopener noreferrer nofollow"
+              onClick={(e) => e.stopPropagation()}
               className="w-full flex items-center justify-center gap-1.5 py-3 text-sm font-black bg-brand-500 hover:bg-brand-400 text-black rounded-xl transition-colors"
             >
               Buy Now on Phiogen
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
-            <Link
-              href={`/products/${product.slug}`}
-              className="w-full text-center py-2.5 text-sm font-semibold text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-colors"
-            >
+            <span className="w-full text-center py-2.5 text-sm font-semibold text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-colors">
               Protocol Guide
-            </Link>
+            </span>
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

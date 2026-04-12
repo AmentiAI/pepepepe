@@ -33,6 +33,7 @@ export async function GET(
   { params }: { params: Promise<{ slug: string }> },
 ) {
   const { slug } = await params;
-  const path = PRODUCT_MAP[slug] ?? '/products';
+  // Known legacy slug mappings; new products use their slug directly as the Phiogen path
+  const path = PRODUCT_MAP[slug] ?? `/products/${slug}`;
   return NextResponse.redirect(`${BASE}${path}${REF}`, { status: 302 });
 }
