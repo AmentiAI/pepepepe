@@ -1,34 +1,10 @@
-// Maps Phiogen image filenames → local /public/images/ webp files (for core products with local assets)
-const IMGS: Record<string, string> = {
-  'bpc-157-10mg.png': 'bpc157.webp',
-  'tb-500-thymosin-beta-4-10mg.png': 'tb500.webp',
-  'semaglutide-3mg.png': 'glp1s_5mg.webp',
-  'semaglutide-6mg.png': 'glp1s_10mg.webp',
-  'semaglutide-12mg.png': 'glp1s_15mg.webp',
-  'tirzepatide-15mg.png': 'tirzepatide_15mg.webp',
-  'tirzepatide-30mg.png': 'glp2t_30mg.webp',
-  'tirzepatide-60mg.png': 'glp2t_60mg.webp',
-  'retatrutide-10mg.png': 'glp3r_10mg.webp',
-  'retatrutide-15mg.png': 'glp3r_15mg.webp',
-  'retatrutide-30mg.png': 'glp3r_30mg.webp',
-  'cagri-sema-blend-5mg-cagrilintide-5mg-sema-10mg.png': 'glp1c_glp1s_bundle.webp',
-  'ipamorelin-cjc-1295-blend-cjc-1295-5mg-ipa-5mg.png': 'cjc1295_ipamorelin.webp',
-  'igf-1-lr3-1mg.png': 'igf1lr3.webp',
-  'ghk-cu-50mg.png': 'ghkcu.webp',
-  'epitalon-50mg.png': 'epithalon.webp',
-  'nad-500mg.png': 'nad.webp',
-  'snap-8-10mg.png': 'snap8.webp',
-  'bacteriostatic-water-30ml.png': 'bacteriostaticwater.webp',
-};
-
 // Returns direct Phiogen product URL with affiliate ref
 function phiogen(slug: string): string {
   return `https://phiogen.is/products/${slug}?ref=PEPS`;
 }
 
-// Returns local webp if available, otherwise Phiogen CDN image
+// Returns Phiogen CDN image
 function img(file: string): string {
-  if (IMGS[file]) return `/images/${IMGS[file]}`;
   return `https://phiogen.is/images/products/${file}`;
 }
 
@@ -4102,7 +4078,7 @@ Clinical applications for Semax include stroke recovery (approved in Russia for 
     category: 'fat-loss',
     productType: 'injectable',
     tags: ['fat-loss', 'triple-agonist', 'bulk-supply', 'advanced', 'maximum-dose'],
-    image: '/images/glp3r_60mg.webp',
+    image: img('retatrutide-60mg.png'),
     affiliateUrl: phiogen('retatrutide-60mg'),
     shortDescription: 'The 60mg retatrutide vial supports 15 weeks at 4mg/week or 7.5 weeks at 8mg/week — designed for committed long-term triple-agonist protocols at maximum therapeutic doses.',
     fullDescription: `Fifteen weeks at 4mg/week. Seven and a half weeks at 8mg/week. Five weeks at the Phase 2 maximum dose of 12mg/week. The 60mg retatrutide vial is the full commitment — a single purchase that covers an entire 4-month protocol at lower maintenance doses, or nearly two months at high-efficacy therapeutic dosing. This is what running retatrutide properly looks like.
