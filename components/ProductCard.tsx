@@ -91,24 +91,24 @@ export function ProductCard({ product, large = false }: ProductCardProps) {
         <div className="mt-auto">
           <div className="flex items-center justify-between mb-3">
             <span className={`${priceSize} font-black text-brand-400`}>${product.price}</span>
-            <span className="text-xs text-gray-500 font-medium">Apollo</span>
+            <span className="text-xs text-gray-500 font-medium">Phiogen</span>
           </div>
-          <div className="flex items-center gap-2">
-            <Link
-              href={`/products/${product.slug}`}
-              className="flex-1 text-center py-3 text-sm font-semibold text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-colors"
-            >
-              Protocol Guide
-            </Link>
+          <div className="flex flex-col gap-2">
             <a
               href={product.affiliateUrl}
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className="flex-1 flex items-center justify-center gap-1.5 py-3 text-sm font-black bg-brand-500 hover:bg-brand-400 text-black rounded-xl transition-colors"
+              className="w-full flex items-center justify-center gap-1.5 py-3 text-sm font-black bg-brand-500 hover:bg-brand-400 text-black rounded-xl transition-colors"
             >
-              Buy Now
+              Buy Now on Phiogen
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
+            <Link
+              href={`/products/${product.slug}`}
+              className="w-full text-center py-2.5 text-sm font-semibold text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-colors"
+            >
+              Protocol Guide
+            </Link>
           </div>
         </div>
       </div>
