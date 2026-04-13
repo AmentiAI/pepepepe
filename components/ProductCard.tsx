@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { ExternalLink, Star, TrendingUp } from 'lucide-react';
 import type { Product } from '@/lib/products';
+import { salePrice } from '@/lib/products';
 
 interface ProductCardProps {
   product: Product;
@@ -95,8 +96,11 @@ export function ProductCard({ product, large = false }: ProductCardProps) {
         {/* Price + Actions */}
         <div className="mt-auto">
           <div className="flex items-center justify-between mb-3">
-            <span className={`${priceSize} font-black text-brand-400`}>${product.price}</span>
-            <span className="text-xs text-gray-500 font-medium">COA-Verified</span>
+            <div>
+              <span className={`${priceSize} font-black text-brand-400`}>${salePrice(product.price)}</span>
+              <span className="text-xs line-through text-gray-600 ml-2">${product.price}</span>
+            </div>
+            <span className="text-xs text-green-400 font-semibold bg-green-500/10 border border-green-500/20 rounded-full px-2 py-0.5">-10%</span>
           </div>
           <div className="flex flex-col gap-2" onClick={(e) => e.preventDefault()}>
             <a

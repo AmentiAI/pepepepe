@@ -1,3 +1,15 @@
+export const SALE_DISCOUNT = 0.10;
+
+/** Returns the sale price after applying the 10% discount, rounded to 2 decimal places. */
+export function salePrice(price: number): number {
+  return parseFloat((price * (1 - SALE_DISCOUNT)).toFixed(2));
+}
+
+/** Returns the sale cost for a stack after applying the 10% discount. */
+export function saleCost(cost: number): number {
+  return parseFloat((cost * (1 - SALE_DISCOUNT)).toFixed(2));
+}
+
 // Returns direct Phiogen product URL with affiliate ref
 function phiogen(slug: string): string {
   return `https://phiogen.is/products/${slug}?ref=PEPS`;

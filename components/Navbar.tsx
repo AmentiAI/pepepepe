@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { Menu, X, FlaskConical, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { SearchModal, SearchTrigger } from '@/components/SearchModal';
 
 const navLinks = [
@@ -81,13 +81,12 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group shrink-0">
-            <div className="w-8 h-8 rounded-lg bg-brand-500/20 border border-brand-500/30 flex items-center justify-center group-hover:bg-brand-500/30 transition-colors">
-              <FlaskConical className="w-4 h-4 text-brand-400" />
-            </div>
-            <span className="font-bold text-white text-lg tracking-tight">
-              Maxxing<span className="text-brand-400">Peptides</span>
-            </span>
+          <Link href="/" className="shrink-0 group" aria-label="MaxxingPeptides">
+            <img
+              src="/maxxingpeptidesfavicon/88abbb4e-2ba2-4d17-a466-0bdd40231540.png"
+              alt="MaxxingPeptides"
+              className="h-10 w-auto group-hover:opacity-90 transition-opacity"
+            />
           </Link>
 
           {/* Desktop nav */}

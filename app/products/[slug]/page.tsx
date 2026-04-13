@@ -5,7 +5,7 @@ import {
   ArrowLeft, ExternalLink, Star, CheckCircle2, Clock, Zap,
   FlaskConical, Syringe, TrendingDown, Activity, Leaf, Package,
 } from 'lucide-react';
-import { allProducts, getProductBySlug } from '@/lib/products';
+import { allProducts, getProductBySlug, salePrice } from '@/lib/products';
 import { AnimateIn } from '@/components/AnimateIn';
 import { RelatedLinks } from '@/components/RelatedLinks';
 import { productFaqs } from '@/lib/productFaqs';
@@ -450,7 +450,7 @@ export default async function ProductPage({
       '@type': 'Offer',
       url: `https://maxxingpeptide.com/products/${product.slug}`,
       priceCurrency: 'USD',
-      price: String(product.price),
+      price: String(salePrice(product.price)),
       availability: 'https://schema.org/InStock',
       seller: { '@type': 'Organization', name: 'MaxxingPeptides' },
     },
@@ -756,14 +756,18 @@ export default async function ProductPage({
               <div className="flex items-center justify-between mb-2">
                 <h3 className="font-bold text-white text-lg">Buy {product.name}</h3>
               </div>
-              <p className="text-2xl sm:text-3xl font-black text-brand-400 mb-5">${product.price}</p>
+              <div className="flex items-baseline gap-3 mb-5">
+                <p className="text-2xl sm:text-3xl font-black text-brand-400">${salePrice(product.price)}</p>
+                <p className="text-base line-through text-gray-500">${product.price}</p>
+                <span className="text-xs font-semibold text-green-400 bg-green-500/10 border border-green-500/20 rounded-full px-2 py-0.5">-10%</span>
+              </div>
               <a
                 href={product.affiliateUrl}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="w-full flex items-center justify-center gap-2 py-4 bg-brand-500 hover:bg-brand-400 text-black font-black rounded-xl text-base transition-colors mb-2"
               >
-                Buy Now — ${product.price}
+                Buy Now — ${salePrice(product.price)}
                 <ExternalLink className="w-4 h-4" />
               </a>
               <a
@@ -848,7 +852,10 @@ export default async function ProductPage({
       <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-black/95 backdrop-blur-xl border-t border-white/10 p-4 flex items-center gap-3">
         <div className="flex-1">
           <p className="text-white font-bold text-sm truncate">{product.name}</p>
-          <p className="text-brand-400 font-black text-lg">${product.price}</p>
+          <div className="flex items-center gap-2">
+            <p className="text-brand-400 font-black text-lg">${salePrice(product.price)}</p>
+            <p className="text-xs line-through text-gray-500">${product.price}</p>
+          </div>
         </div>
         <a
           href={product.affiliateUrl}

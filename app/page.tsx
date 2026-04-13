@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { ArrowRight, FlaskConical, Zap, Shield, TrendingUp } from 'lucide-react';
 import { AnimateIn } from '@/components/AnimateIn';
 import { ProductCard } from '@/components/ProductCard';
-import { allProducts } from '@/lib/products';
+import { allProducts, salePrice, saleCost } from '@/lib/products';
 import { allStacks } from '@/lib/stacks';
 
 const marqueeItems = [
@@ -104,7 +104,7 @@ export default function HomePage() {
                       {p.name}
                     </p>
                     <div className="flex items-center justify-between mt-1">
-                      <p className="text-sm text-brand-400 font-black">${p.price}</p>
+                      <p className="text-sm text-brand-400 font-black">${salePrice(p.price)}</p>
                       <span className="text-xs text-gray-500 group-hover:text-brand-400 transition-colors">Buy →</span>
                     </div>
                   </Link>
@@ -201,7 +201,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="text-center md:text-right">
-                <p className="text-4xl sm:text-5xl font-black text-brand-400">${featuredStack.cost.toFixed(0)}</p>
+                <p className="text-4xl sm:text-5xl font-black text-brand-400">${saleCost(featuredStack.cost).toFixed(0)}</p>
                 <p className="text-gray-500 text-sm mt-1">Stack total / protocol</p>
                 <p className="text-xs text-gray-600 mt-1">{featuredStack.difficulty} level</p>
               </div>

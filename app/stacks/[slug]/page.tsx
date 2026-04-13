@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, ExternalLink, Clock, CheckCircle2 } from 'lucide-react';
 import { allStacks, getStackBySlug } from '@/lib/stacks';
-import { allProducts } from '@/lib/products';
+import { allProducts, salePrice, saleCost } from '@/lib/products';
 import { AnimateIn } from '@/components/AnimateIn';
 import { RelatedLinks } from '@/components/RelatedLinks';
 
@@ -131,7 +131,7 @@ export default async function StackPage({
                     <p className="text-xs text-gray-400 group-hover:text-white transition-colors text-center leading-tight line-clamp-2">
                       {p.name}
                     </p>
-                    <span className="text-xs font-bold text-brand-400">${p.price}</span>
+                    <span className="text-xs font-bold text-brand-400">${salePrice(p.price)}</span>
                   </Link>
                 ))}
               </div>
@@ -180,7 +180,10 @@ export default async function StackPage({
                       <div className="flex-1 min-w-0">
                         <div className="flex items-start justify-between gap-2 mb-1">
                           <h3 className="font-bold text-white">{p.name}</h3>
-                          <span className="text-lg font-black text-brand-400 shrink-0">${p.price}</span>
+                          <div className="flex items-baseline gap-1.5 shrink-0">
+                            <span className="text-lg font-black text-brand-400">${salePrice(p.price)}</span>
+                            <span className="text-xs line-through text-gray-600">${p.price}</span>
+                          </div>
                         </div>
                         <p className="text-sm text-gray-500 mb-3 line-clamp-2">{p.shortDescription}</p>
                         <div className="flex gap-2">
@@ -220,7 +223,7 @@ export default async function StackPage({
                   ['Goal', stack.goal.replace('-', ' ')],
                   ['Timeframe', stack.timeframe],
                   ['Peptides', `${stackProducts.length} compounds`],
-                  ['Monthly cost', `$${stack.cost.toFixed(2)}`],
+                  ['Monthly cost', `$${saleCost(stack.cost).toFixed(2)}`],
                 ].map(([k, v]) => (
                   <div key={k} className="flex justify-between text-sm">
                     <span className="text-gray-500">{k}</span>

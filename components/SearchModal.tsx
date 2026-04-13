@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { Search, X, ExternalLink, ArrowRight, Command } from 'lucide-react';
-import { allProducts } from '@/lib/products';
+import { allProducts, salePrice } from '@/lib/products';
 import type { Product } from '@/lib/products';
 
 const categoryColor: Record<string, string> = {
@@ -204,7 +204,7 @@ export function SearchModal({ open, onClose }: Props) {
 
                     {/* Price + action */}
                     <div className="flex items-center gap-3 shrink-0">
-                      <span className="text-brand-400 font-black text-base">${product.price}</span>
+                      <span className="text-brand-400 font-black text-base">${salePrice(product.price)}</span>
                       <div className="flex items-center gap-1.5">
                         <a
                           href={`/go/${product.slug}`}

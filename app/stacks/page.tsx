@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, Clock, Layers } from 'lucide-react';
 import { AnimateIn } from '@/components/AnimateIn';
 import { allStacks } from '@/lib/stacks';
-import { allProducts } from '@/lib/products';
+import { allProducts, salePrice, saleCost } from '@/lib/products';
 
 export const metadata: Metadata = {
   title: 'Peptide Protocol Stacks — Complete Multi-Compound Guides | MaxxingPeptides',
@@ -75,8 +75,8 @@ export default function StacksPage() {
                     </div>
                   )}
                   <div className="ml-auto text-right flex-shrink-0">
-                    <p className="text-2xl sm:text-3xl font-black text-brand-400">${stack.cost.toFixed(0)}</p>
-                    <p className="text-xs text-gray-600">/ protocol</p>
+                    <p className="text-2xl sm:text-3xl font-black text-brand-400">${saleCost(stack.cost).toFixed(0)}</p>
+                    <p className="text-xs text-gray-400 line-through">${stack.cost.toFixed(0)}</p>
                   </div>
                 </div>
 
@@ -109,7 +109,7 @@ export default function StacksPage() {
                     {stackProducts.map(p => (
                       <div key={p.slug} className="flex items-center justify-between px-4 py-2.5 bg-white/3 rounded-xl">
                         <span className="text-base font-medium text-gray-200">{p.name}</span>
-                        <span className="text-sm text-gray-500 capitalize">${p.price}</span>
+                        <span className="text-sm text-brand-400 font-semibold">${salePrice(p.price)}</span>
                       </div>
                     ))}
                   </div>

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { AnimateIn } from '@/components/AnimateIn';
 import { ProductCard } from '@/components/ProductCard';
-import { allProducts } from '@/lib/products';
+import { allProducts, saleCost } from '@/lib/products';
 import { allStacks } from '@/lib/stacks';
 import { RelatedLinks } from '@/components/RelatedLinks';
 import { CheckCircle2, Sparkles, Droplets, Wind, Sun, TrendingUp, FlaskConical } from 'lucide-react';
@@ -264,7 +264,7 @@ export default function LooksMaxxingPage() {
                       <h3 className="text-lg font-bold text-white mb-2">{stack.name}</h3>
                       <p className="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">{stack.tagline}</p>
                       <div className="flex items-center justify-between mt-auto">
-                        <span className="text-brand-400 font-bold">${stack.cost.toFixed(2)}</span>
+                        <span className="text-brand-400 font-bold">${saleCost(stack.cost).toFixed(2)}</span>
                         <span className="text-gray-500 text-xs">{stack.timeframe}</span>
                       </div>
                     </div>
