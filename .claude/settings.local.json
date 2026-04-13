@@ -34,7 +34,13 @@
       "Bash(echo \"TSC_EXIT:$?\")",
       "Bash(ls /mnt/c/Users/Wilso/pepepepe/app/*.tsx /mnt/c/Users/Wilso/pepepepe/app/**/*.tsx)",
       "Bash(ls /mnt/c/Users/Wilso/pepepepe/public/maxxingpeptidesfavicon*)",
-      "WebFetch(domain:phiogen.is)"
+      "WebFetch(domain:phiogen.is)",
+      "Bash(sed -i '150s/price: 79.99,/price: 49.99,/' lib/products.ts)",
+      "Bash(sed -i '198s/price: 99.99,/price: 79.99,/' lib/products.ts)",
+      "Bash(sed -i '240s/price: 159.99,/price: 129.99,/' lib/products.ts)",
+      "Bash(sed -i '324s/price: 279.99,/price: 249.99,/' lib/products.ts)",
+      "Bash(sed -i '366s/price: 489.99,/price: 399.99,/' lib/products.ts)",
+      "Bash(awk -F: 'NR>=2 && NR<=12')"
     ]
   }
 }
