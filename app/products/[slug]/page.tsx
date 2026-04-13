@@ -848,8 +848,8 @@ export default async function ProductPage({
 
       <RelatedLinks pageKey={product.slug} />
 
-      {/* Mobile sticky buy bar */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-black/95 backdrop-blur-xl border-t border-white/10 p-4 flex items-center gap-3">
+      {/* Sticky buy bar */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-black/95 backdrop-blur-xl border-t border-white/10 p-4 flex items-center gap-3">
         <div className="flex-1">
           <p className="text-white font-bold text-sm truncate">{product.name}</p>
           <div className="flex items-center gap-2">
@@ -867,8 +867,8 @@ export default async function ProductPage({
           <ExternalLink className="w-4 h-4" />
         </a>
       </div>
-      {/* Spacer for mobile sticky bar */}
-      <div className="lg:hidden h-24" />
+      {/* Spacer for sticky bar */}
+      <div className="h-24" />
     </div>
   );
 }
