@@ -28,7 +28,7 @@ export function ProductsClient() {
             All <span className="gradient-text">Peptides</span>
           </h1>
           <p className="text-gray-400 text-xl max-w-2xl">
-            20 premium peptides — every mechanism explained, every protocol sourced, every synergy mapped.
+            139 premium peptides — every mechanism explained, every protocol sourced, every synergy mapped.
           </p>
         </div>
       </AnimateIn>
