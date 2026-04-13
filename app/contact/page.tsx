@@ -58,7 +58,7 @@ export default function ContactPage() {
               <label className="block text-sm font-medium text-gray-300 mb-3">
                 What&apos;s your inquiry about?
               </label>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {inquiryTypes.map(t => (
                   <button
                     key={t.id}

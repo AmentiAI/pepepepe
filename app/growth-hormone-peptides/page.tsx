@@ -364,7 +364,7 @@ export default function GrowthHormonePeptidesPage() {
 
         {/* Products */}
         <section>
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6">GH Peptides Available from Phiogen</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">GH Peptides</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { name: 'CJC-1295 / Ipamorelin Blend', slug: 'cjc1295-ipamorelin', desc: 'Pre-formulated stack — 2 mg CJC-1295 No DAC + 2 mg Ipamorelin per vial.' },
@@ -380,7 +380,7 @@ export default function GrowthHormonePeptidesPage() {
                 <h3 className="font-semibold mb-2 group-hover:text-brand-400 transition-colors">{p.name}</h3>
                 <p className="text-gray-400 text-sm mb-3 leading-relaxed">{p.desc}</p>
                 <span className="text-brand-400 text-sm font-medium flex items-center gap-1">
-                  Buy at Phiogen <ChevronRight className="w-3.5 h-3.5" />
+                  Buy Now <ChevronRight className="w-3.5 h-3.5" />
                 </span>
               </a>
             ))}
@@ -428,7 +428,7 @@ export default function GrowthHormonePeptidesPage() {
         <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-6 sm:p-10 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Build Your GH Protocol?</h2>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
-            All GH secretagogues above are available research-grade from Phiogen. Start with our most popular stack — CJC-1295 / Ipamorelin — or view individual compounds.
+            All GH secretagogues above are available research-grade. Start with our most popular stack — CJC-1295 / Ipamorelin — or view individual compounds.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/products/cjc1295-ipamorelin" className="px-6 py-3 bg-brand-500 hover:bg-brand-400 text-black font-bold rounded-xl transition-colors">

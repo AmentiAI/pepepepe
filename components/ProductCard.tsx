@@ -96,7 +96,7 @@ export function ProductCard({ product, large = false }: ProductCardProps) {
         <div className="mt-auto">
           <div className="flex items-center justify-between mb-3">
             <span className={`${priceSize} font-black text-brand-400`}>${product.price}</span>
-            <span className="text-xs text-gray-500 font-medium">Phiogen</span>
+            <span className="text-xs text-gray-500 font-medium">COA-Verified</span>
           </div>
           <div className="flex flex-col gap-2" onClick={(e) => e.preventDefault()}>
             <a
@@ -106,7 +106,7 @@ export function ProductCard({ product, large = false }: ProductCardProps) {
               onClick={(e) => e.stopPropagation()}
               className="w-full flex items-center justify-center gap-1.5 py-3 text-sm font-black bg-brand-500 hover:bg-brand-400 text-black rounded-xl transition-colors"
             >
-              Buy Now on Phiogen
+              Buy Now
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
             <span className="w-full text-center py-2.5 text-sm font-semibold text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-colors">

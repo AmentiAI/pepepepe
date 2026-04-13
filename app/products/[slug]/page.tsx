@@ -772,18 +772,18 @@ export default async function ProductPage({
                 rel="noopener noreferrer nofollow"
                 className="w-full flex items-center justify-center gap-2 py-3 border border-brand-500/40 hover:border-brand-500 text-brand-400 hover:text-brand-300 font-semibold rounded-xl text-sm transition-colors mb-4"
               >
-                Buy at Phiogen
+                Buy Now
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
               <p className="text-xs text-gray-500 text-center mb-5">
-                Research-grade · COA verified · Phiogen
+                Research-grade · COA verified
               </p>
               <div className="border-t border-white/5 pt-5 space-y-3">
                 {[
                   ['Category', product.category.replace('-', ' ')],
                   ['Type', product.productType],
                   ['Quality Rating', `${'★'.repeat(product.researchRating)}${'☆'.repeat(5 - product.researchRating)}`],
-                  ['Vendor', 'Phiogen'],
+                  ['Quality', 'COA-Verified'],
                 ].map(([label, value]) => (
                   <div key={label} className="flex justify-between text-sm">
                     <span className="text-gray-500">{label}</span>

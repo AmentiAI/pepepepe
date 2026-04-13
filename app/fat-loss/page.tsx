@@ -7,7 +7,7 @@ import { RelatedLinks } from '@/components/RelatedLinks';
 export const metadata: Metadata = {
   title: 'Semaglutide, Tirzepatide & Retatrutide — GLP-1 Peptides for Fat Loss',
   description:
-    'The complete GLP-1 class comparison: semaglutide vs tirzepatide vs retatrutide vs cagrisema. Clinical weight loss data, titration protocols, and dosing guides. Available from Phiogen.',
+    'The complete GLP-1 class comparison: semaglutide vs tirzepatide vs retatrutide vs cagrisema. Clinical weight loss data, titration protocols, and dosing guides.',
 };
 
 const compounds = [

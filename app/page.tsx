@@ -15,7 +15,7 @@ const stats = [
   { value: '20', label: 'Premium peptides' },
   { value: '6', label: 'Protocol stacks' },
   { value: '4', label: 'Goal categories' },
-  { value: '99.1%', label: 'Avg purity (Phiogen)' },
+  { value: '99.1%', label: 'Avg purity' },
 ];
 
 const goals = [
@@ -34,8 +34,8 @@ export default function HomePage() {
       {/* ── Hero ─────────────────────────────────────────────────── */}
       <section className="relative min-h-[90vh] flex items-center">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-500/5 rounded-full blur-3xl" />
-          <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-blue-500/3 rounded-full blur-3xl" />
+          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] bg-brand-500/5 rounded-full blur-3xl" />
+          <div className="absolute top-1/3 left-1/4 w-[200px] h-[200px] sm:w-[400px] sm:h-[400px] bg-blue-500/3 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-24">
@@ -61,7 +61,7 @@ export default function HomePage() {
               <AnimateIn delay={0.2}>
                 <p className="text-lg sm:text-2xl text-gray-400 leading-relaxed mb-8 sm:mb-10 max-w-xl">
                   Complete peptide protocols for healing, fat loss, performance, and longevity.
-                  Research-grade Phiogen products. COA-verified purity. Real pricing.
+                  Research-grade products. COA-verified purity. Real pricing.
                 </p>
               </AnimateIn>
 
@@ -169,7 +169,7 @@ export default function HomePage() {
 
       {/* ── Featured stack ───────────────────────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20">
-        <div className="bg-gradient-to-br from-brand-950/60 to-black border border-brand-500/20 rounded-3xl p-6 sm:p-8 md:p-6 sm:p-12">
+        <div className="bg-gradient-to-br from-brand-950/60 to-black border border-brand-500/20 rounded-3xl p-6 sm:p-10 md:p-12">
           <AnimateIn>
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
               <div className="max-w-xl">
@@ -216,7 +216,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between mb-8 sm:mb-10">
             <div>
               <h2 className="text-2xl sm:text-3xl font-black text-white mb-2">Buy Top Peptides</h2>
-              <p className="text-base sm:text-lg text-gray-400">Research-grade · COA verified · Phiogen.</p>
+              <p className="text-base sm:text-lg text-gray-400">Research-grade · COA verified.</p>
             </div>
             <Link
               href="/products"
@@ -256,7 +256,7 @@ export default function HomePage() {
               {
                 icon: <Shield className="w-6 h-6 text-brand-400" />,
                 title: 'Real products, real images',
-                desc: 'Every peptide in our catalog links directly to Phiogen with affiliate tracking. COA-verified purity — no placeholders.',
+                desc: 'Every peptide in our catalog links directly to the supplier with affiliate tracking. COA-verified purity — no placeholders.',
               },
               {
                 icon: <TrendingUp className="w-6 h-6 text-brand-400" />,

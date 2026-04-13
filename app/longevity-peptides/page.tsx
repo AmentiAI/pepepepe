@@ -316,7 +316,7 @@ export default function LongevityPeptidesPage() {
 
         {/* Products */}
         <section>
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Longevity Peptides from Phiogen</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Longevity Peptides</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { name: 'Epithalon 50mg', slug: 'epithalon-50mg', desc: 'Telomerase activator. Russian clinical data. Multi-year cycle protocol.' },
@@ -333,7 +333,7 @@ export default function LongevityPeptidesPage() {
                 <h3 className="font-semibold mb-2 group-hover:text-brand-400 transition-colors">{p.name}</h3>
                 <p className="text-gray-400 text-sm mb-3 leading-relaxed">{p.desc}</p>
                 <span className="text-brand-400 text-sm font-medium flex items-center gap-1">
-                  Buy at Phiogen <ChevronRight className="w-3.5 h-3.5" />
+                  Buy Now <ChevronRight className="w-3.5 h-3.5" />
                 </span>
               </a>
             ))}
@@ -344,7 +344,7 @@ export default function LongevityPeptidesPage() {
         <section className="bg-gradient-to-br from-brand-500/10 to-transparent border border-brand-500/20 rounded-3xl p-6 sm:p-10 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Explore the Anti-Aging Protocol</h2>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
-            View our curated anti-aging stacks or browse all longevity-category peptides from Phiogen.
+            View our curated anti-aging stacks or browse all longevity-category peptides.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/anti-aging" className="px-6 py-3 bg-brand-500 hover:bg-brand-400 text-black font-bold rounded-xl transition-colors">

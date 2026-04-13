@@ -219,7 +219,7 @@ export default function PeptidesForSleepPage() {
 
       {/* Products */}
       <AnimateIn delay={0.25}>
-        <h2 className="text-3xl font-black text-white mb-8">Sleep Peptides from Phiogen</h2>
+        <h2 className="text-3xl font-black text-white mb-8">Sleep Peptides</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {products.map((p) => <ProductCard key={p.slug} product={p} />)}
         </div>

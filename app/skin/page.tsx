@@ -267,7 +267,7 @@ export default function SkinPage() {
       <div className="flex items-center justify-between mb-8">
         <div>
           <h2 className="text-2xl font-black text-white">Skin & Collagen Peptides</h2>
-          <p className="text-gray-500 text-sm mt-1">{products.length} peptides for skin optimization — sourced from Phiogen</p>
+          <p className="text-gray-500 text-sm mt-1">{products.length} peptides for skin optimization — COA-verified</p>
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

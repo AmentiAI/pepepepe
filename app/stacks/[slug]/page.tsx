@@ -196,7 +196,7 @@ export default async function StackPage({
                             rel="noopener noreferrer nofollow"
                             className="flex items-center gap-1 text-xs font-semibold bg-brand-500/20 hover:bg-brand-500/30 text-brand-300 border border-brand-500/30 rounded-lg px-3 py-1.5 transition-colors"
                           >
-                            Buy at Phiogen
+                            Buy Now
                             <ExternalLink className="w-3 h-3" />
                           </a>
                         </div>
