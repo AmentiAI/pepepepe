@@ -11,6 +11,9 @@ import { RelatedLinks } from '@/components/RelatedLinks';
 import { productFaqs } from '@/lib/productFaqs';
 import { getDeepDive } from '@/lib/deepDive';
 
+export const dynamic = 'force-static';
+export const revalidate = 86400;
+
 export function generateStaticParams() {
   return allProducts.map(p => ({ slug: p.slug }));
 }
@@ -37,7 +40,7 @@ export async function generateMetadata({
       url: `https://maxxingpeptide.com/products/${slug}`,
       siteName: 'MaxxingPeptides',
       type: 'website',
-      images: [{ url: `https://maxxingpeptide.com${product.image}`, alt: product.name }],
+      images: [{ url: `https://maxxingpeptide.com${product.image}`, width: 1200, height: 630, alt: product.name }],
     },
     twitter: {
       card: 'summary_large_image',

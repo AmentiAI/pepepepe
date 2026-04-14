@@ -6,6 +6,7 @@ const BASE = 'https://maxxingpeptide.com';
 const TODAY = new Date('2026-04-12');
 const LAST_WEEK = new Date('2026-04-06');
 const LAST_MONTH = new Date('2026-04-01');
+const SITE_LAUNCH = new Date('2026-03-21');
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
@@ -57,8 +58,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const productPages = allProducts.map(p => ({
     url: `${BASE}/products/${p.slug}`,
-    lastModified: TODAY,
-    changeFrequency: 'weekly' as const,
+    lastModified: SITE_LAUNCH,
+    changeFrequency: 'monthly' as const,
     priority: 0.8,
   }));
 
