@@ -54,6 +54,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/ipamorelin-cjc-guide`,            lastModified: TODAY,      changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE}/peptide-anti-aging`,              lastModified: TODAY,      changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/cognitive-peptides-guide`,        lastModified: TODAY,      changeFrequency: 'monthly', priority: 0.8 },
+
+    // ── Blog ──────────────────────────────────────────────────────────────
+    { url: `${BASE}/blog`,                            lastModified: TODAY,      changeFrequency: 'weekly',  priority: 0.8 },
+    { url: `${BASE}/blog/peptides-vs-sarms`,          lastModified: TODAY,      changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE}/blog/are-peptides-safe`,          lastModified: TODAY,      changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE}/blog/how-long-until-peptides-work`, lastModified: TODAY,    changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE}/blog/peptides-for-men-over-40`,   lastModified: TODAY,      changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE}/blog/glp1-vs-tirzepatide-vs-retatrutide`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE}/blog/peptide-stacking-101`,       lastModified: TODAY,      changeFrequency: 'monthly', priority: 0.75 },
   ];
 
   const productPages = allProducts.map(p => ({

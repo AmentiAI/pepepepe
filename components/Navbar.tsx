@@ -51,6 +51,7 @@ const navLinks = [
       { href: '/tanning', label: 'Tanning Peptides' },
     ],
   },
+  { href: '/blog', label: 'Blog' },
   { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact' },
 ];
