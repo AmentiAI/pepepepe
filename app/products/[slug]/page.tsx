@@ -5,11 +5,22 @@ import {
   ArrowLeft, ExternalLink, Star, CheckCircle2, Clock, Zap,
   FlaskConical, Syringe, TrendingDown, Activity, Leaf, Package,
 } from 'lucide-react';
-import { allProducts, getProductBySlug, salePrice } from '@/lib/products';
+import { allProducts, getProductBySlug, salePrice, type Product } from '@/lib/products';
 import { AnimateIn } from '@/components/AnimateIn';
 import { RelatedLinks } from '@/components/RelatedLinks';
 import { productFaqs } from '@/lib/productFaqs';
 import { getDeepDive } from '@/lib/deepDive';
+import type { DeepDive } from '@/lib/deepDive';
+import {
+  pickHeader,
+  shuffleSections,
+  OVERVIEW_HEADERS,
+  BENEFITS_HEADERS,
+  PROTOCOLS_HEADERS,
+  SAFETY_HEADERS,
+  STACK_HEADERS,
+  FAQ_HEADERS,
+} from '@/lib/productPageVariation';
 
 export const dynamic = 'force-static';
 export const revalidate = 86400;
@@ -402,6 +413,246 @@ function ProductFactBox({ slug, accent }: { slug: string; accent: { badge: strin
   );
 }
 
+type AccentConfig = { badge: string; border: string; glow: string; icon: React.ReactNode };
+
+function renderOrderedSections({
+  product,
+  accent,
+  deepDive,
+  synergies,
+}: {
+  product: Product;
+  accent: AccentConfig;
+  deepDive: DeepDive | null;
+  synergies: Product[];
+}) {
+  const stackPartners = synergies.filter(s => s.productType !== 'supply');
+  const benefitIconColor =
+    product.category === 'healing' ? 'text-emerald-400' :
+    product.category === 'fat-loss' ? 'text-blue-400' :
+    product.category === 'performance' ? 'text-amber-400' :
+    product.category === 'anti-aging' ? 'text-purple-400' :
+    'text-brand-400';
+  const doseIconColor =
+    product.category === 'healing' ? 'text-emerald-400' :
+    product.category === 'fat-loss' ? 'text-blue-400' :
+    product.category === 'performance' ? 'text-amber-400' :
+    'text-purple-400';
+
+  const sections: { key: string; node: React.ReactNode }[] = [];
+
+  if (productFacts[product.slug]) {
+    sections.push({
+      key: 'snapshot',
+      node: <ProductFactBox slug={product.slug} accent={accent} />,
+    });
+  }
+
+  sections.push({
+    key: 'overview',
+    node: (
+      <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
+        <h2 className="text-2xl font-bold text-white mb-5">
+          {pickHeader(product.slug, 'overview', product.name, OVERVIEW_HEADERS)}
+        </h2>
+        <div className="whitespace-pre-line text-gray-300 leading-relaxed text-base">
+          {product.fullDescription}
+        </div>
+      </div>
+    ),
+  });
+
+  sections.push({
+    key: 'benefits',
+    node: (
+      <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
+        <h2 className="text-2xl font-bold text-white mb-5">
+          {pickHeader(product.slug, 'benefits', product.name, BENEFITS_HEADERS)}
+        </h2>
+        <ul className="space-y-4">
+          {product.benefits.map(b => (
+            <li key={b} className="flex items-start gap-3">
+              <CheckCircle2 className={`w-6 h-6 mt-0.5 shrink-0 ${benefitIconColor}`} />
+              <span className="text-gray-300 text-base leading-relaxed">{b}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ),
+  });
+
+  sections.push({
+    key: 'protocols',
+    node: (
+      <div>
+        <h2 className="text-2xl font-bold text-white mb-5">
+          {pickHeader(product.slug, 'protocols', product.name, PROTOCOLS_HEADERS)}
+        </h2>
+        <div className="space-y-4">
+          {product.protocols.map(protocol => (
+            <div key={protocol.name} className="bg-[#111] border border-white/5 rounded-2xl p-6">
+              <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
+                <h3 className="font-bold text-white text-lg">{protocol.name}</h3>
+                <span className={`flex items-center gap-1.5 text-sm border rounded-full px-3 py-1 ${accent.badge}`}>
+                  <Clock className="w-4 h-4" />
+                  {protocol.schedule}
+                </span>
+              </div>
+              <div className="flex items-center gap-2 mb-3">
+                <Zap className={`w-5 h-5 shrink-0 ${doseIconColor}`} />
+                <span className="text-base font-mono text-brand-300">{protocol.dose}</span>
+              </div>
+              <p className="text-base text-gray-400 leading-relaxed">{protocol.notes}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    ),
+  });
+
+  if (deepDive) {
+    sections.push({
+      key: 'mechanism',
+      node: (
+        <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
+          <h2 className="text-2xl font-bold text-white mb-5">{deepDive.mechanismTitle}</h2>
+          <div className="text-gray-300 leading-relaxed text-base space-y-4 whitespace-pre-line">
+            {deepDive.mechanismBody}
+          </div>
+        </div>
+      ),
+    });
+
+    sections.push({
+      key: 'research',
+      node: (
+        <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
+          <h2 className="text-2xl font-bold text-white mb-5">{deepDive.researchTitle}</h2>
+          <div className="text-gray-300 leading-relaxed text-base space-y-4 whitespace-pre-line mb-6">
+            {deepDive.researchBody}
+          </div>
+          {deepDive.studies.length > 0 && (
+            <div className="border-t border-white/5 pt-5">
+              <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Key Studies</h3>
+              <div className="space-y-3">
+                {deepDive.studies.map((s, i) => (
+                  <div key={i} className="flex gap-3">
+                    <div className="w-5 h-5 rounded-full bg-brand-500/10 border border-brand-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                      <span className="text-brand-400 text-xs font-bold">{i + 1}</span>
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500 mb-0.5">{s.citation}</p>
+                      <p className="text-sm text-gray-300 leading-relaxed">{s.finding}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      ),
+    });
+
+    sections.push({
+      key: 'safety',
+      node: (
+        <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
+          <h2 className="text-2xl font-bold text-white mb-5">
+            {pickHeader(product.slug, 'safety', product.name, SAFETY_HEADERS)}
+          </h2>
+          <div className="space-y-4">
+            {deepDive.sideEffects.map((se, i) => (
+              <div key={i} className="flex gap-4">
+                <div className="shrink-0 mt-1">
+                  <span className={`inline-block w-2.5 h-2.5 rounded-full ${
+                    se.severity === 'low' ? 'bg-emerald-400' :
+                    se.severity === 'moderate' ? 'bg-yellow-400' :
+                    'bg-red-400'
+                  }`} />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <p className="font-semibold text-white text-sm">{se.name}</p>
+                    <span className={`text-xs px-2 py-0.5 rounded-full ${
+                      se.severity === 'low' ? 'bg-emerald-500/10 text-emerald-400' :
+                      se.severity === 'moderate' ? 'bg-yellow-500/10 text-yellow-400' :
+                      'bg-red-500/10 text-red-400'
+                    }`}>{se.severity}</span>
+                  </div>
+                  <p className="text-gray-400 text-sm leading-relaxed">{se.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ),
+    });
+
+    sections.push({
+      key: 'buyersGuide',
+      node: (
+        <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
+          <h2 className="text-2xl font-bold text-white mb-5">{deepDive.buyersGuideTitle}</h2>
+          <div className="text-gray-300 leading-relaxed text-base space-y-4 whitespace-pre-line">
+            {deepDive.buyersGuideBody}
+          </div>
+        </div>
+      ),
+    });
+
+    if (deepDive.vsAlternativesTitle && deepDive.vsAlternativesBody) {
+      sections.push({
+        key: 'vsAlternatives',
+        node: (
+          <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
+            <h2 className="text-2xl font-bold text-white mb-5">{deepDive.vsAlternativesTitle}</h2>
+            <div className="text-gray-300 leading-relaxed text-base space-y-4 whitespace-pre-line">
+              {deepDive.vsAlternativesBody}
+            </div>
+          </div>
+        ),
+      });
+    }
+  }
+
+  if (stackPartners.length > 0) {
+    sections.push({
+      key: 'stack',
+      node: (
+        <div>
+          <h2 className="text-xl font-bold text-white mb-5">
+            {pickHeader(product.slug, 'stack', product.name, STACK_HEADERS)}
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {stackPartners.slice(0, 4).map(syn => (
+              <div key={syn.slug} className="bg-[#111] border border-white/5 rounded-2xl overflow-hidden flex items-center gap-4 p-4 hover:border-brand-500/20 transition-colors group">
+                <div className="w-16 h-16 shrink-0 rounded-xl overflow-hidden bg-[#0d0d0d] flex items-center justify-center p-1.5">
+                  <img src={syn.image} alt={syn.name} className="w-full h-full object-contain" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="font-semibold text-white text-sm group-hover:text-brand-300 transition-colors truncate">{syn.name}</p>
+                  <p className="text-xs text-gray-500 capitalize">{syn.category.replace('-', ' ')}</p>
+                </div>
+                <Link href={`/products/${syn.slug}`} className="text-xs text-brand-400 hover:text-brand-300 shrink-0">
+                  View →
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      ),
+    });
+  }
+
+  const ordered = shuffleSections(product.slug, sections);
+
+  return ordered.map((s, i) => (
+    <AnimateIn key={s.key} delay={0.08 + i * 0.04}>
+      {s.node}
+    </AnimateIn>
+  ));
+}
+
 export default async function ProductPage({
   params,
 }: {
@@ -548,199 +799,7 @@ export default async function ProductPage({
             </AnimateIn>
           )}
 
-          {/* Product-specific Snapshot */}
-          <AnimateIn delay={0.08}>
-            <ProductFactBox slug={product.slug} accent={accent} />
-          </AnimateIn>
-
-          {/* Overview & Benefits */}
-          <AnimateIn delay={0.1}>
-            <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
-              <h2 className="text-2xl font-bold text-white mb-5">Overview & Benefits</h2>
-              <div className="whitespace-pre-line text-gray-300 leading-relaxed text-base">
-                {product.fullDescription}
-              </div>
-            </div>
-          </AnimateIn>
-
-          {/* Key Benefits */}
-          <AnimateIn delay={0.15}>
-            <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
-              <h2 className="text-2xl font-bold text-white mb-5">Key Benefits</h2>
-              <ul className="space-y-4">
-                {product.benefits.map(b => (
-                  <li key={b} className="flex items-start gap-3">
-                    <CheckCircle2 className={`w-6 h-6 mt-0.5 shrink-0 ${
-                      product.category === 'healing' ? 'text-emerald-400' :
-                      product.category === 'fat-loss' ? 'text-blue-400' :
-                      product.category === 'performance' ? 'text-amber-400' :
-                      product.category === 'anti-aging' ? 'text-purple-400' :
-                      'text-brand-400'
-                    }`} />
-                    <span className="text-gray-300 text-base leading-relaxed">{b}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </AnimateIn>
-
-          {/* Protocols & Dosing */}
-          <AnimateIn delay={0.2}>
-            <div>
-              <h2 className="text-2xl font-bold text-white mb-5">Protocols & Dosing</h2>
-              <div className="space-y-4">
-                {product.protocols.map(protocol => (
-                  <div key={protocol.name} className="bg-[#111] border border-white/5 rounded-2xl p-6">
-                    <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
-                      <h3 className="font-bold text-white text-lg">{protocol.name}</h3>
-                      <span className={`flex items-center gap-1.5 text-sm border rounded-full px-3 py-1 ${accent.badge}`}>
-                        <Clock className="w-4 h-4" />
-                        {protocol.schedule}
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2 mb-3">
-                      <Zap className={`w-5 h-5 shrink-0 ${
-                        product.category === 'healing' ? 'text-emerald-400' :
-                        product.category === 'fat-loss' ? 'text-blue-400' :
-                        product.category === 'performance' ? 'text-amber-400' :
-                        'text-purple-400'
-                      }`} />
-                      <span className="text-base font-mono text-brand-300">{protocol.dose}</span>
-                    </div>
-                    <p className="text-base text-gray-400 leading-relaxed">{protocol.notes}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </AnimateIn>
-
-          {/* ── Deep Dive Sections ────────────────────────────────── */}
-          {deepDive && (
-            <>
-              {/* Mechanism Deep Dive */}
-              <AnimateIn delay={0.22}>
-                <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
-                  <h2 className="text-2xl font-bold text-white mb-5">{deepDive.mechanismTitle}</h2>
-                  <div className="text-gray-300 leading-relaxed text-base space-y-4 whitespace-pre-line">
-                    {deepDive.mechanismBody}
-                  </div>
-                </div>
-              </AnimateIn>
-
-              {/* Research Evidence */}
-              <AnimateIn delay={0.24}>
-                <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
-                  <h2 className="text-2xl font-bold text-white mb-5">{deepDive.researchTitle}</h2>
-                  <div className="text-gray-300 leading-relaxed text-base space-y-4 whitespace-pre-line mb-6">
-                    {deepDive.researchBody}
-                  </div>
-                  {deepDive.studies.length > 0 && (
-                    <div className="border-t border-white/5 pt-5">
-                      <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Key Studies</h3>
-                      <div className="space-y-3">
-                        {deepDive.studies.map((s, i) => (
-                          <div key={i} className="flex gap-3">
-                            <div className="w-5 h-5 rounded-full bg-brand-500/10 border border-brand-500/20 flex items-center justify-center shrink-0 mt-0.5">
-                              <span className="text-brand-400 text-xs font-bold">{i + 1}</span>
-                            </div>
-                            <div>
-                              <p className="text-xs text-gray-500 mb-0.5">{s.citation}</p>
-                              <p className="text-sm text-gray-300 leading-relaxed">{s.finding}</p>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </AnimateIn>
-
-              {/* Safety Profile */}
-              <AnimateIn delay={0.26}>
-                <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
-                  <h2 className="text-2xl font-bold text-white mb-5">Safety Profile & Side Effects</h2>
-                  <div className="space-y-4">
-                    {deepDive.sideEffects.map((se, i) => (
-                      <div key={i} className="flex gap-4">
-                        <div className="shrink-0 mt-1">
-                          <span className={`inline-block w-2.5 h-2.5 rounded-full ${
-                            se.severity === 'low' ? 'bg-emerald-400' :
-                            se.severity === 'moderate' ? 'bg-yellow-400' :
-                            'bg-red-400'
-                          }`} />
-                        </div>
-                        <div>
-                          <div className="flex items-center gap-2 mb-1">
-                            <p className="font-semibold text-white text-sm">{se.name}</p>
-                            <span className={`text-xs px-2 py-0.5 rounded-full ${
-                              se.severity === 'low' ? 'bg-emerald-500/10 text-emerald-400' :
-                              se.severity === 'moderate' ? 'bg-yellow-500/10 text-yellow-400' :
-                              'bg-red-500/10 text-red-400'
-                            }`}>{se.severity}</span>
-                          </div>
-                          <p className="text-gray-400 text-sm leading-relaxed">{se.description}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </AnimateIn>
-
-              {/* Buyer's Guide */}
-              <AnimateIn delay={0.28}>
-                <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
-                  <h2 className="text-2xl font-bold text-white mb-5">{deepDive.buyersGuideTitle}</h2>
-                  <div className="text-gray-300 leading-relaxed text-base space-y-4 whitespace-pre-line">
-                    {deepDive.buyersGuideBody}
-                  </div>
-                </div>
-              </AnimateIn>
-
-              {/* vs. Alternatives */}
-              {deepDive.vsAlternativesTitle && deepDive.vsAlternativesBody && (
-                <AnimateIn delay={0.30}>
-                  <div className="bg-[#111] border border-white/5 rounded-2xl p-6 sm:p-8">
-                    <h2 className="text-2xl font-bold text-white mb-5">{deepDive.vsAlternativesTitle}</h2>
-                    <div className="text-gray-300 leading-relaxed text-base space-y-4 whitespace-pre-line">
-                      {deepDive.vsAlternativesBody}
-                    </div>
-                  </div>
-                </AnimateIn>
-              )}
-            </>
-          )}
-
-          {/* Stack With These Peptides */}
-          {synergies.filter(s => s.productType !== 'supply').length > 0 && (
-            <AnimateIn delay={0.25}>
-              <div>
-                <h2 className="text-xl font-bold text-white mb-5">Stack With These Peptides</h2>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  {synergies.filter(s => s.productType !== 'supply').slice(0, 4).map(syn => (
-                    <div key={syn.slug} className="bg-[#111] border border-white/5 rounded-2xl overflow-hidden flex items-center gap-4 p-4 hover:border-brand-500/20 transition-colors group">
-                      <div className="w-16 h-16 shrink-0 rounded-xl overflow-hidden bg-[#0d0d0d] flex items-center justify-center p-1.5">
-                        <img
-                          src={syn.image}
-                          alt={syn.name}
-                          className="w-full h-full object-contain"
-                        />
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <p className="font-semibold text-white text-sm group-hover:text-brand-300 transition-colors truncate">{syn.name}</p>
-                        <p className="text-xs text-gray-500 capitalize">{syn.category.replace('-', ' ')}</p>
-                      </div>
-                      <Link
-                        href={`/products/${syn.slug}`}
-                        className="text-xs text-brand-400 hover:text-brand-300 shrink-0"
-                      >
-                        View →
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </AnimateIn>
-          )}
+          {renderOrderedSections({ product, accent, deepDive, synergies })}
         </div>
 
         {/* ── Sidebar ───────────────────────────────────────────────── */}
@@ -834,7 +893,7 @@ export default async function ProductPage({
       {faqs.length > 0 && (
         <div className="mt-16 border-t border-white/5 pt-12">
           <h2 className="text-2xl font-black text-white mb-6">
-            Common Questions About {product.name.split(' ').slice(0, 2).join(' ')}
+            {pickHeader(product.slug, 'faq', product.name, FAQ_HEADERS)}
           </h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
