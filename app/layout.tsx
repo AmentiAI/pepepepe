@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     'research peptides 2026',
   ],
   metadataBase: new URL('https://maxxingpeptide.com'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
